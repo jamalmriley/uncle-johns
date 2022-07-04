@@ -1,0 +1,119 @@
+[
+    {
+        "name": "Coffee",
+        "small": 1.75,
+        "medium": 1.95,
+        "large": 2.15,
+        "oneSize": "",
+        "menuCategory": "Beverages",
+        "itemCategory": "Drinks"
+    },
+    {
+        "name": "Hot Cocoa",
+        "small": 2.19,
+        "medium": "",
+        "large": 2.59,
+        "oneSize": "",
+        "menuCategory": "Beverages",
+        "itemCategory": "Drinks"
+    },
+    {
+        "name": "Tea",
+        "small": 1.65,
+        "medium": "",
+        "large": 1.85,
+        "oneSize": "",
+        "menuCategory": "Beverages",
+        "itemCategory": "Drinks"
+    },
+    {
+        "name": "Iced Coffee",
+        "small": 2.65,
+        "medium": 3.05,
+        "large": 3.39,
+        "oneSize": "",
+        "menuCategory": "Beverages",
+        "itemCategory": "Drinks"
+    },
+    {
+        "name": "White Milk (2%)",
+        "small": "",
+        "medium": "",
+        "large": "",
+        "oneSize": 2.19,
+        "menuCategory": "Beverages",
+        "itemCategory": "Drinks"
+    },
+    {
+        "name": "Chocolate Milk",
+        "small": "",
+        "medium": "",
+        "large": "",
+        "oneSize": 2.19,
+        "menuCategory": "Beverages",
+        "itemCategory": "Drinks"
+    },
+    {
+        "name": "Apple Juice",
+        "small": 1.89,
+        "medium": "",
+        "large": 2.19,
+        "oneSize": "",
+        "menuCategory": "Beverages",
+        "itemCategory": "Juices"
+    },
+    {
+        "name": "Orange Juice",
+        "small": 1.89,
+        "medium": "",
+        "large": 2.19,
+        "oneSize": "",
+        "menuCategory": "Beverages",
+        "itemCategory": "Juices"
+    },
+    {
+        "name": "V8 Splash",
+        "small": "",
+        "medium": "",
+        "large": "",
+        "oneSize": 2.35,
+        "menuCategory": "Beverages",
+        "itemCategory": "Juices"
+    },
+    {
+        "name": "Bottled Water",
+        "small": "",
+        "medium": "",
+        "large": "",
+        "oneSize": 1.09,
+        "menuCategory": "Beverages",
+        "itemCategory": "Juices"
+    },
+    {
+        "name": "Cappuccino",
+        "small": 2.29,
+        "medium": "",
+        "large": 2.59,
+        "oneSize": "",
+        "menuCategory": "Beverages",
+        "itemCategory": "Juices"
+    },
+    {
+        "name": "Flavor Shot",
+        "small": "",
+        "medium": "",
+        "large": "",
+        "oneSize": 0.4,
+        "menuCategory": "Beverages",
+        "itemCategory": "Juices"
+    },
+    {
+        "name": "Smoothie",
+        "small": 2.99,
+        "medium": 3.89,
+        "large": 4.69,
+        "oneSize": "",
+        "menuCategory": "Beverages",
+        "itemCategory": "Fruit Smoothies"
+    }
+]

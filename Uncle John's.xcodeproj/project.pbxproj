@@ -7,18 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		89B122FD28725C710011CE40 /* Uncle_John_sApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B122FC28725C710011CE40 /* Uncle_John_sApp.swift */; };
+		89B122FD28725C710011CE40 /* Uncle_Johns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B122FC28725C710011CE40 /* Uncle_Johns.swift */; };
 		89B122FF28725C710011CE40 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B122FE28725C710011CE40 /* ContentView.swift */; };
 		89B1230128725C740011CE40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89B1230028725C740011CE40 /* Assets.xcassets */; };
 		89B1230428725C740011CE40 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89B1230328725C740011CE40 /* Preview Assets.xcassets */; };
+		89B3FEB8287331EE00D6DFD0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B3FEB7287331EE00D6DFD0 /* User.swift */; };
+		89B3FEBA287331FF00D6DFD0 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B3FEB9287331FF00D6DFD0 /* Weather.swift */; };
+		89B3FEBC2873327B00D6DFD0 /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B3FEBB2873327B00D6DFD0 /* AuthModel.swift */; };
+		89B3FEBE287332BC00D6DFD0 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B3FEBD287332BC00D6DFD0 /* WeatherModel.swift */; };
+		89B3FEC0287332D600D6DFD0 /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B3FEBF287332D600D6DFD0 /* MapModel.swift */; };
+		89B3FEC22873339300D6DFD0 /* RestaurantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B3FEC12873339300D6DFD0 /* RestaurantModel.swift */; };
+		89B3FEC42873340000D6DFD0 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B3FEC32873340000D6DFD0 /* Restaurant.swift */; };
+		89B3FECC28733EBA00D6DFD0 /* restaurants.json in Resources */ = {isa = PBXBuildFile; fileRef = 89B3FECB28733EBA00D6DFD0 /* restaurants.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		89B122F928725C710011CE40 /* Uncle John's.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Uncle John's.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		89B122FC28725C710011CE40 /* Uncle_John_sApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Uncle_John_sApp.swift; sourceTree = "<group>"; };
+		89B122FC28725C710011CE40 /* Uncle_Johns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Uncle_Johns.swift; sourceTree = "<group>"; };
 		89B122FE28725C710011CE40 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		89B1230028725C740011CE40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89B1230328725C740011CE40 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		89B3FEB7287331EE00D6DFD0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		89B3FEB9287331FF00D6DFD0 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		89B3FEBB2873327B00D6DFD0 /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
+		89B3FEBD287332BC00D6DFD0 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		89B3FEBF287332D600D6DFD0 /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
+		89B3FEC12873339300D6DFD0 /* RestaurantModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantModel.swift; sourceTree = "<group>"; };
+		89B3FEC32873340000D6DFD0 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		89B3FECB28733EBA00D6DFD0 /* restaurants.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = restaurants.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +67,11 @@
 		89B122FB28725C710011CE40 /* Uncle John's */ = {
 			isa = PBXGroup;
 			children = (
-				89B122FC28725C710011CE40 /* Uncle_John_sApp.swift */,
-				89B122FE28725C710011CE40 /* ContentView.swift */,
+				89B122FC28725C710011CE40 /* Uncle_Johns.swift */,
+				89B1230A2872A1860011CE40 /* Models */,
+				89B1230B2872A19A0011CE40 /* Views */,
+				89B1230C2872A1A50011CE40 /* ViewModels */,
+				89B1230D2872A1AD0011CE40 /* Resources */,
 				89B1230028725C740011CE40 /* Assets.xcassets */,
 				89B1230228725C740011CE40 /* Preview Content */,
 			);
@@ -65,6 +84,43 @@
 				89B1230328725C740011CE40 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		89B1230A2872A1860011CE40 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				89B3FEC32873340000D6DFD0 /* Restaurant.swift */,
+				89B3FEB7287331EE00D6DFD0 /* User.swift */,
+				89B3FEB9287331FF00D6DFD0 /* Weather.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		89B1230B2872A19A0011CE40 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				89B122FE28725C710011CE40 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		89B1230C2872A1A50011CE40 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				89B3FEBB2873327B00D6DFD0 /* AuthModel.swift */,
+				89B3FEBF287332D600D6DFD0 /* MapModel.swift */,
+				89B3FEC12873339300D6DFD0 /* RestaurantModel.swift */,
+				89B3FEBD287332BC00D6DFD0 /* WeatherModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		89B1230D2872A1AD0011CE40 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				89B3FECB28733EBA00D6DFD0 /* restaurants.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89B1230428725C740011CE40 /* Preview Assets.xcassets in Resources */,
+				89B3FECC28733EBA00D6DFD0 /* restaurants.json in Resources */,
 				89B1230128725C740011CE40 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +194,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89B3FEC42873340000D6DFD0 /* Restaurant.swift in Sources */,
+				89B3FEC0287332D600D6DFD0 /* MapModel.swift in Sources */,
+				89B3FEC22873339300D6DFD0 /* RestaurantModel.swift in Sources */,
+				89B3FEB8287331EE00D6DFD0 /* User.swift in Sources */,
 				89B122FF28725C710011CE40 /* ContentView.swift in Sources */,
-				89B122FD28725C710011CE40 /* Uncle_John_sApp.swift in Sources */,
+				89B3FEBE287332BC00D6DFD0 /* WeatherModel.swift in Sources */,
+				89B122FD28725C710011CE40 /* Uncle_Johns.swift in Sources */,
+				89B3FEBA287331FF00D6DFD0 /* Weather.swift in Sources */,
+				89B3FEBC2873327B00D6DFD0 /* AuthModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

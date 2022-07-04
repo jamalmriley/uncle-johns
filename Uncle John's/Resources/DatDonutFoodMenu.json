@@ -1,0 +1,227 @@
+[
+    {
+        "quantity": 1,
+        "name": "Donut",
+        "addOn": "",
+        "price": 1.25,
+        "unitPrice": "",
+        "menuCategory": "Food",
+        "itemCategory": "Our Donuts"
+    },
+    {
+        "quantity": 2,
+        "name": "Donuts",
+        "addOn": "",
+        "price": 2.39,
+        "unitPrice": 1.2,
+        "menuCategory": "Food",
+        "itemCategory": "Our Donuts"
+    },
+    {
+        "quantity": 6,
+        "name": "Donuts",
+        "addOn": "",
+        "price": 6.95,
+        "unitPrice": 1.16,
+        "menuCategory": "Food",
+        "itemCategory": "Our Donuts"
+    },
+    {
+        "quantity": 12,
+        "name": "Donuts",
+        "addOn": "",
+        "price": 13.25,
+        "unitPrice": 1.1,
+        "menuCategory": "Food",
+        "itemCategory": "Our Donuts"
+    },
+    {
+        "quantity": 0,
+        "name": "The Big Dat Donut",
+        "addOn": "",
+        "price": 3.35,
+        "unitPrice": "",
+        "menuCategory": "Food",
+        "itemCategory": "Our Donuts"
+    },
+    {
+        "quantity": 0,
+        "name": "Cinnamon Roll",
+        "addOn": "",
+        "price": 2.39,
+        "unitPrice": "",
+        "menuCategory": "Food",
+        "itemCategory": "Our Donuts"
+    },
+    {
+        "quantity": 0,
+        "name": "Bow Tie Donut",
+        "addOn": "",
+        "price": 1.39,
+        "unitPrice": "",
+        "menuCategory": "Food",
+        "itemCategory": "Our Donuts"
+    },
+    {
+        "quantity": 0,
+        "name": "Apple Fritter",
+        "addOn": "",
+        "price": 2.89,
+        "unitPrice": "",
+        "menuCategory": "Food",
+        "itemCategory": "Our Donuts"
+    },
+    {
+        "quantity": 6,
+        "name": "Donut Balls",
+        "addOn": "",
+        "price": 1.45,
+        "unitPrice": 0.24,
+        "menuCategory": "Food",
+        "itemCategory": "Our Donuts"
+    },
+    {
+        "quantity": 12,
+        "name": "Donut Balls",
+        "addOn": "",
+        "price": 2.65,
+        "unitPrice": 0.22,
+        "menuCategory": "Food",
+        "itemCategory": "Our Donuts"
+    },
+    {
+        "quantity": 0,
+        "name": "Muffin",
+        "addOn": "",
+        "price": 2.19,
+        "unitPrice": "",
+        "menuCategory": "Food",
+        "itemCategory": "Our Donuts"
+    },
+    {
+        "quantity": 0,
+        "name": "Bacon & Egg Toast",
+        "addOn": "Add coffee or donut for $1.10",
+        "price": 3.89,
+        "unitPrice": "",
+        "menuCategory": "Food",
+        "itemCategory": "Our Sandwiches"
+    },
+    {
+        "quantity": 0,
+        "name": "Sausage & Egg Toast",
+        "addOn": "Add coffee or donut for $1.10",
+        "price": 3.89,
+        "unitPrice": "",
+        "menuCategory": "Food",
+        "itemCategory": "Our Sandwiches"
+    },
+    {
+        "quantity": 0,
+        "name": "Ham & Egg Toast",
+        "addOn": "Add coffee or donut for $1.10",
+        "price": 3.89,
+        "unitPrice": "",
+        "menuCategory": "Food",
+        "itemCategory": "Our Sandwiches"
+    },
+    {
+        "quantity": 0,
+        "name": "Turkey Bacon & Egg Toast",
+        "addOn": "Add coffee or donut for $1.10",
+        "price": 3.89,
+        "unitPrice": "",
+        "menuCategory": "Food",
+        "itemCategory": "Our Sandwiches"
+    },
+    {
+        "quantity": 0,
+        "name": "Egg & Cheese Toast",
+        "addOn": "",
+        "price": 3.09,
+        "unitPrice": "",
+        "menuCategory": "Food",
+        "itemCategory": "Our Sandwiches"
+    },
+    {
+        "quantity": 0,
+        "name": "Grilled Cheese Toast",
+        "addOn": "",
+        "price": 2.99,
+        "unitPrice": "",
+        "menuCategory": "Food",
+        "itemCategory": "Our Sandwiches"
+    },
+    {
+        "quantity": 0,
+        "name": "Bacon & Egg Croissant",
+        "addOn": "Add coffee or donut for $1.10",
+        "price": 4.09,
+        "unitPrice": "",
+        "menuCategory": "Food",
+        "itemCategory": "Our Sandwiches"
+    },
+    {
+        "quantity": 0,
+        "name": "Sausage & Egg Croissant",
+        "addOn": "Add coffee or donut for $1.10",
+        "price": 4.09,
+        "unitPrice": "",
+        "menuCategory": "Food",
+        "itemCategory": "Our Sandwiches"
+    },
+    {
+        "quantity": 0,
+        "name": "Ham & Egg Croissant",
+        "addOn": "Add coffee or donut for $1.10",
+        "price": 4.09,
+        "unitPrice": "",
+        "menuCategory": "Food",
+        "itemCategory": "Our Sandwiches"
+    },
+    {
+        "quantity": 0,
+        "name": "Turkey Bacon & Egg Croissant",
+        "addOn": "Add coffee or donut for $1.10",
+        "price": 4.09,
+        "unitPrice": "",
+        "menuCategory": "Food",
+        "itemCategory": "Our Sandwiches"
+    },
+    {
+        "quantity": 0,
+        "name": "Egg & Cheese Croissant",
+        "addOn": "Add coffee or donut for $2.10",
+        "price": 3.09,
+        "unitPrice": "",
+        "menuCategory": "Food",
+        "itemCategory": "Our Sandwiches"
+    },
+    {
+        "quantity": 0,
+        "name": "Extra Meat",
+        "addOn": "",
+        "price": 1.35,
+        "unitPrice": "",
+        "menuCategory": "Food",
+        "itemCategory": "Our Sandwiches"
+    },
+    {
+        "quantity": 0,
+        "name": "Extra Egg",
+        "addOn": "",
+        "price": 1,
+        "unitPrice": "",
+        "menuCategory": "Food",
+        "itemCategory": "Our Sandwiches"
+    },
+    {
+        "quantity": 0,
+        "name": "Extra Cheese",
+        "addOn": "",
+        "price": 0.5,
+        "unitPrice": "",
+        "menuCategory": "Food",
+        "itemCategory": "Our Sandwiches"
+    }
+]

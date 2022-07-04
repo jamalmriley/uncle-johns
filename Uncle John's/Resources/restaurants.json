@@ -1,0 +1,406 @@
+[
+    {
+        "name": "Dat Donut",
+        "nickname": "",
+        "address1": "8249 S Cottage Grove Ave",
+        "address2": "",
+        "city": "Chicago",
+        "state": "IL",
+        "zipCode": 60619,
+        "phone": 7737231002,
+        "email": "info@datdonut.com",
+        "website": "https://www.datdonut.com/",
+        "latitude": 41.74414,
+        "longitude": -87.60461,
+        "sundayOpenTime": "1899-12-30T13:06:36.000Z",
+        "sundayCloseTime": "1899-12-30T23:36:36.000Z",
+        "mondayOpenTime": "1899-12-30T12:06:36.000Z",
+        "mondayCloseTime": "1899-12-31T04:36:36.000Z",
+        "tuesdayOpenTime": "1899-12-30T12:06:36.000Z",
+        "tuesdayCloseTime": "1899-12-31T04:36:36.000Z",
+        "wednesdayOpenTime": "1899-12-30T12:06:36.000Z",
+        "wednesdayCloseTime": "1899-12-31T04:36:36.000Z",
+        "thursdayOpenTime": "1899-12-30T12:06:36.000Z",
+        "thursdayCloseTime": "1899-12-31T04:36:36.000Z",
+        "fridayOpenTime": "1899-12-30T12:06:36.000Z",
+        "fridayCloseTime": "1899-12-31T04:36:36.000Z",
+        "saturdayOpenTime": "1899-12-30T12:06:36.000Z",
+        "saturdayCloseTime": "1899-12-31T04:36:36.000Z",
+        "foodItems": [
+            {
+                "quantity": 1,
+                "name": "Donut",
+                "addOn": "",
+                "price": 1.25,
+                "unitPrice": 0,
+                "menuCategory": "Food",
+                "itemCategory": "Our Donuts"
+            },
+            {
+                "quantity": 2,
+                "name": "Donuts",
+                "addOn": "",
+                "price": 2.39,
+                "unitPrice": 1.2,
+                "menuCategory": "Food",
+                "itemCategory": "Our Donuts"
+            },
+            {
+                "quantity": 6,
+                "name": "Donuts",
+                "addOn": "",
+                "price": 6.95,
+                "unitPrice": 1.16,
+                "menuCategory": "Food",
+                "itemCategory": "Our Donuts"
+            },
+            {
+                "quantity": 12,
+                "name": "Donuts",
+                "addOn": "",
+                "price": 13.25,
+                "unitPrice": 1.1,
+                "menuCategory": "Food",
+                "itemCategory": "Our Donuts"
+            },
+            {
+                "quantity": 0,
+                "name": "The Big Dat Donut",
+                "addOn": "",
+                "price": 3.35,
+                "unitPrice": 0,
+                "menuCategory": "Food",
+                "itemCategory": "Our Donuts"
+            },
+            {
+                "quantity": 0,
+                "name": "Cinnamon Roll",
+                "addOn": "",
+                "price": 2.39,
+                "unitPrice": 0,
+                "menuCategory": "Food",
+                "itemCategory": "Our Donuts"
+            },
+            {
+                "quantity": 0,
+                "name": "Bow Tie Donut",
+                "addOn": "",
+                "price": 1.39,
+                "unitPrice": 0,
+                "menuCategory": "Food",
+                "itemCategory": "Our Donuts"
+            },
+            {
+                "quantity": 0,
+                "name": "Apple Fritter",
+                "addOn": "",
+                "price": 2.89,
+                "unitPrice": 0,
+                "menuCategory": "Food",
+                "itemCategory": "Our Donuts"
+            },
+            {
+                "quantity": 6,
+                "name": "Donut Balls",
+                "addOn": "",
+                "price": 1.45,
+                "unitPrice": 0.24,
+                "menuCategory": "Food",
+                "itemCategory": "Our Donuts"
+            },
+            {
+                "quantity": 12,
+                "name": "Donut Balls",
+                "addOn": "",
+                "price": 2.65,
+                "unitPrice": 0.22,
+                "menuCategory": "Food",
+                "itemCategory": "Our Donuts"
+            },
+            {
+                "quantity": 0,
+                "name": "Muffin",
+                "addOn": "",
+                "price": 2.19,
+                "unitPrice": 0,
+                "menuCategory": "Food",
+                "itemCategory": "Our Donuts"
+            },
+            {
+                "quantity": 0,
+                "name": "Bacon & Egg Toast",
+                "addOn": "Add coffee or donut for $1.10",
+                "price": 3.89,
+                "unitPrice": 0,
+                "menuCategory": "Food",
+                "itemCategory": "Our Sandwiches"
+            },
+            {
+                "quantity": 0,
+                "name": "Sausage & Egg Toast",
+                "addOn": "Add coffee or donut for $1.10",
+                "price": 3.89,
+                "unitPrice": 0,
+                "menuCategory": "Food",
+                "itemCategory": "Our Sandwiches"
+            },
+            {
+                "quantity": 0,
+                "name": "Ham & Egg Toast",
+                "addOn": "Add coffee or donut for $1.10",
+                "price": 3.89,
+                "unitPrice": 0,
+                "menuCategory": "Food",
+                "itemCategory": "Our Sandwiches"
+            },
+            {
+                "quantity": 0,
+                "name": "Turkey Bacon & Egg Toast",
+                "addOn": "Add coffee or donut for $1.10",
+                "price": 3.89,
+                "unitPrice": 0,
+                "menuCategory": "Food",
+                "itemCategory": "Our Sandwiches"
+            },
+            {
+                "quantity": 0,
+                "name": "Egg & Cheese Toast",
+                "addOn": "",
+                "price": 3.09,
+                "unitPrice": 0,
+                "menuCategory": "Food",
+                "itemCategory": "Our Sandwiches"
+            },
+            {
+                "quantity": 0,
+                "name": "Grilled Cheese Toast",
+                "addOn": "",
+                "price": 2.99,
+                "unitPrice": 0,
+                "menuCategory": "Food",
+                "itemCategory": "Our Sandwiches"
+            },
+            {
+                "quantity": 0,
+                "name": "Bacon & Egg Croissant",
+                "addOn": "Add coffee or donut for $1.10",
+                "price": 4.09,
+                "unitPrice": 0,
+                "menuCategory": "Food",
+                "itemCategory": "Our Sandwiches"
+            },
+            {
+                "quantity": 0,
+                "name": "Sausage & Egg Croissant",
+                "addOn": "Add coffee or donut for $1.10",
+                "price": 4.09,
+                "unitPrice": 0,
+                "menuCategory": "Food",
+                "itemCategory": "Our Sandwiches"
+            },
+            {
+                "quantity": 0,
+                "name": "Ham & Egg Croissant",
+                "addOn": "Add coffee or donut for $1.10",
+                "price": 4.09,
+                "unitPrice": 0,
+                "menuCategory": "Food",
+                "itemCategory": "Our Sandwiches"
+            },
+            {
+                "quantity": 0,
+                "name": "Turkey Bacon & Egg Croissant",
+                "addOn": "Add coffee or donut for $1.10",
+                "price": 4.09,
+                "unitPrice": 0,
+                "menuCategory": "Food",
+                "itemCategory": "Our Sandwiches"
+            },
+            {
+                "quantity": 0,
+                "name": "Egg & Cheese Croissant",
+                "addOn": "Add coffee or donut for $2.10",
+                "price": 3.09,
+                "unitPrice": 0,
+                "menuCategory": "Food",
+                "itemCategory": "Our Sandwiches"
+            },
+            {
+                "quantity": 0,
+                "name": "Extra Meat",
+                "addOn": "",
+                "price": 1.35,
+                "unitPrice": 0,
+                "menuCategory": "Food",
+                "itemCategory": "Our Sandwiches"
+            },
+            {
+                "quantity": 0,
+                "name": "Extra Egg",
+                "addOn": "",
+                "price": 1,
+                "unitPrice": 0,
+                "menuCategory": "Food",
+                "itemCategory": "Our Sandwiches"
+            },
+            {
+                "quantity": 0,
+                "name": "Extra Cheese",
+                "addOn": "",
+                "price": 0.5,
+                "unitPrice": 0,
+                "menuCategory": "Food",
+                "itemCategory": "Our Sandwiches"
+            }
+        ],
+        "beverageItems": [
+            {
+                "name": "Coffee",
+                "small": 1.75,
+                "medium": 1.95,
+                "large": 2.15,
+                "oneSize": 0,
+                "menuCategory": "Beverages",
+                "itemCategory": "Drinks"
+            },
+            {
+                "name": "Hot Cocoa",
+                "small": 2.19,
+                "medium": 0,
+                "large": 2.59,
+                "oneSize": 0,
+                "menuCategory": "Beverages",
+                "itemCategory": "Drinks"
+            },
+            {
+                "name": "Tea",
+                "small": 1.65,
+                "medium": 0,
+                "large": 1.85,
+                "oneSize": 0,
+                "menuCategory": "Beverages",
+                "itemCategory": "Drinks"
+            },
+            {
+                "name": "Iced Coffee",
+                "small": 2.65,
+                "medium": 3.05,
+                "large": 3.39,
+                "oneSize": 0,
+                "menuCategory": "Beverages",
+                "itemCategory": "Drinks"
+            },
+            {
+                "name": "White Milk (2%)",
+                "small": 0,
+                "medium": 0,
+                "large": 0,
+                "oneSize": 2.19,
+                "menuCategory": "Beverages",
+                "itemCategory": "Drinks"
+            },
+            {
+                "name": "Chocolate Milk",
+                "small": 0,
+                "medium": 0,
+                "large": 0,
+                "oneSize": 2.19,
+                "menuCategory": "Beverages",
+                "itemCategory": "Drinks"
+            },
+            {
+                "name": "Apple Juice",
+                "small": 1.89,
+                "medium": 0,
+                "large": 2.19,
+                "oneSize": 0,
+                "menuCategory": "Beverages",
+                "itemCategory": "Juices"
+            },
+            {
+                "name": "Orange Juice",
+                "small": 1.89,
+                "medium": 0,
+                "large": 2.19,
+                "oneSize": 0,
+                "menuCategory": "Beverages",
+                "itemCategory": "Juices"
+            },
+            {
+                "name": "V8 Splash",
+                "small": 0,
+                "medium": 0,
+                "large": 0,
+                "oneSize": 2.35,
+                "menuCategory": "Beverages",
+                "itemCategory": "Juices"
+            },
+            {
+                "name": "Bottled Water",
+                "small": 0,
+                "medium": 0,
+                "large": 0,
+                "oneSize": 1.09,
+                "menuCategory": "Beverages",
+                "itemCategory": "Juices"
+            },
+            {
+                "name": "Cappuccino",
+                "small": 2.29,
+                "medium": 0,
+                "large": 2.59,
+                "oneSize": 0,
+                "menuCategory": "Beverages",
+                "itemCategory": "Juices"
+            },
+            {
+                "name": "Flavor Shot",
+                "small": 0,
+                "medium": 0,
+                "large": 0,
+                "oneSize": 0.4,
+                "menuCategory": "Beverages",
+                "itemCategory": "Juices"
+            },
+            {
+                "name": "Smoothie",
+                "small": 2.99,
+                "medium": 3.89,
+                "large": 4.69,
+                "oneSize": 0,
+                "menuCategory": "Beverages",
+                "itemCategory": "Fruit Smoothies"
+            }
+        ]
+    },
+    {
+        "name": "Uncle John's Barbeque",
+        "nickname": "Uncle John's BBQ",
+        "address1": "8249 S Cottage Grove Ave",
+        "address2": "",
+        "city": "Chicago",
+        "state": "IL",
+        "zipCode": 60619,
+        "phone": 7739526236,
+        "email": "info@datdonut.com",
+        "website": "https://www.unclejohnsbarbecue.com/",
+        "latitude": 41.74414,
+        "longitude": -87.60461,
+        "sundayOpenTime": "1899-12-30T18:36:36.000Z",
+        "sundayCloseTime": "1899-12-31T02:36:36.000Z",
+        "mondayOpenTime": "1899-12-30T17:36:36.000Z",
+        "mondayCloseTime": "1899-12-31T04:36:36.000Z",
+        "tuesdayOpenTime": "1899-12-30T17:36:36.000Z",
+        "tuesdayCloseTime": "1899-12-31T04:36:36.000Z",
+        "wednesdayOpenTime": "1899-12-30T17:36:36.000Z",
+        "wednesdayCloseTime": "1899-12-31T04:36:36.000Z",
+        "thursdayOpenTime": "1899-12-30T17:36:36.000Z",
+        "thursdayCloseTime": "1899-12-31T04:36:36.000Z",
+        "fridayOpenTime": "1899-12-30T17:36:36.000Z",
+        "fridayCloseTime": "1899-12-31T05:36:36.000Z",
+        "saturdayOpenTime": "1899-12-30T17:36:36.000Z",
+        "saturdayCloseTime": "1899-12-31T05:36:36.000Z",
+        "foodItems": [],
+        "beverageItems": []
+    }
+]
