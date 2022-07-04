@@ -38,26 +38,22 @@ class Restaurant: Decodable, Identifiable, ObservableObject, Equatable {
     var email: String
     var latitude: Double
     var longitude: Double
-    var foodItems: [FoodItem]
-    var beverageItems: [BeverageItem]
+    var menu0: [menuItem]
+    var menu1: [menuItem]
 }
 
-class FoodItem: Decodable {
+class menuItem: Decodable {
     var quantity: Int
     var name: String
-    var addOn: String
-    var price: Float
-    var unitPrice: Float?
+    var description: String
+    var isSpecial: Bool
+    var price1: Float
+    var price2: Float
+    var price3: Float
+    var price4: Float
+    var singleSizePrice: Float
+    var unitPrice: Float
     var menuCategory: String
     var itemCategory: String
-}
-
-class BeverageItem: Decodable {
-    var name: String
-    var small: Float?
-    var medium: Float?
-    var large: Float?
-    var oneSize: Float?
-    var menuCategory: String
-    var itemCategory: String
+    var itemCategoryDesc: String
 }

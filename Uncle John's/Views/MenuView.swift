@@ -18,9 +18,8 @@ struct MenuView: View {
     var body: some View {
         VStack {
             
-            // MARK: Header and Picker
+            // MARK: Header and Restaurant Picker
             HStack(alignment: .center) {
-                
                 Text("Menu")
                     .font(.custom("AvenirNext-Bold", size: 32))
                     .textCase(.uppercase)
@@ -54,20 +53,20 @@ struct MenuView: View {
                 ScrollView(showsIndicators: false) {
                     VStack (alignment: .leading, spacing: 10) {
                         if restaurantModel.selectedRestaurant == 0 && selectedSubMenu == 0 {
-                            ForEach(0..<restaurantModel.restaurants[restaurantModel.selectedRestaurant].foodItems.count, id: \.self) { index in
+                            ForEach(0..<restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu0.count, id: \.self) { index in
                                 HStack (alignment: .top) {
-                                    if restaurantModel.restaurants[restaurantModel.selectedRestaurant].foodItems[index].quantity > 0 {
-                                        Text("(\(restaurantModel.restaurants[restaurantModel.selectedRestaurant].foodItems[index].quantity))")
-                                            .font(.custom("AvenirNext-Bold", size: 18))
+                                    if restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu0[index].quantity > 0 {
+                                        Text("(\(restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu0[index].quantity))")
+                                            .font(.custom("AvenirNext-Bold", size: 16))
                                     }
-                                    Text(restaurantModel.restaurants[restaurantModel.selectedRestaurant].foodItems[index].name)
+                                    Text(restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu0[index].name)
                                     Spacer()
-                                    Text("$\(String(format: "%.2f", restaurantModel.restaurants[restaurantModel.selectedRestaurant].foodItems[index].price))")
-                                        .font(.custom("AvenirNext-Bold", size: 18))
+                                    Text("$\(String(format: "%.2f", restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu0[index].singleSizePrice))")
+                                        .font(.custom("AvenirNext-Bold", size: 16))
                                 }
                                 
-                                if restaurantModel.restaurants[restaurantModel.selectedRestaurant].foodItems[index].addOn != "" {
-                                    Text(restaurantModel.restaurants[restaurantModel.selectedRestaurant].foodItems[index].addOn)
+                                if restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu0[index].description != "" {
+                                    Text(restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu0[index].description)
                                         .font(.custom("AvenirNext-Medium", size: 13))
                                 }
                                 
@@ -75,14 +74,14 @@ struct MenuView: View {
                             }
                         }
                         else if restaurantModel.selectedRestaurant == 0 && selectedSubMenu == 1 {
-                            ForEach(0..<restaurantModel.restaurants[restaurantModel.selectedRestaurant].beverageItems.count, id: \.self) { index in
+                            ForEach(0..<restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu1.count, id: \.self) { index in
                                 HStack (alignment: .top) {
-                                    Text(restaurantModel.restaurants[restaurantModel.selectedRestaurant].beverageItems[index].name)
+                                    Text(restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu1[index].name)
                                     Spacer()
                                     
                                     // MARK: Small, Medium, and Large buttons (if applicable)
                                     Group {
-                                        if restaurantModel.restaurants[restaurantModel.selectedRestaurant].beverageItems[index].small! > 0 {
+                                        if restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu1[index].price1 > 0 {
                                             Button {
                                                 //
                                             } label: {
@@ -90,7 +89,7 @@ struct MenuView: View {
                                             }
                                         }
                                         
-                                        if restaurantModel.restaurants[restaurantModel.selectedRestaurant].beverageItems[index].medium! > 0 {
+                                        if restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu1[index].price2 > 0 {
                                             Button {
                                                 //
                                             } label: {
@@ -98,7 +97,7 @@ struct MenuView: View {
                                             }
                                         }
                                         
-                                        if restaurantModel.restaurants[restaurantModel.selectedRestaurant].beverageItems[index].large! > 0 {
+                                        if restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu1[index].price3 > 0 {
                                             Button {
                                                 //
                                             } label: {
@@ -109,13 +108,108 @@ struct MenuView: View {
                                     }
                                     .padding(.horizontal, 5)
                                     
-                                    if restaurantModel.restaurants[restaurantModel.selectedRestaurant].beverageItems[index].oneSize! > 0 {
-                                        Text("$\(String(format: "%.2f", restaurantModel.restaurants[restaurantModel.selectedRestaurant].beverageItems[index].oneSize!))")
-                                            .font(.custom("AvenirNext-Bold", size: 18))
+                                    if restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu1[index].singleSizePrice > 0 {
+                                        Text("$\(String(format: "%.2f", restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu1[index].singleSizePrice))")
+                                            .font(.custom("AvenirNext-Bold", size: 16))
                                     }
                                     else {
-                                        Text("$\(String(format: "%.2f", restaurantModel.restaurants[restaurantModel.selectedRestaurant].beverageItems[index].small!))")
-                                            .font(.custom("AvenirNext-Bold", size: 18))
+                                        Text("$\(String(format: "%.2f", restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu1[index].price1))")
+                                            .font(.custom("AvenirNext-Bold", size: 16))
+                                    }
+                                }
+                                
+                                Divider()
+                            }
+                        }
+                        else if restaurantModel.selectedRestaurant == 1 && selectedSubMenu == 0 {
+                            ForEach(0..<restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu0.count, id: \.self) { index in
+                                HStack (alignment: .top) {
+                                    if restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu0[index].quantity > 0 {
+                                        Text("(\(restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu0[index].quantity))")
+                                            .font(.custom("AvenirNext-Bold", size: 16))
+                                    }
+                                    Text(restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu0[index].name)
+                                    Spacer()
+                                    
+                                    // MARK: Small, Medium, and Large buttons (if applicable)
+                                    Group {
+                                        if restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu0[index].price1 > 0 {
+                                            Button {
+                                                //
+                                            } label: {
+                                                Image(systemName: "s.circle.fill")
+                                            }
+                                        }
+                                        
+                                        if restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu0[index].price2 > 0 {
+                                            Button {
+                                                //
+                                            } label: {
+                                                Image(systemName: "m.circle.fill")
+                                            }
+                                        }
+                                        
+                                        if restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu0[index].price3 > 0 {
+                                            Button {
+                                                //
+                                            } label: {
+                                                Image(systemName: "l.circle.fill")
+                                            }
+                                            .padding(.trailing)
+                                        }
+                                    }
+                                    .padding(.horizontal, 5)
+                                    
+                                    if restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu0[index].singleSizePrice > 0 {
+                                        Text("$\(String(format: "%.2f", restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu0[index].singleSizePrice))")
+                                            .font(.custom("AvenirNext-Bold", size: 16))
+                                    }
+                                    else {
+                                        Text("$\(String(format: "%.2f", restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu0[index].price1))")
+                                            .font(.custom("AvenirNext-Bold", size: 16))
+                                    }
+                                }
+                                
+                                Divider()
+                            }
+                        }
+                        else if restaurantModel.selectedRestaurant == 1 && selectedSubMenu == 1 {
+                            ForEach(0..<restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu1.count, id: \.self) { index in
+                                HStack (alignment: .top) {
+                                    if restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu1[index].quantity > 0 {
+                                        Text("(\(restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu1[index].quantity))")
+                                            .font(.custom("AvenirNext-Bold", size: 16))
+                                    }
+                                    Text(restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu1[index].name)
+                                    Spacer()
+                                    
+                                    // MARK: Small, Medium, and Large buttons (if applicable)
+                                    Group {
+                                        if restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu1[index].price1 > 0 {
+                                            Button {
+                                                //
+                                            } label: {
+                                                Image(systemName: "circle.lefthalf.filled")
+                                            }
+                                        }
+                                        
+                                        if restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu1[index].price2 > 0 {
+                                            Button {
+                                                //
+                                            } label: {
+                                                Image(systemName: "circle.fill")
+                                            }
+                                        }
+                                    }
+                                    .padding(.horizontal, 5)
+                                    
+                                    if restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu1[index].singleSizePrice > 0 {
+                                        Text("$\(String(format: "%.2f", restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu1[index].singleSizePrice))")
+                                            .font(.custom("AvenirNext-Bold", size: 16))
+                                    }
+                                    else {
+                                        Text("$\(String(format: "%.2f", restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu1[index].price1))")
+                                            .font(.custom("AvenirNext-Bold", size: 16))
                                     }
                                 }
                                 
@@ -123,7 +217,7 @@ struct MenuView: View {
                             }
                         }
                     }
-                    .font(.custom("AvenirNext-Medium", size: 18))
+                    .font(.custom("AvenirNext-Medium", size: 16))
                     .lineLimit(1)
                     .foregroundColor(Color("ForegroundColor \(colorSchemeSuffix[restaurantModel.selectedRestaurant])"))
                 }
