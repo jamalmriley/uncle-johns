@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		89B122FD28725C710011CE40 /* Uncle_Johns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B122FC28725C710011CE40 /* Uncle_Johns.swift */; };
-		89B122FF28725C710011CE40 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B122FE28725C710011CE40 /* ContentView.swift */; };
+		89B122FF28725C710011CE40 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B122FE28725C710011CE40 /* MenuView.swift */; };
 		89B1230128725C740011CE40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89B1230028725C740011CE40 /* Assets.xcassets */; };
 		89B1230428725C740011CE40 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89B1230328725C740011CE40 /* Preview Assets.xcassets */; };
 		89B3FEB8287331EE00D6DFD0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B3FEB7287331EE00D6DFD0 /* User.swift */; };
@@ -24,7 +24,7 @@
 /* Begin PBXFileReference section */
 		89B122F928725C710011CE40 /* Uncle John's.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Uncle John's.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89B122FC28725C710011CE40 /* Uncle_Johns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Uncle_Johns.swift; sourceTree = "<group>"; };
-		89B122FE28725C710011CE40 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		89B122FE28725C710011CE40 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		89B1230028725C740011CE40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89B1230328725C740011CE40 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		89B3FEB7287331EE00D6DFD0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 		89B1230B2872A19A0011CE40 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				89B122FE28725C710011CE40 /* ContentView.swift */,
+				89B122FE28725C710011CE40 /* MenuView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -198,7 +198,7 @@
 				89B3FEC0287332D600D6DFD0 /* MapModel.swift in Sources */,
 				89B3FEC22873339300D6DFD0 /* RestaurantModel.swift in Sources */,
 				89B3FEB8287331EE00D6DFD0 /* User.swift in Sources */,
-				89B122FF28725C710011CE40 /* ContentView.swift in Sources */,
+				89B122FF28725C710011CE40 /* MenuView.swift in Sources */,
 				89B3FEBE287332BC00D6DFD0 /* WeatherModel.swift in Sources */,
 				89B122FD28725C710011CE40 /* Uncle_Johns.swift in Sources */,
 				89B3FEBA287331FF00D6DFD0 /* Weather.swift in Sources */,
