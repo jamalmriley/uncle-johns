@@ -21,10 +21,10 @@ struct Header: View {
                     .frame(width: 25, height: 25)
                     .foregroundColor(Color("ForegroundColor \(restaurantModel.selectedRestaurant == 0 ? "(DD)" : "(UJB)")"))
                 Spacer()
-                Image(colorScheme == .light ? "Uncle John's Header (Light)" : "Uncle John's Header (Dark)")
+                Image(restaurantModel.selectedRestaurant == 0 ? "Dat Donut Header" : colorScheme == .light ? "Uncle John's Header (Light)" : "Uncle John's Header (Dark)")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 125)
+                    .frame(height: 50)
                 Spacer()
                 Image(systemName: "gearshape.fill")
                     .resizable()
@@ -43,6 +43,6 @@ struct Header_Previews: PreviewProvider {
     static var previews: some View {
         Header()
             .environmentObject(RestaurantModel())
-            .colorScheme(.dark)
+            .colorScheme(.light)
     }
 }

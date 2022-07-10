@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Uncle John's Header Dark.png",
+      "filename" : "Dat Donut Header.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Uncle John's Header Dark@2x.png",
+      "filename" : "Dat Donut Header@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Uncle John's Header Dark@3x.png",
+      "filename" : "Dat Donut Header@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
