@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8911BF712879FAA200486EDA /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8911BF702879FAA200486EDA /* BaseView.swift */; };
+		8911BF73287A4FC700486EDA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8911BF72287A4FC700486EDA /* HomeView.swift */; };
+		8911BF75287A4FE200486EDA /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8911BF74287A4FE200486EDA /* ScanView.swift */; };
+		8911BF77287A4FF600486EDA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8911BF76287A4FF600486EDA /* ProfileView.swift */; };
 		89B122FD28725C710011CE40 /* Uncle_Johns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B122FC28725C710011CE40 /* Uncle_Johns.swift */; };
 		89B122FF28725C710011CE40 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B122FE28725C710011CE40 /* MenuView.swift */; };
 		89B1230128725C740011CE40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89B1230028725C740011CE40 /* Assets.xcassets */; };
@@ -22,6 +26,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8911BF702879FAA200486EDA /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		8911BF72287A4FC700486EDA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8911BF74287A4FE200486EDA /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
+		8911BF76287A4FF600486EDA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		89B122F928725C710011CE40 /* Uncle John's.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Uncle John's.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89B122FC28725C710011CE40 /* Uncle_Johns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Uncle_Johns.swift; sourceTree = "<group>"; };
 		89B122FE28725C710011CE40 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
@@ -99,7 +107,11 @@
 		89B1230B2872A19A0011CE40 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8911BF702879FAA200486EDA /* BaseView.swift */,
+				8911BF72287A4FC700486EDA /* HomeView.swift */,
+				8911BF74287A4FE200486EDA /* ScanView.swift */,
 				89B122FE28725C710011CE40 /* MenuView.swift */,
+				8911BF76287A4FF600486EDA /* ProfileView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -195,12 +207,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				89B3FEC42873340000D6DFD0 /* Restaurant.swift in Sources */,
+				8911BF77287A4FF600486EDA /* ProfileView.swift in Sources */,
 				89B3FEC0287332D600D6DFD0 /* MapModel.swift in Sources */,
 				89B3FEC22873339300D6DFD0 /* RestaurantModel.swift in Sources */,
 				89B3FEB8287331EE00D6DFD0 /* User.swift in Sources */,
 				89B122FF28725C710011CE40 /* MenuView.swift in Sources */,
+				8911BF75287A4FE200486EDA /* ScanView.swift in Sources */,
+				8911BF73287A4FC700486EDA /* HomeView.swift in Sources */,
 				89B3FEBE287332BC00D6DFD0 /* WeatherModel.swift in Sources */,
 				89B122FD28725C710011CE40 /* Uncle_Johns.swift in Sources */,
+				8911BF712879FAA200486EDA /* BaseView.swift in Sources */,
 				89B3FEBA287331FF00D6DFD0 /* Weather.swift in Sources */,
 				89B3FEBC2873327B00D6DFD0 /* AuthModel.swift in Sources */,
 			);
