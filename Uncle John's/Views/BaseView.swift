@@ -81,10 +81,10 @@ struct BaseView: View {
                     .renderingMode(.template)
                     .aspectRatio(contentMode: .fit)
                     .frame(width: dimension, height: dimension)
-                    .foregroundColor(currentTab == image ? Color("AccentColor \(restaurantModel.selectedRestaurant == 0 ? "(DD)" : "(UJB)")") : .gray)
+                    .foregroundColor(currentTab == image ? Color("ForegroundColor \(restaurantModel.selectedRestaurant == 0 ? "(DD)" : "(UJB)")") : .gray)
                     .frame(maxWidth: .infinity)
                 Text(label)
-                    .foregroundColor(currentTab == image ? Color("AccentColor \(restaurantModel.selectedRestaurant == 0 ? "(DD)" : "(UJB)")") : .gray)
+                    .foregroundColor(currentTab == image ? Color("ForegroundColor \(restaurantModel.selectedRestaurant == 0 ? "(DD)" : "(UJB)")") : .gray)
                     .font(.caption)
             }
         }
@@ -99,10 +99,10 @@ struct BaseView: View {
                     .renderingMode(.template)
                     .aspectRatio(contentMode: .fit)
                     .frame(width: dimension, height: dimension)
-                    .foregroundColor(currentTab == image ? Color("AccentColor \(restaurantModel.selectedRestaurant == 0 ? "(DD)" : "(UJB)")") : .gray)
+                    .foregroundColor(currentTab == image ? Color("ForegroundColor \(restaurantModel.selectedRestaurant == 0 ? "(DD)" : "(UJB)")") : .gray)
                     .frame(maxWidth: .infinity)
                 Text(label)
-                    .foregroundColor(currentTab == image ? Color("AccentColor \(restaurantModel.selectedRestaurant == 0 ? "(DD)" : "(UJB)")") : .gray)
+                    .foregroundColor(currentTab == image ? Color("ForegroundColor \(restaurantModel.selectedRestaurant == 0 ? "(DD)" : "(UJB)")") : .gray)
                     .font(.caption)
             }
         }

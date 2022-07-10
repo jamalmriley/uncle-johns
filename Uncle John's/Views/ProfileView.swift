@@ -14,7 +14,13 @@ struct ProfileView: View {
         ZStack {
             Color("BackgroundColor \(restaurantModel.selectedRestaurant == 0 ? "(DD)" : "(UJB)")")
                 .ignoresSafeArea()
-            Text("Profile")
+            VStack {
+                Header()
+                Spacer()
+                ScrollView(showsIndicators: false) {
+                    Text("Profile")
+                }
+            }
         }
     }
 }

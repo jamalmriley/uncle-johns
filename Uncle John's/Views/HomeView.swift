@@ -14,7 +14,13 @@ struct HomeView: View {
         ZStack {
             Color("BackgroundColor \(restaurantModel.selectedRestaurant == 0 ? "(DD)" : "(UJB)")")
                 .ignoresSafeArea()
-            Text("Home")
+            VStack {
+                Header()
+                Spacer()
+                ScrollView(showsIndicators: false) {
+                    Text("Home")
+                }
+            }
         }
     }
 }

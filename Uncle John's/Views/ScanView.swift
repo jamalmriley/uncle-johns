@@ -14,7 +14,13 @@ struct ScanView: View {
         ZStack {
             Color("BackgroundColor \(restaurantModel.selectedRestaurant == 0 ? "(DD)" : "(UJB)")")
                 .ignoresSafeArea()
-            Text("Scan")
+            VStack {
+                Header()
+                Spacer()
+                ScrollView(showsIndicators: false) {
+                    Text("Scan")
+                }
+            }
         }
     }
 }
