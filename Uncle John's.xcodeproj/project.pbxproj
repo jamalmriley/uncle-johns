@@ -24,6 +24,21 @@
 		89B3FEC22873339300D6DFD0 /* RestaurantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B3FEC12873339300D6DFD0 /* RestaurantModel.swift */; };
 		89B3FEC42873340000D6DFD0 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B3FEC32873340000D6DFD0 /* Restaurant.swift */; };
 		89B3FECC28733EBA00D6DFD0 /* restaurants.json in Resources */ = {isa = PBXBuildFile; fileRef = 89B3FECB28733EBA00D6DFD0 /* restaurants.json */; };
+		89F9F552287F14C800DFCAD2 /* Uncle John's App Icon (Light)@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89F9F546287F14C800DFCAD2 /* Uncle John's App Icon (Light)@3x.png */; };
+		89F9F553287F14C800DFCAD2 /* Uncle John's App Icon (Dark)@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89F9F547287F14C800DFCAD2 /* Uncle John's App Icon (Dark)@2x.png */; };
+		89F9F554287F14C800DFCAD2 /* Uncle John's App Icon (Dark)@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89F9F548287F14C800DFCAD2 /* Uncle John's App Icon (Dark)@3x.png */; };
+		89F9F555287F14C800DFCAD2 /* Dat Donut App Icon (Dark)@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89F9F549287F14C800DFCAD2 /* Dat Donut App Icon (Dark)@3x.png */; };
+		89F9F556287F14C800DFCAD2 /* Dat Donut App Icon (Dark)@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89F9F54A287F14C800DFCAD2 /* Dat Donut App Icon (Dark)@2x.png */; };
+		89F9F557287F14C800DFCAD2 /* Uncle John's App Icon (Light).png in Resources */ = {isa = PBXBuildFile; fileRef = 89F9F54B287F14C800DFCAD2 /* Uncle John's App Icon (Light).png */; };
+		89F9F558287F14C800DFCAD2 /* Dat Donut App Icon (Dark).png in Resources */ = {isa = PBXBuildFile; fileRef = 89F9F54C287F14C800DFCAD2 /* Dat Donut App Icon (Dark).png */; };
+		89F9F559287F14C800DFCAD2 /* Uncle John's App Icon (Dark).png in Resources */ = {isa = PBXBuildFile; fileRef = 89F9F54D287F14C800DFCAD2 /* Uncle John's App Icon (Dark).png */; };
+		89F9F55A287F14C800DFCAD2 /* Dat Donut App Icon (Light).png in Resources */ = {isa = PBXBuildFile; fileRef = 89F9F54E287F14C800DFCAD2 /* Dat Donut App Icon (Light).png */; };
+		89F9F55B287F14C800DFCAD2 /* Dat Donut App Icon (Light)@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89F9F54F287F14C800DFCAD2 /* Dat Donut App Icon (Light)@2x.png */; };
+		89F9F55C287F14C800DFCAD2 /* Dat Donut App Icon (Light)@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89F9F550287F14C800DFCAD2 /* Dat Donut App Icon (Light)@3x.png */; };
+		89F9F55D287F14C800DFCAD2 /* Uncle John's App Icon (Light)@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89F9F551287F14C800DFCAD2 /* Uncle John's App Icon (Light)@2x.png */; };
+		89F9F55F287F152200DFCAD2 /* AppSettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F9F55E287F152200DFCAD2 /* AppSettingsModel.swift */; };
+		89F9F561287F17F900DFCAD2 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F9F560287F17F900DFCAD2 /* SettingsView.swift */; };
+		89F9F563287F271000DFCAD2 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F9F562287F271000DFCAD2 /* Icon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +60,22 @@
 		89B3FEC12873339300D6DFD0 /* RestaurantModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantModel.swift; sourceTree = "<group>"; };
 		89B3FEC32873340000D6DFD0 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		89B3FECB28733EBA00D6DFD0 /* restaurants.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = restaurants.json; sourceTree = "<group>"; };
+		89F9F545287F136400DFCAD2 /* Uncle-John-s-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Uncle-John-s-Info.plist"; sourceTree = SOURCE_ROOT; };
+		89F9F546287F14C800DFCAD2 /* Uncle John's App Icon (Light)@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Uncle John's App Icon (Light)@3x.png"; sourceTree = "<group>"; };
+		89F9F547287F14C800DFCAD2 /* Uncle John's App Icon (Dark)@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Uncle John's App Icon (Dark)@2x.png"; sourceTree = "<group>"; };
+		89F9F548287F14C800DFCAD2 /* Uncle John's App Icon (Dark)@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Uncle John's App Icon (Dark)@3x.png"; sourceTree = "<group>"; };
+		89F9F549287F14C800DFCAD2 /* Dat Donut App Icon (Dark)@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dat Donut App Icon (Dark)@3x.png"; sourceTree = "<group>"; };
+		89F9F54A287F14C800DFCAD2 /* Dat Donut App Icon (Dark)@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dat Donut App Icon (Dark)@2x.png"; sourceTree = "<group>"; };
+		89F9F54B287F14C800DFCAD2 /* Uncle John's App Icon (Light).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Uncle John's App Icon (Light).png"; sourceTree = "<group>"; };
+		89F9F54C287F14C800DFCAD2 /* Dat Donut App Icon (Dark).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dat Donut App Icon (Dark).png"; sourceTree = "<group>"; };
+		89F9F54D287F14C800DFCAD2 /* Uncle John's App Icon (Dark).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Uncle John's App Icon (Dark).png"; sourceTree = "<group>"; };
+		89F9F54E287F14C800DFCAD2 /* Dat Donut App Icon (Light).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dat Donut App Icon (Light).png"; sourceTree = "<group>"; };
+		89F9F54F287F14C800DFCAD2 /* Dat Donut App Icon (Light)@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dat Donut App Icon (Light)@2x.png"; sourceTree = "<group>"; };
+		89F9F550287F14C800DFCAD2 /* Dat Donut App Icon (Light)@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dat Donut App Icon (Light)@3x.png"; sourceTree = "<group>"; };
+		89F9F551287F14C800DFCAD2 /* Uncle John's App Icon (Light)@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Uncle John's App Icon (Light)@2x.png"; sourceTree = "<group>"; };
+		89F9F55E287F152200DFCAD2 /* AppSettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsModel.swift; sourceTree = "<group>"; };
+		89F9F560287F17F900DFCAD2 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		89F9F562287F271000DFCAD2 /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				8911BF79287ABBC600486EDA /* Header.swift */,
+				89F9F560287F17F900DFCAD2 /* SettingsView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -85,6 +117,7 @@
 		89B122FB28725C710011CE40 /* Uncle John's */ = {
 			isa = PBXGroup;
 			children = (
+				89F9F545287F136400DFCAD2 /* Uncle-John-s-Info.plist */,
 				89B122FC28725C710011CE40 /* Uncle_Johns.swift */,
 				89B1230A2872A1860011CE40 /* Models */,
 				89B1230B2872A19A0011CE40 /* Views */,
@@ -107,6 +140,7 @@
 		89B1230A2872A1860011CE40 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				89F9F562287F271000DFCAD2 /* Icon.swift */,
 				89B3FEC32873340000D6DFD0 /* Restaurant.swift */,
 				89B3FEB7287331EE00D6DFD0 /* User.swift */,
 				89B3FEB9287331FF00D6DFD0 /* Weather.swift */,
@@ -130,6 +164,7 @@
 		89B1230C2872A1A50011CE40 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				89F9F55E287F152200DFCAD2 /* AppSettingsModel.swift */,
 				89B3FEBB2873327B00D6DFD0 /* AuthModel.swift */,
 				89B3FEBF287332D600D6DFD0 /* MapModel.swift */,
 				89B3FEC12873339300D6DFD0 /* RestaurantModel.swift */,
@@ -142,6 +177,18 @@
 			isa = PBXGroup;
 			children = (
 				89B3FECB28733EBA00D6DFD0 /* restaurants.json */,
+				89F9F54C287F14C800DFCAD2 /* Dat Donut App Icon (Dark).png */,
+				89F9F54A287F14C800DFCAD2 /* Dat Donut App Icon (Dark)@2x.png */,
+				89F9F549287F14C800DFCAD2 /* Dat Donut App Icon (Dark)@3x.png */,
+				89F9F54E287F14C800DFCAD2 /* Dat Donut App Icon (Light).png */,
+				89F9F54F287F14C800DFCAD2 /* Dat Donut App Icon (Light)@2x.png */,
+				89F9F550287F14C800DFCAD2 /* Dat Donut App Icon (Light)@3x.png */,
+				89F9F54D287F14C800DFCAD2 /* Uncle John's App Icon (Dark).png */,
+				89F9F547287F14C800DFCAD2 /* Uncle John's App Icon (Dark)@2x.png */,
+				89F9F548287F14C800DFCAD2 /* Uncle John's App Icon (Dark)@3x.png */,
+				89F9F54B287F14C800DFCAD2 /* Uncle John's App Icon (Light).png */,
+				89F9F551287F14C800DFCAD2 /* Uncle John's App Icon (Light)@2x.png */,
+				89F9F546287F14C800DFCAD2 /* Uncle John's App Icon (Light)@3x.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -204,8 +251,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89F9F555287F14C800DFCAD2 /* Dat Donut App Icon (Dark)@3x.png in Resources */,
+				89F9F554287F14C800DFCAD2 /* Uncle John's App Icon (Dark)@3x.png in Resources */,
+				89F9F556287F14C800DFCAD2 /* Dat Donut App Icon (Dark)@2x.png in Resources */,
+				89F9F55B287F14C800DFCAD2 /* Dat Donut App Icon (Light)@2x.png in Resources */,
 				89B1230428725C740011CE40 /* Preview Assets.xcassets in Resources */,
+				89F9F55C287F14C800DFCAD2 /* Dat Donut App Icon (Light)@3x.png in Resources */,
+				89F9F558287F14C800DFCAD2 /* Dat Donut App Icon (Dark).png in Resources */,
+				89F9F552287F14C800DFCAD2 /* Uncle John's App Icon (Light)@3x.png in Resources */,
+				89F9F55D287F14C800DFCAD2 /* Uncle John's App Icon (Light)@2x.png in Resources */,
 				89B3FECC28733EBA00D6DFD0 /* restaurants.json in Resources */,
+				89F9F55A287F14C800DFCAD2 /* Dat Donut App Icon (Light).png in Resources */,
+				89F9F559287F14C800DFCAD2 /* Uncle John's App Icon (Dark).png in Resources */,
+				89F9F557287F14C800DFCAD2 /* Uncle John's App Icon (Light).png in Resources */,
+				89F9F553287F14C800DFCAD2 /* Uncle John's App Icon (Dark)@2x.png in Resources */,
 				89B1230128725C740011CE40 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89B3FEC42873340000D6DFD0 /* Restaurant.swift in Sources */,
+				89F9F563287F271000DFCAD2 /* Icon.swift in Sources */,
 				8911BF77287A4FF600486EDA /* ProfileView.swift in Sources */,
 				89B3FEC0287332D600D6DFD0 /* MapModel.swift in Sources */,
 				89B3FEC22873339300D6DFD0 /* RestaurantModel.swift in Sources */,
@@ -226,6 +286,8 @@
 				8911BF75287A4FE200486EDA /* ScanView.swift in Sources */,
 				8911BF73287A4FC700486EDA /* HomeView.swift in Sources */,
 				89B3FEBE287332BC00D6DFD0 /* WeatherModel.swift in Sources */,
+				89F9F561287F17F900DFCAD2 /* SettingsView.swift in Sources */,
+				89F9F55F287F152200DFCAD2 /* AppSettingsModel.swift in Sources */,
 				89B122FD28725C710011CE40 /* Uncle_Johns.swift in Sources */,
 				8911BF7A287ABBC700486EDA /* Header.swift in Sources */,
 				8911BF712879FAA200486EDA /* BaseView.swift in Sources */,
@@ -362,6 +424,7 @@
 				DEVELOPMENT_TEAM = NFN2M6GAXF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Uncle-John-s-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -391,6 +454,7 @@
 				DEVELOPMENT_TEAM = NFN2M6GAXF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Uncle-John-s-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

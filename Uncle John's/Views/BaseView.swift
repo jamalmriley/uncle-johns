@@ -64,6 +64,7 @@ struct BaseView: View {
             }
             .ignoresSafeArea(.all, edges: .all)
             .background(Color("BackgroundColor (UJB)"))
+            .navigationTitle("Back")
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarHidden(true)
         }

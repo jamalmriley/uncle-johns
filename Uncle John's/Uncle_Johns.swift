@@ -13,6 +13,7 @@ struct Uncle_Johns: App {
         WindowGroup {
             BaseView()
                 .environmentObject(RestaurantModel())
+                .environmentObject(AppSettingsModel())
         }
     }
 }

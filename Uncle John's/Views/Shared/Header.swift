@@ -10,6 +10,7 @@ import SwiftUI
 struct Header: View {
     @EnvironmentObject var restaurantModel: RestaurantModel
     @Environment(\.colorScheme) var colorScheme
+    @StateObject var settings: AppSettingsModel = AppSettingsModel()
     
     var body: some View {
         VStack {
@@ -26,12 +27,19 @@ struct Header: View {
                     .scaledToFit()
                     .frame(height: 50)
                 Spacer()
-                Image(systemName: "gearshape.fill")
-                    .resizable()
-                    .renderingMode(.template)
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 25, height: 25)
-                    .foregroundColor(Color("ForegroundColor \(restaurantModel.selectedRestaurant == 0 ? "(DD)" : "(UJB)")"))
+                
+                NavigationLink {
+                    SettingsView()
+                        .navigationBarTitleDisplayMode(.inline)
+                        .environmentObject(settings)
+                } label: {
+                    Image(systemName: "gearshape.fill")
+                        .resizable()
+                        .renderingMode(.template)
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 25, height: 25)
+                        .foregroundColor(Color("ForegroundColor \(restaurantModel.selectedRestaurant == 0 ? "(DD)" : "(UJB)")"))
+                }
             }
             .padding(.horizontal)
             Divider()
@@ -43,6 +51,7 @@ struct Header_Previews: PreviewProvider {
     static var previews: some View {
         Header()
             .environmentObject(RestaurantModel())
+            .environmentObject(AppSettingsModel())
             .colorScheme(.light)
     }
 }
