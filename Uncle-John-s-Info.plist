@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIcons</key>
+	<dict>
+		<key>CFBundleAlternateIcons</key>
+		<dict>
+			<key>Uncle John's (Dark)</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>Uncle John's App Icon (Dark)</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+            <key>Dat Donut (Light)</key>
+            <dict>
+                <key>CFBundleIconFiles</key>
+                <array>
+                    <string>Dat Donut App Icon (Light)</string>
+                </array>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+            </dict>
+            <key>Dat Donut (Dark)</key>
+            <dict>
+                <key>CFBundleIconFiles</key>
+                <array>
+                    <string>Dat Donut App Icon (Dark)</string>
+                </array>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+            </dict>
+		</dict>
+		<key>CFBundlePrimaryIcon</key>
+		<dict>
+			<key>CFBundleIconFiles</key>
+			<array>
+				<string>Uncle John's App Icon (Light)</string>
+			</array>
+			<key>CFBundleIconName</key>
+			<string>Default</string>
+			<key>UIPrerenderedIcon</key>
+			<false/>
+		</dict>
+	</dict>
+</dict>
+</plist>
