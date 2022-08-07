@@ -16,10 +16,10 @@ struct ScanView: View {
                 .ignoresSafeArea()
             VStack {
                 Header()
+                
                 Spacer()
-                ScrollView(showsIndicators: false) {
-                    Text("Scan")
-                }
+                PaymentCards()
+                Spacer()
             }
         }
     }

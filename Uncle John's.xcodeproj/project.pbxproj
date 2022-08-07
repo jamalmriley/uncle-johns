@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8904ED9F288480090045565B /* PaymentCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8904ED9E288480090045565B /* PaymentCards.swift */; };
 		8911BF712879FAA200486EDA /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8911BF702879FAA200486EDA /* BaseView.swift */; };
 		8911BF73287A4FC700486EDA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8911BF72287A4FC700486EDA /* HomeView.swift */; };
 		8911BF75287A4FE200486EDA /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8911BF74287A4FE200486EDA /* ScanView.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8904ED9E288480090045565B /* PaymentCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCards.swift; sourceTree = "<group>"; };
 		8911BF702879FAA200486EDA /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		8911BF72287A4FC700486EDA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8911BF74287A4FE200486EDA /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
@@ -89,6 +91,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8904ED9C28847FBE0045565B /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				8911BF74287A4FE200486EDA /* ScanView.swift */,
+				8904ED9D28847FD10045565B /* Components */,
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
+		8904ED9D28847FD10045565B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8904ED9E288480090045565B /* PaymentCards.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		8911BF78287ABB9D00486EDA /* Shared */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,7 +173,7 @@
 				8911BF78287ABB9D00486EDA /* Shared */,
 				8911BF702879FAA200486EDA /* BaseView.swift */,
 				8911BF72287A4FC700486EDA /* HomeView.swift */,
-				8911BF74287A4FE200486EDA /* ScanView.swift */,
+				8904ED9C28847FBE0045565B /* Scan */,
 				89B122FE28725C710011CE40 /* MenuView.swift */,
 				8911BF76287A4FF600486EDA /* ProfileView.swift */,
 			);
@@ -287,6 +306,7 @@
 				8911BF73287A4FC700486EDA /* HomeView.swift in Sources */,
 				89B3FEBE287332BC00D6DFD0 /* WeatherModel.swift in Sources */,
 				89F9F561287F17F900DFCAD2 /* SettingsView.swift in Sources */,
+				8904ED9F288480090045565B /* PaymentCards.swift in Sources */,
 				89F9F55F287F152200DFCAD2 /* AppSettingsModel.swift in Sources */,
 				89B122FD28725C710011CE40 /* Uncle_Johns.swift in Sources */,
 				8911BF7A287ABBC700486EDA /* Header.swift in Sources */,
