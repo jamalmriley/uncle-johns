@@ -1,5 +1,5 @@
 //
-//  MenuView.swift
+//  OldMenuView.swift
 //  Uncle John's
 //
 //  Created by Jamal Riley on 7/3/22.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MenuView: View {
+struct OldMenuView: View {
     
     @EnvironmentObject var restaurantModel: RestaurantModel
     @State private var selectedSubMenu = 0
@@ -235,14 +235,16 @@ struct MenuView: View {
     }
 }
 
-struct MenuView_Previews: PreviewProvider {
+struct OldMenuView_Previews: PreviewProvider {
     static var previews: some View {
-        MenuView()
+        OldMenuView()
             .colorScheme(.dark)
             .environmentObject(RestaurantModel())
+            .environmentObject(CartModel())
         
-        MenuView()
+        OldMenuView()
             .colorScheme(.light)
             .environmentObject(RestaurantModel())
+            .environmentObject(CartModel())
     }
 }

@@ -222,7 +222,7 @@ struct PaymentCards: View {
             .cornerRadius(20)
             .tag(3)
         }
-        .frame(width: .infinity, height: height + 100)
+        .frame(width: 400, height: height + 100)
         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
         .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
     }

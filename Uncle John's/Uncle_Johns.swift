@@ -12,8 +12,9 @@ struct Uncle_Johns: App {
     var body: some Scene {
         WindowGroup {
             BaseView()
-                .environmentObject(RestaurantModel())
                 .environmentObject(AppSettingsModel())
+                .environmentObject(CartModel())
+                .environmentObject(RestaurantModel())
         }
     }
 }
