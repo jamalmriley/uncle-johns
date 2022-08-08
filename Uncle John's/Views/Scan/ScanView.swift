@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ScanView: View {
+    @EnvironmentObject var cartModel: CartModel
     @EnvironmentObject var restaurantModel: RestaurantModel
     
     var body: some View {
@@ -28,6 +29,7 @@ struct ScanView: View {
 struct ScanView_Previews: PreviewProvider {
     static var previews: some View {
         ScanView()
+            .environmentObject(CartModel())
             .environmentObject(RestaurantModel())
             .colorScheme(.dark)
     }
