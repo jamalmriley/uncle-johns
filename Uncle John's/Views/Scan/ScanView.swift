@@ -8,19 +8,23 @@
 import SwiftUI
 
 struct ScanView: View {
-    @EnvironmentObject var cartModel: CartModel
     @EnvironmentObject var restaurantModel: RestaurantModel
     
     var body: some View {
-        ZStack {
-            Color("BackgroundColor \(restaurantModel.selectedRestaurant == 0 ? "(DD)" : "(UJB)")")
-                .ignoresSafeArea()
-            VStack {
-                Header()
-                
-                Spacer()
-                PaymentCards()
-                Spacer()
+        GeometryReader { reader in
+            ZStack {
+                Color("BackgroundColor \(restaurantModel.selectedRestaurant == 0 ? "(DD)" : "(UJB)")")
+                    .ignoresSafeArea()
+                VStack {
+                    Header()
+                        .environmentObject(CartModel())
+                    
+                    Text("Scan Me")
+                        .font(.custom("AvenirNext-Bold", size: 32))
+                        .padding(.bottom)
+                    
+                    Spacer()
+                }
             }
         }
     }
