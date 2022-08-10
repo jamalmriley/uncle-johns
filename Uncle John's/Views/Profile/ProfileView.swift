@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ProfileView: View {
     @EnvironmentObject var restaurantModel: RestaurantModel
+    @StateObject var settings: AppSettingsModel = AppSettingsModel()
     var colorSchemeSuffix = ["(DD)", "(UJB)"]
     
     var body: some View {
@@ -92,89 +93,19 @@ struct ProfileView: View {
                                 Divider()
                             }
                             
-                            // MARK: Payment Methods
-                            Group {
-                                HStack {
-                                    Text("Payment Methods")
-                                    Spacer()
-                                    Text("〉")
-                                }
-                                .font(.custom("AvenirNext-Bold", size: 20))
-                                .textCase(.uppercase)
-                                .foregroundColor(.white) // Just black or white depending on light/dark mode
-                                
-                                Divider()
-                            }
+                            // MARK: - Profile Menu Options
+                            ProfileMenuOption(menuOption: "Payment Methods", view: AnyView(ComingSoonView()))
+                            ProfileMenuOption(menuOption: "Recent Orders", view: AnyView(ComingSoonView()))
+                            ProfileMenuOption(menuOption: "Gift Cards", view: AnyView(ComingSoonView()))
                             
-                            // MARK: Recent Orders
-                            Group {
-                                HStack {
-                                    Text("Recent Orders")
-                                    Spacer()
-                                    Text("〉")
-                                }
-                                .font(.custom("AvenirNext-Bold", size: 20))
-                                .textCase(.uppercase)
-                                .foregroundColor(.white) // Just black or white depending on light/dark mode
-                                
-                                Divider()
-                            }
+                            ProfileMenuOption(menuOption: "App Settings", view: AnyView(
+                                SettingsView()
+                                .navigationBarTitleDisplayMode(.inline)
+                                .environmentObject(settings))
+                            )
                             
-                            // MARK: Gift Cards
-                            Group {
-                                HStack {
-                                    Text("Gift Cards")
-                                    Spacer()
-                                    Text("〉")
-                                }
-                                .font(.custom("AvenirNext-Bold", size: 20))
-                                .textCase(.uppercase)
-                                .foregroundColor(.white) // Just black or white depending on light/dark mode
-                                
-                                Divider()
-                            }
-                            
-                            // MARK: App Settings
-                            Group {
-                                HStack {
-                                    Text("App Settings")
-                                    Spacer()
-                                    Text("〉")
-                                }
-                                .font(.custom("AvenirNext-Bold", size: 20))
-                                .textCase(.uppercase)
-                                .foregroundColor(.white) // Just black or white depending on light/dark mode
-                                
-                                Divider()
-                            }
-                            
-                            // MARK: Support
-                            Group {
-                                HStack {
-                                    Text("Support")
-                                    Spacer()
-                                    Text("〉")
-                                }
-                                .font(.custom("AvenirNext-Bold", size: 20))
-                                .textCase(.uppercase)
-                                .foregroundColor(.white) // Just black or white depending on light/dark mode
-                                
-                                Divider()
-                            }
-                            
-                            // MARK: The Legal Stuff
-                            Group {
-                                HStack {
-                                    Text("The Legal Stuff")
-                                    Spacer()
-                                    Text("〉")
-                                }
-                                .font(.custom("AvenirNext-Bold", size: 20))
-                                .textCase(.uppercase)
-                                .foregroundColor(.white) // Just black or white depending on light/dark mode
-                                
-                                Divider()
-                            }
+                            ProfileMenuOption(menuOption: "Support", view: AnyView(ComingSoonView()))
+                            ProfileMenuOption(menuOption: "The Legal Stuff", view: AnyView(ComingSoonView()))
                             
                             HStack {
                                 Spacer()
@@ -221,5 +152,28 @@ struct EmojiButton: View {
             //                    .frame(width: 60, height: 60)
             //            )
         }
+    }
+}
+
+struct ProfileMenuOption: View {
+    var menuOption: String
+    var view: AnyView
+    
+    var body: some View {
+        
+        NavigationLink {
+            view
+        } label: {
+            HStack {
+                Text(menuOption)
+                Spacer()
+                Text("〉")
+            }
+            .font(.custom("AvenirNext-Bold", size: 20))
+            .textCase(.uppercase)
+            .foregroundColor(.white) // Just black or white depending on light/dark mode
+        }
+        
+        Divider()
     }
 }

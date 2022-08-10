@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8904ED9F288480090045565B /* PaymentCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8904ED9E288480090045565B /* PaymentCards.swift */; };
+		8909C78B28A3F99F004FDE79 /* ComingSoonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8909C78A28A3F99F004FDE79 /* ComingSoonView.swift */; };
 		8911BF712879FAA200486EDA /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8911BF702879FAA200486EDA /* BaseView.swift */; };
 		8911BF73287A4FC700486EDA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8911BF72287A4FC700486EDA /* HomeView.swift */; };
 		8911BF75287A4FE200486EDA /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8911BF74287A4FE200486EDA /* ScanView.swift */; };
@@ -52,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		8904ED9E288480090045565B /* PaymentCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCards.swift; sourceTree = "<group>"; };
+		8909C78A28A3F99F004FDE79 /* ComingSoonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonView.swift; sourceTree = "<group>"; };
 		8911BF702879FAA200486EDA /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		8911BF72287A4FC700486EDA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8911BF74287A4FE200486EDA /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 			children = (
 				8911BF79287ABBC600486EDA /* Header.swift */,
 				89F9F560287F17F900DFCAD2 /* SettingsView.swift */,
+				8909C78A28A3F99F004FDE79 /* ComingSoonView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				89F9F55F287F152200DFCAD2 /* AppSettingsModel.swift in Sources */,
 				89B122FD28725C710011CE40 /* Uncle_Johns.swift in Sources */,
 				8911BF7A287ABBC700486EDA /* Header.swift in Sources */,
+				8909C78B28A3F99F004FDE79 /* ComingSoonView.swift in Sources */,
 				898FCCD628A0871A003C283F /* MenuItemCard.swift in Sources */,
 				8911BF712879FAA200486EDA /* BaseView.swift in Sources */,
 				89B3FEBA287331FF00D6DFD0 /* Weather.swift in Sources */,

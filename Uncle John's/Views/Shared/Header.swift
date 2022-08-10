@@ -9,21 +9,14 @@ import SwiftUI
 
 struct Header: View {
     @EnvironmentObject var restaurantModel: RestaurantModel
-    @Environment(\.colorScheme) var colorScheme
     @EnvironmentObject var cartModel: CartModel
-    @StateObject var settings: AppSettingsModel = AppSettingsModel()
+    @Environment(\.colorScheme) var colorScheme
+    private var emojis = ["🍩", "🍖"]
     
     var body: some View {
         VStack {
             HStack {
-                /* Image(systemName: "questionmark.circle.fill")
-                    .resizable()
-                    .renderingMode(.template)
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 25, height: 25)
-                    .foregroundColor(Color("ForegroundColor \(restaurantModel.selectedRestaurant == 0 ? "(DD)" : "(UJB)")")) */
-                
-                NavigationLink {
+                /* NavigationLink {
                     SettingsView()
                         .navigationBarTitleDisplayMode(.inline)
                         .environmentObject(settings)
@@ -34,13 +27,15 @@ struct Header: View {
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 25, height: 25)
                         .foregroundColor(Color("ForegroundColor \(restaurantModel.selectedRestaurant == 0 ? "(DD)" : "(UJB)")"))
+                } */
+                Picker("Picker", selection: $restaurantModel.selectedRestaurant) {
+                    ForEach(0..<restaurantModel.restaurants.count, id: \.self) { index in
+                        Text(emojis[index])
+                            .tag(index)
+                    }
                 }
-                
-                Spacer()
-                Image(restaurantModel.selectedRestaurant == 0 ? "Dat Donut Header" : colorScheme == .light ? "Uncle John's Header (Light)" : "Uncle John's Header (Dark)")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(height: 50)
+                .pickerStyle(SegmentedPickerStyle())
+                .frame(width: 80)
                 
                 Spacer()
                 
@@ -52,7 +47,13 @@ struct Header: View {
                 }
                 
             }
-            .padding(.horizontal)
+            .overlay {
+                Image(restaurantModel.selectedRestaurant == 0 ? "Dat Donut Header" : colorScheme == .light ? "Uncle John's Header (Light)" : "Uncle John's Header (Dark)")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 50)
+            }
+            .padding()
             Divider()
         }
     }

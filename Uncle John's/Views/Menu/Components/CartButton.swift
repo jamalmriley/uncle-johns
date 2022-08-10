@@ -13,7 +13,7 @@ struct CartButton: View {
     
     var body: some View {
         ZStack(alignment: .topTrailing) {
-            Image(systemName: "cart")
+            Image(systemName: "bag")
                 .resizable()
                 .renderingMode(.template)
                 .aspectRatio(contentMode: .fit)
