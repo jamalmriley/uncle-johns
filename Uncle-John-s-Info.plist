@@ -6,6 +6,24 @@
 	<dict>
 		<key>CFBundleAlternateIcons</key>
 		<dict>
+			<key>Dat Donut (Dark)</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>Dat Donut App Icon (Dark)</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+			<key>Dat Donut (Light)</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>Dat Donut App Icon (Light)</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
 			<key>Uncle John's (Dark)</key>
 			<dict>
 				<key>CFBundleIconFiles</key>
@@ -15,24 +33,6 @@
 				<key>UIPrerenderedIcon</key>
 				<false/>
 			</dict>
-            <key>Dat Donut (Light)</key>
-            <dict>
-                <key>CFBundleIconFiles</key>
-                <array>
-                    <string>Dat Donut App Icon (Light)</string>
-                </array>
-                <key>UIPrerenderedIcon</key>
-                <false/>
-            </dict>
-            <key>Dat Donut (Dark)</key>
-            <dict>
-                <key>CFBundleIconFiles</key>
-                <array>
-                    <string>Dat Donut App Icon (Dark)</string>
-                </array>
-                <key>UIPrerenderedIcon</key>
-                <false/>
-            </dict>
 		</dict>
 		<key>CFBundlePrimaryIcon</key>
 		<dict>

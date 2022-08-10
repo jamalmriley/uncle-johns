@@ -53,7 +53,8 @@ struct Header: View {
                     .scaledToFit()
                     .frame(height: 50)
             }
-            .padding()
+            .padding(.horizontal)
+            .padding(.vertical, 15)
             Divider()
         }
     }
