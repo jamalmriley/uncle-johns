@@ -38,31 +38,37 @@ struct ProfileView: View {
                         VStack {
                             ZStack(alignment: .leading) {
                                 Capsule()
-                                    .frame(width: reader.size.width - 50)
+                                    .frame(width: reader.size.width - 50, height: 20)
                                     .foregroundColor(.black)
                                 
-                                Capsule()
-                                    .frame(width: (reader.size.width - 50) * (773/1000))
-                                    .foregroundColor(Color("AccentColor \(restaurantModel.selectedRestaurant == 0 ? "(DD)" : "(UJB)")"))
-                                
-                                /* HStack {
-                                 ForEach(0..<9) { index in
-                                 Spacer()
-                                 Rectangle()
-                                 .frame(width: 2)
-                                 }
-                                 Spacer()
-                                 }
-                                 .frame(width: reader.size.width - 50) */
+                                ZStack(alignment: .trailing) {
+                                    Capsule()
+                                        .frame(width: (reader.size.width - 50) * (773/1000), height: 20)
+                                        .foregroundColor(Color("AccentColor \(restaurantModel.selectedRestaurant == 0 ? "(DD)" : "(UJB)")"))
+                                    
+                                    Circle()
+                                        .foregroundColor(.white)
+                                        .frame(width: 25, height: 25)
+                                }
                             }
-                            .frame(height: 20)
                             
                             HStack {
                                 Text("0")
+                                    .frame(width: 50, alignment: .leading)
+                                Spacer()
+                                Text("250")
+                                    .frame(width: 50)
+                                Spacer()
+                                Text("500")
+                                    .frame(width: 50)
+                                Spacer()
+                                Text("750")
+                                    .frame(width: 50)
                                 Spacer()
                                 Text("1,000")
+                                    .frame(width: 50, alignment: .trailing)
                             }
-                            .font(.custom("AvenirNext-Medium", size: 16))
+                            .font(.custom("AvenirNext-Bold", size: 14))
                             .frame(width: reader.size.width - 50)
                         }
                     }

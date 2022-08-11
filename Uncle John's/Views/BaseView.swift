@@ -27,10 +27,10 @@ struct BaseView: View {
                         .navigationBarHidden(true)
                         .tag("house")
                     
-                    ScanView()
+                    RewardsView()
                         .navigationBarTitleDisplayMode(.inline)
                         .navigationBarHidden(true)
-                        .tag("qrcode")
+                        .tag("app.gift")
                     
                     MenuView()
                         .navigationBarTitleDisplayMode(.inline)
@@ -54,7 +54,7 @@ struct BaseView: View {
                         .frame(height: 90)
                     HStack(alignment: .center, spacing: 0) {
                         TabButton(image: "house", dimension: 23, label: "Home")
-                        TabButtonStatic(image: "qrcode", dimension: 23, label: "Earn Points")
+                        TabButton(image: "app.gift", dimension: 23, label: "Rewards")
                         TabButton(image: "takeoutbag.and.cup.and.straw", dimension: 23, label: "Order")
                         TabButton(image: "person.crop.circle", dimension: 23, label: "Profile")
                     }
@@ -86,7 +86,7 @@ struct BaseView: View {
                     .frame(maxWidth: .infinity)
                 Text(label)
                     .foregroundColor(currentTab == image ? Color("ForegroundColor \(restaurantModel.selectedRestaurant == 0 ? "(DD)" : "(UJB)")") : .gray)
-                    .font(.caption)
+                    .font(.custom("AvenirNext-Medium", size: 13))
             }
         }
     }
@@ -104,7 +104,7 @@ struct BaseView: View {
                     .frame(maxWidth: .infinity)
                 Text(label)
                     .foregroundColor(currentTab == image ? Color("ForegroundColor \(restaurantModel.selectedRestaurant == 0 ? "(DD)" : "(UJB)")") : .gray)
-                    .font(.caption)
+                    .font(.custom("AvenirNext-Medium", size: 13))
             }
         }
     }
@@ -113,7 +113,7 @@ struct BaseView: View {
             withAnimation {currentTab = image}
         } label: {
             VStack {
-                Image("harolds_h")
+                Image(image)
                     .resizable()
                     .renderingMode(.template)
                     .aspectRatio(contentMode: .fit)
@@ -122,7 +122,7 @@ struct BaseView: View {
                     .frame(maxWidth: .infinity)
                 Text(label)
                     .foregroundColor(Color("ForegroundColor"))
-                    .font(.caption)
+                    .font(.custom("AvenirNext-Medium", size: 13))
             }
         }
     }
