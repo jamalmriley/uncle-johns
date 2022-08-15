@@ -21,7 +21,7 @@ struct CustomSegmentedControl: View {
                 let isSelected = selection == index
                 ZStack {
                     Rectangle()
-                        .fill(color.opacity(0.2))
+                        .fill(color.opacity(0.4))
                     
                     Rectangle()
                         .fill(color)
@@ -40,7 +40,7 @@ struct CustomSegmentedControl: View {
                     Text(options[index])
                         .font(isSelected ? .custom("AvenirNext-Bold", size: fontSize) : .custom("AvenirNext-Medium", size: fontSize))
                         .textCase(.uppercase)
-                        .foregroundColor(isSelected ? .white : .gray)
+                        .foregroundColor(isSelected ? Color("ForegroundColor (Generic)") : .gray)
                 )
             }
         }
