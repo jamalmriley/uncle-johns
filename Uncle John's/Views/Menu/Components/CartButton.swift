@@ -12,24 +12,20 @@ struct CartButton: View {
     var numOfMenuItems: Int
     
     var body: some View {
-        ZStack(alignment: .topTrailing) {
+        ZStack(alignment: .bottom) {
             Image(systemName: "bag")
                 .resizable()
                 .renderingMode(.template)
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 25, height: 25)
-                .foregroundColor(Color("ForegroundColor \(restaurantModel.selectedRestaurant == 0 ? "(DD)" : "(UJB)")"))
-                .padding(.top, 5)
+                .frame(width: 27, height: 27)
             
             if numOfMenuItems > 0 {
                 Text("\(numOfMenuItems)")
-                    .font(.caption2).bold()
-                    .foregroundColor(.white)
-                    .frame(width: 15, height: 15)
-                    .background(.red)
-                    .cornerRadius(50)
+                    .font(.custom("AvenirNext-Medium", size: 13))
+                    .padding(.bottom, 1)
             }
         }
+        .foregroundColor(Color("ForegroundColor \(restaurantModel.selectedRestaurant == 0 ? "(DD)" : "(UJB)")"))
     }
 }
 

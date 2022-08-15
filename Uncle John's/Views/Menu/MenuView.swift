@@ -16,37 +16,22 @@ struct MenuView: View {
     private var menuCategories = [["Food","Beverages"], ["Lunch & Dinner", "Catering"]]
     
     var body: some View {
-        VStack {
+        VStack(spacing: 20) {
             Header()
             
+            // MARK: - Submenu Selection
+            Group {
+                Text("Our Menu")
+                    .font(.custom("AvenirNext-Bold", size: 32))
+                    .textCase(.uppercase)
+                    .foregroundColor(Color("ForegroundColor \(colorSchemeSuffix[restaurantModel.selectedRestaurant])"))
+                
+                CustomSegmentedControl(selection: $selectedSubMenu, options: menuCategories[restaurantModel.selectedRestaurant], width: 350, fontSize: 16)
+                
+                // Divider()
+            }
+            
             VStack {
-                // MARK: Header and Restaurant Picker
-                HStack(alignment: .center) {
-                    Text("Menu")
-                        .font(.custom("AvenirNext-Bold", size: 32))
-                        .textCase(.uppercase)
-                        .foregroundColor(Color("ForegroundColor \(colorSchemeSuffix[restaurantModel.selectedRestaurant])"))
-                    
-                    Spacer()
-                    Picker("Picker", selection: $restaurantModel.selectedRestaurant) {
-                        ForEach(0..<restaurantModel.restaurants.count, id: \.self) { index in
-                            Text(emojis[index])
-                                .tag(index)
-                        }
-                    }
-                    .pickerStyle(SegmentedPickerStyle())
-                    .frame(width: 100)
-                    
-                }
-                
-                Picker("Picker", selection: $selectedSubMenu) {
-                    ForEach(0..<menuCategories[restaurantModel.selectedRestaurant].count, id: \.self) { index in
-                        Text(menuCategories[restaurantModel.selectedRestaurant][index])
-                            .tag(index)
-                    }
-                }
-                .pickerStyle(SegmentedPickerStyle())
-                
                 ScrollView (showsIndicators: false) {
                     if restaurantModel.selectedRestaurant == 0 && selectedSubMenu == 0 {
                         Restaurant0Menu0Section(itemCategory: "Our Donuts")

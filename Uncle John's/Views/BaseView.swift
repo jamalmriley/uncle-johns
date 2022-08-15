@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct BaseView: View {
+    @EnvironmentObject var cartModel: CartModel
     @EnvironmentObject var restaurantModel: RestaurantModel
     @State var currentTab = "house"
     
@@ -53,10 +54,10 @@ struct BaseView: View {
                         .foregroundColor(Color("TertiaryColor"))
                         .frame(height: 90)
                     HStack(alignment: .center, spacing: 0) {
-                        TabButton(image: "house", dimension: 23, label: "Home")
-                        TabButton(image: "app.gift", dimension: 23, label: "Rewards")
-                        TabButton(image: "takeoutbag.and.cup.and.straw", dimension: 23, label: "Order")
-                        TabButton(image: "person.crop.circle", dimension: 23, label: "Profile")
+                        TabButtonV2(image: "house", dimension: 23, label: "Home")
+                        TabButtonV2(image: "app.gift", dimension: 23, label: "Rewards")
+                        TabButtonOrder(image: "takeoutbag.and.cup.and.straw", dimension: 23, label: "Order")
+                        TabButtonV2(image: "person.crop.circle", dimension: 23, label: "Profile")
                     }
                     .cornerRadius(25, corners: [.topLeft, .topRight])
                     .padding(.top, 15)
@@ -72,56 +73,58 @@ struct BaseView: View {
     
     @ViewBuilder
     
-    func TabButton(image: String, dimension: CGFloat, label: String) -> some View {
+    func TabButtonV2(image: String, dimension: CGFloat, label: String) -> some View {
         Button {
             withAnimation {currentTab = image}
         } label: {
             VStack {
-                Image(systemName: currentTab == image ? "\(image).fill" : image)
-                    .resizable()
-                    .renderingMode(.template)
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: dimension, height: dimension)
-                    .foregroundColor(currentTab == image ? Color("ForegroundColor \(restaurantModel.selectedRestaurant == 0 ? "(DD)" : "(UJB)")") : .gray)
-                    .frame(maxWidth: .infinity)
+                ZStack(alignment: .bottom) {
+                    Image(systemName: currentTab == image ? "\(image).fill" : image)
+                        .resizable()
+                        .renderingMode(.template)
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: dimension, height: dimension)
+                        .foregroundColor(currentTab == image ? Color("ForegroundColor \(restaurantModel.selectedRestaurant == 0 ? "(DD)" : "(UJB)")") : .gray)
+                        .frame(maxWidth: .infinity)
+                    
+                    Circle()
+                        .foregroundColor(.red)
+                        .frame(width: 10, height: 10)
+                        .padding([.bottom, .leading], 15)
+                        .opacity(0) // MARK: Use for unseen notifications/updates on respective page.
+                    
+                }
+                
                 Text(label)
                     .foregroundColor(currentTab == image ? Color("ForegroundColor \(restaurantModel.selectedRestaurant == 0 ? "(DD)" : "(UJB)")") : .gray)
                     .font(.custom("AvenirNext-Medium", size: 13))
             }
         }
     }
-    func TabButtonStatic(image: String, dimension: CGFloat, label: String) -> some View {
+    func TabButtonOrder(image: String, dimension: CGFloat, label: String) -> some View {
         Button {
             withAnimation {currentTab = image}
         } label: {
             VStack {
-                Image(systemName: image)
-                    .resizable()
-                    .renderingMode(.template)
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: dimension, height: dimension)
-                    .foregroundColor(currentTab == image ? Color("ForegroundColor \(restaurantModel.selectedRestaurant == 0 ? "(DD)" : "(UJB)")") : .gray)
-                    .frame(maxWidth: .infinity)
+                ZStack(alignment: .bottom) {
+                    Image(systemName: currentTab == image ? "\(image).fill" : image)
+                        .resizable()
+                        .renderingMode(.template)
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: dimension, height: dimension)
+                        .foregroundColor(currentTab == image ? Color("ForegroundColor \(restaurantModel.selectedRestaurant == 0 ? "(DD)" : "(UJB)")") : .gray)
+                        .frame(maxWidth: .infinity)
+                    
+                    Circle()
+                        .foregroundColor(.red)
+                        .frame(width: 10, height: 10)
+                        .padding([.bottom, .leading], 15)
+                        .opacity(cartModel.menuItems.count > 0 ? 1 : 0)
+                    
+                }
+                
                 Text(label)
                     .foregroundColor(currentTab == image ? Color("ForegroundColor \(restaurantModel.selectedRestaurant == 0 ? "(DD)" : "(UJB)")") : .gray)
-                    .font(.custom("AvenirNext-Medium", size: 13))
-            }
-        }
-    }
-    func TabButtonImage(image: String, dimension: CGFloat, label: String) -> some View {
-        Button {
-            withAnimation {currentTab = image}
-        } label: {
-            VStack {
-                Image(image)
-                    .resizable()
-                    .renderingMode(.template)
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: dimension, height: dimension)
-                    .foregroundColor(currentTab == image ? Color("AccentColor1") : .gray)
-                    .frame(maxWidth: .infinity)
-                Text(label)
-                    .foregroundColor(Color("ForegroundColor"))
                     .font(.custom("AvenirNext-Medium", size: 13))
             }
         }
@@ -145,10 +148,31 @@ struct RoundedCorner: Shape {
     }
 }
 
+struct UpdateIcon: View {
+    @State var animate = false
+    
+    var body: some View {
+        ZStack {
+            Circle().fill(Color.red.opacity(0.25)).frame(width: 15, height: 15).scaleEffect(self.animate ? 1 : 0)
+            Circle().fill(Color.red.opacity(0.35)).frame(width: 13, height: 13).scaleEffect(self.animate ? 1 : 0)
+            Circle().fill(Color.red.opacity(0.45)).frame(width: 12, height: 12).scaleEffect(self.animate ? 1 : 0)
+            Circle().fill(Color.red.opacity(1.00)).frame(width: 10, height: 10)
+        }
+        .onAppear {
+            self.animate.toggle()
+        }
+        .animation(.linear(duration: 1.5).repeatForever(autoreverses: true))
+        .frame(width: 15, height: 15)
+    }
+}
+
 struct BaseView_Previews: PreviewProvider {
     static var previews: some View {
         BaseView()
+            .environmentObject(CartModel())
             .environmentObject(RestaurantModel())
             .colorScheme(.dark)
+        
+        UpdateIcon()
     }
 }
