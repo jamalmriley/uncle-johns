@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8901CEFE28ADF27A00021DCA /* EventCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8901CEFD28ADF27A00021DCA /* EventCards.swift */; };
+		8901CF0028AE7BEA00021DCA /* DonutGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8901CEFF28AE7BEA00021DCA /* DonutGrid.swift */; };
+		8901CF0228AE7FC400021DCA /* FireGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8901CF0128AE7FC400021DCA /* FireGrid.swift */; };
 		8904ED9F288480090045565B /* PaymentCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8904ED9E288480090045565B /* PaymentCards.swift */; };
 		8909C78B28A3F99F004FDE79 /* ComingSoonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8909C78A28A3F99F004FDE79 /* ComingSoonView.swift */; };
 		8909C78E28A3FCA4004FDE79 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8909C78D28A3FCA4004FDE79 /* OnboardingView.swift */; };
@@ -56,6 +59,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8901CEFD28ADF27A00021DCA /* EventCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCards.swift; sourceTree = "<group>"; };
+		8901CEFF28AE7BEA00021DCA /* DonutGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonutGrid.swift; sourceTree = "<group>"; };
+		8901CF0128AE7FC400021DCA /* FireGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireGrid.swift; sourceTree = "<group>"; };
 		8904ED9E288480090045565B /* PaymentCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCards.swift; sourceTree = "<group>"; };
 		8909C78A28A3F99F004FDE79 /* ComingSoonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonView.swift; sourceTree = "<group>"; };
 		8909C78D28A3FCA4004FDE79 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
@@ -195,6 +201,9 @@
 			isa = PBXGroup;
 			children = (
 				898FCCE628A0A32C003C283F /* HomeTile.swift */,
+				8901CEFD28ADF27A00021DCA /* EventCards.swift */,
+				8901CEFF28AE7BEA00021DCA /* DonutGrid.swift */,
+				8901CF0128AE7FC400021DCA /* FireGrid.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -393,6 +402,7 @@
 				89B3FEC42873340000D6DFD0 /* Restaurant.swift in Sources */,
 				8909C79228A3FDD6004FDE79 /* LaunchView.swift in Sources */,
 				89F9F563287F271000DFCAD2 /* Icon.swift in Sources */,
+				8901CF0228AE7FC400021DCA /* FireGrid.swift in Sources */,
 				8911BF77287A4FF600486EDA /* ProfileView.swift in Sources */,
 				89B3FEC0287332D600D6DFD0 /* MapModel.swift in Sources */,
 				89B3FEC22873339300D6DFD0 /* RestaurantModel.swift in Sources */,
@@ -416,11 +426,13 @@
 				8909C78B28A3F99F004FDE79 /* ComingSoonView.swift in Sources */,
 				898FCCD628A0871A003C283F /* MenuItemCard.swift in Sources */,
 				8911BF712879FAA200486EDA /* BaseView.swift in Sources */,
+				8901CEFE28ADF27A00021DCA /* EventCards.swift in Sources */,
 				89B3FEBA287331FF00D6DFD0 /* Weather.swift in Sources */,
 				898FCCE328A09574003C283F /* MenuItemRow.swift in Sources */,
 				898FCCE128A09244003C283F /* CartModel.swift in Sources */,
 				89B3FEBC2873327B00D6DFD0 /* AuthModel.swift in Sources */,
 				898FCCD228A0856C003C283F /* MenuItem.swift in Sources */,
+				8901CF0028AE7BEA00021DCA /* DonutGrid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

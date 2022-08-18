@@ -25,7 +25,7 @@ struct CartButton: View {
                     .padding(.bottom, 1)
             }
         }
-        .foregroundColor(Color("ForegroundColor \(restaurantModel.selectedRestaurant == 0 ? "(DD)" : "(UJB)")"))
+        .foregroundColor(Color("ForegroundColor (Generic)"))
     }
 }
 
