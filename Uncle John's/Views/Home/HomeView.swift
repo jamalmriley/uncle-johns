@@ -43,7 +43,7 @@ struct HomeView: View {
                             } label: {
                                 CartButton(numOfMenuItems: cartModel.menuItems.count)
                             }
-                            
+                            .disabled(cartModel.menuItems.count <= 0)
                         }
                         .overlay {
                             Image(restaurantModel.selectedRestaurant == 0 ? "Dat Donut Header" : "Uncle John's Header (Light)")

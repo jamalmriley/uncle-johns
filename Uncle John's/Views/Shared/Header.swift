@@ -26,6 +26,7 @@ struct Header: View {
                 } label: {
                     CartButton(numOfMenuItems: cartModel.menuItems.count)
                 }
+                .disabled(cartModel.menuItems.count <= 0)
                 
             }
             .overlay {

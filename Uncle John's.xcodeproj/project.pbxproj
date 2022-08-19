@@ -11,6 +11,7 @@
 		8901CF0028AE7BEA00021DCA /* DonutGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8901CEFF28AE7BEA00021DCA /* DonutGrid.swift */; };
 		8901CF0228AE7FC400021DCA /* FireGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8901CF0128AE7FC400021DCA /* FireGrid.swift */; };
 		8904ED9F288480090045565B /* PaymentCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8904ED9E288480090045565B /* PaymentCards.swift */; };
+		8909BF1328AF1C1F004EB4FA /* PaymentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8909BF1228AF1C1F004EB4FA /* PaymentButton.swift */; };
 		8909C78B28A3F99F004FDE79 /* ComingSoonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8909C78A28A3F99F004FDE79 /* ComingSoonView.swift */; };
 		8909C78E28A3FCA4004FDE79 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8909C78D28A3FCA4004FDE79 /* OnboardingView.swift */; };
 		8909C79028A3FD59004FDE79 /* LocationDeniedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8909C78F28A3FD59004FDE79 /* LocationDeniedView.swift */; };
@@ -63,6 +64,7 @@
 		8901CEFF28AE7BEA00021DCA /* DonutGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonutGrid.swift; sourceTree = "<group>"; };
 		8901CF0128AE7FC400021DCA /* FireGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireGrid.swift; sourceTree = "<group>"; };
 		8904ED9E288480090045565B /* PaymentCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCards.swift; sourceTree = "<group>"; };
+		8909BF1228AF1C1F004EB4FA /* PaymentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentButton.swift; sourceTree = "<group>"; };
 		8909C78A28A3F99F004FDE79 /* ComingSoonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonView.swift; sourceTree = "<group>"; };
 		8909C78D28A3FCA4004FDE79 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		8909C78F28A3FD59004FDE79 /* LocationDeniedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDeniedView.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				898FCCD528A0871A003C283F /* MenuItemCard.swift */,
 				898FCCDC28A08FCC003C283F /* CartButton.swift */,
 				898FCCE228A09574003C283F /* MenuItemRow.swift */,
+				8909BF1228AF1C1F004EB4FA /* PaymentButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -423,6 +426,7 @@
 				89F9F55F287F152200DFCAD2 /* AppSettingsModel.swift in Sources */,
 				89B122FD28725C710011CE40 /* Uncle_Johns.swift in Sources */,
 				8911BF7A287ABBC700486EDA /* Header.swift in Sources */,
+				8909BF1328AF1C1F004EB4FA /* PaymentButton.swift in Sources */,
 				8909C78B28A3F99F004FDE79 /* ComingSoonView.swift in Sources */,
 				898FCCD628A0871A003C283F /* MenuItemCard.swift in Sources */,
 				8911BF712879FAA200486EDA /* BaseView.swift in Sources */,
