@@ -22,6 +22,7 @@
 		8911BF77287A4FF600486EDA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8911BF76287A4FF600486EDA /* ProfileView.swift */; };
 		8911BF7A287ABBC700486EDA /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8911BF79287ABBC600486EDA /* Header.swift */; };
 		892C2BAE28A9BE760059D245 /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892C2BAD28A9BE760059D245 /* CustomSegmentedControl.swift */; };
+		897AC58A28B3C8DD0099D52C /* Drawer in Frameworks */ = {isa = PBXBuildFile; productRef = 897AC58928B3C8DD0099D52C /* Drawer */; };
 		898FCCD228A0856C003C283F /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FCCD128A0856C003C283F /* MenuItem.swift */; };
 		898FCCD628A0871A003C283F /* MenuItemCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FCCD528A0871A003C283F /* MenuItemCard.swift */; };
 		898FCCD828A08C64003C283F /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FCCD728A08C63003C283F /* MenuView.swift */; };
@@ -119,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				897AC58A28B3C8DD0099D52C /* Drawer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +337,9 @@
 			dependencies = (
 			);
 			name = "Uncle John's";
+			packageProductDependencies = (
+				897AC58928B3C8DD0099D52C /* Drawer */,
+			);
 			productName = "Uncle John's";
 			productReference = 89B122F928725C710011CE40 /* Uncle John's.app */;
 			productType = "com.apple.product-type.application";
@@ -363,6 +368,9 @@
 				Base,
 			);
 			mainGroup = 89B122F028725C710011CE40;
+			packageReferences = (
+				897AC58828B3C8DD0099D52C /* XCRemoteSwiftPackageReference "swiftui-drawer" */,
+			);
 			productRefGroup = 89B122FA28725C710011CE40 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -641,6 +649,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		897AC58828B3C8DD0099D52C /* XCRemoteSwiftPackageReference "swiftui-drawer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maustinstar/swiftui-drawer";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		897AC58928B3C8DD0099D52C /* Drawer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 897AC58828B3C8DD0099D52C /* XCRemoteSwiftPackageReference "swiftui-drawer" */;
+			productName = Drawer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 89B122F128725C710011CE40 /* Project object */;
 }

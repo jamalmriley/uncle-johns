@@ -22,6 +22,7 @@ class RestaurantModel: NSObject, CLLocationManagerDelegate, ObservableObject {
     
     @Published var isDirectionsShowing = false
     @Published var selectedRestaurant = 0
+    @Published var showMenuItemCustomization: Bool = false
     @Published var showRestaurantPopUpCard = false
     
     @Published var routeDistance: Double = 0

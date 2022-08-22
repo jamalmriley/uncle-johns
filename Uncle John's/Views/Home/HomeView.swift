@@ -75,7 +75,7 @@ struct HomeView: View {
                             
                             ScrollView(.horizontal, showsIndicators: false) {
                                 HStack {
-                                    ForEach(0..<5) { index in
+                                    ForEach(0..<4) { index in
                                         VStack {
                                             ZStack(alignment: .bottom) {
                                                 Image("bob\(index + 1)")

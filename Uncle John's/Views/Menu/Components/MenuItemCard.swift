@@ -40,7 +40,8 @@ struct MenuItemCard: View {
             .shadow(radius: 3)
             
             Button {
-                cartModel.addToCart(menuItem: menuItem)
+                restaurantModel.showMenuItemCustomization.toggle()
+                // cartModel.addToCart(menuItem: menuItem) TODO: Make this line of code update future currentMenuItem in restaurant model so we can then add to card with button with this line of code
                 print("Added to cart")
             } label: {
                 Image(systemName: "plus")
@@ -51,12 +52,33 @@ struct MenuItemCard: View {
                     .padding([.top, .trailing])
             }
         }
+        .contextMenu {
+            Text(menuItem.name)
+            
+            Button {
+                //
+            } label: {
+                Label("Add to Order", systemImage: "bag")
+            }
+            
+            Button {
+                //
+            } label: {
+                Label("Nutrition Facts", systemImage: "info.circle")
+            }
+            
+            Button {
+                //
+            } label: {
+                Label("Add to Favorites", systemImage: "star")
+            }
+        }
     }
 }
 
 struct MenuItemCard_Previews: PreviewProvider {
     static var previews: some View {
-        MenuItemCard(menuItem: menuList[0])
+        MenuView()
             .environmentObject(CartModel())
             .environmentObject(RestaurantModel())
             .colorScheme(.dark)
