@@ -84,7 +84,7 @@ struct BaseView: View {
                         .renderingMode(.template)
                         .aspectRatio(contentMode: .fit)
                         .frame(width: dimension, height: dimension)
-                        .foregroundColor(currentTab == image ? Color("ForegroundColor \(restaurantModel.selectedRestaurant == 0 ? "(DD)" : "(UJB)")") : .gray)
+                        .foregroundColor(currentTab == image ? Color("ForegroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])") : .gray)
                         .frame(maxWidth: .infinity)
                     
                     Circle()
@@ -96,7 +96,7 @@ struct BaseView: View {
                 }
                 
                 Text(label)
-                    .foregroundColor(currentTab == image ? Color("ForegroundColor \(restaurantModel.selectedRestaurant == 0 ? "(DD)" : "(UJB)")") : .gray)
+                    .foregroundColor(currentTab == image ? Color("ForegroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])") : .gray)
                     .font(.custom("AvenirNext-Medium", size: 13))
             }
         }
@@ -112,7 +112,7 @@ struct BaseView: View {
                         .renderingMode(.template)
                         .aspectRatio(contentMode: .fit)
                         .frame(width: dimension, height: dimension)
-                        .foregroundColor(currentTab == image ? Color("ForegroundColor \(restaurantModel.selectedRestaurant == 0 ? "(DD)" : "(UJB)")") : .gray)
+                        .foregroundColor(currentTab == image ? Color("ForegroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])") : .gray)
                         .frame(maxWidth: .infinity)
                     
                     Circle()
@@ -124,7 +124,7 @@ struct BaseView: View {
                 }
                 
                 Text(label)
-                    .foregroundColor(currentTab == image ? Color("ForegroundColor \(restaurantModel.selectedRestaurant == 0 ? "(DD)" : "(UJB)")") : .gray)
+                    .foregroundColor(currentTab == image ? Color("ForegroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])") : .gray)
                     .font(.custom("AvenirNext-Medium", size: 13))
             }
         }

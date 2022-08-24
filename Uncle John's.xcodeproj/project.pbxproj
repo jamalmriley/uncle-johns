@@ -31,6 +31,8 @@
 		898FCCE128A09244003C283F /* CartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FCCE028A09244003C283F /* CartModel.swift */; };
 		898FCCE328A09574003C283F /* MenuItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FCCE228A09574003C283F /* MenuItemRow.swift */; };
 		898FCCE728A0A32C003C283F /* HomeTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FCCE628A0A32C003C283F /* HomeTile.swift */; };
+		899CC5EB28B5D56300E0F6D3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899CC5EA28B5D56300E0F6D3 /* Extensions.swift */; };
+		899CC5F028B6024100E0F6D3 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899CC5EF28B6024100E0F6D3 /* SplashScreenView.swift */; };
 		89B122FD28725C710011CE40 /* Uncle_Johns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B122FC28725C710011CE40 /* Uncle_Johns.swift */; };
 		89B122FF28725C710011CE40 /* OldMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B122FE28725C710011CE40 /* OldMenuView.swift */; };
 		89B1230128725C740011CE40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89B1230028725C740011CE40 /* Assets.xcassets */; };
@@ -84,6 +86,8 @@
 		898FCCE028A09244003C283F /* CartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartModel.swift; sourceTree = "<group>"; };
 		898FCCE228A09574003C283F /* MenuItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemRow.swift; sourceTree = "<group>"; };
 		898FCCE628A0A32C003C283F /* HomeTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTile.swift; sourceTree = "<group>"; };
+		899CC5EA28B5D56300E0F6D3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		899CC5EF28B6024100E0F6D3 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		89B122F928725C710011CE40 /* Uncle John's.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Uncle John's.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89B122FC28725C710011CE40 /* Uncle_Johns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Uncle_Johns.swift; sourceTree = "<group>"; };
 		89B122FE28725C710011CE40 /* OldMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldMenuView.swift; sourceTree = "<group>"; };
@@ -221,6 +225,16 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		899CC5EC28B5E32000E0F6D3 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				899CC5EF28B6024100E0F6D3 /* SplashScreenView.swift */,
+				8909C79128A3FDD6004FDE79 /* LaunchView.swift */,
+				8911BF702879FAA200486EDA /* BaseView.swift */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
 		89B122F028725C710011CE40 = {
 			isa = PBXGroup;
 			children = (
@@ -275,10 +289,9 @@
 		89B1230B2872A19A0011CE40 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8909C79128A3FDD6004FDE79 /* LaunchView.swift */,
-				8911BF702879FAA200486EDA /* BaseView.swift */,
-				8911BF78287ABB9D00486EDA /* Shared */,
 				8909C78C28A3FB30004FDE79 /* Onboarding */,
+				899CC5EC28B5E32000E0F6D3 /* Launch */,
+				8911BF78287ABB9D00486EDA /* Shared */,
 				898FCCD928A08EC0003C283F /* Home */,
 				8904ED9C28847FBE0045565B /* Scan */,
 				898FCCDA28A08EEE003C283F /* Menu */,
@@ -317,6 +330,7 @@
 				89F9F54B287F14C800DFCAD2 /* Uncle John's App Icon (Light).png */,
 				89F9F551287F14C800DFCAD2 /* Uncle John's App Icon (Light)@2x.png */,
 				89F9F546287F14C800DFCAD2 /* Uncle John's App Icon (Light)@3x.png */,
+				899CC5EA28B5D56300E0F6D3 /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -426,9 +440,11 @@
 				898FCCE728A0A32C003C283F /* HomeTile.swift in Sources */,
 				898FCCDD28A08FCC003C283F /* CartButton.swift in Sources */,
 				8909C79028A3FD59004FDE79 /* LocationDeniedView.swift in Sources */,
+				899CC5F028B6024100E0F6D3 /* SplashScreenView.swift in Sources */,
 				898FCCD828A08C64003C283F /* MenuView.swift in Sources */,
 				8909C78E28A3FCA4004FDE79 /* OnboardingView.swift in Sources */,
 				89B3FEBE287332BC00D6DFD0 /* WeatherModel.swift in Sources */,
+				899CC5EB28B5D56300E0F6D3 /* Extensions.swift in Sources */,
 				89F9F561287F17F900DFCAD2 /* SettingsView.swift in Sources */,
 				8904ED9F288480090045565B /* PaymentCards.swift in Sources */,
 				89F9F55F287F152200DFCAD2 /* AppSettingsModel.swift in Sources */,
@@ -580,7 +596,6 @@
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Grant the app permission to help Uncle John's know when to start your order and track your ETA.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -611,7 +626,6 @@
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Grant the app permission to help Uncle John's know when to start your order and track your ETA.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -11,7 +11,6 @@ struct OnboardingView: View {
     
     @EnvironmentObject var restaurantModel: RestaurantModel
     @State private var tabSelection = 0
-    private var colorSchemeSuffix = ["(DD)", "(UJB)"]
     
     var body: some View {
         ZStack {
@@ -47,7 +46,7 @@ struct OnboardingView: View {
                         Text("The Uncle John's app allows you to seamlessly order from Uncle John's and Dat Donut!")
                             .font(.custom("AvenirNext-Medium", size: 16))
                     }
-                    .foregroundColor(Color("ForegroundColor \(colorSchemeSuffix[0])")) // Replaced restaurantModel.selectedRestaurant with 0
+                    .foregroundColor(Color("ForegroundColor \(Color.suffixArray[0])")) // Replaced restaurantModel.selectedRestaurant with 0
                     .multilineTextAlignment(.center)
                     .padding(.horizontal)
                     .tag(0)
@@ -67,7 +66,7 @@ struct OnboardingView: View {
                         Text("We'll show you the best route to head over to Uncle John's! Click the button below.")
                             .font(.custom("AvenirNext-Medium", size: 16))
                     }
-                    .foregroundColor(Color("ForegroundColor \(colorSchemeSuffix[0])")) // Replaced restaurantModel.selectedRestaurant with 0
+                    .foregroundColor(Color("ForegroundColor \(Color.suffixArray[0])")) // Replaced restaurantModel.selectedRestaurant with 0
                     .multilineTextAlignment(.center)
                     .padding(.horizontal)
                     .tag(1)
@@ -87,7 +86,7 @@ struct OnboardingView: View {
                 } label: {
                     ZStack {
                         Rectangle()
-                            .foregroundColor(tabSelection == 0 ? .white : Color("AccentColor \(colorSchemeSuffix[1])")) // Replaced restaurantModel.selectedRestaurant with 1
+                            .foregroundColor(tabSelection == 0 ? .white : Color("AccentColor \(Color.suffixArray[1])")) // Replaced restaurantModel.selectedRestaurant with 1
                             .frame(height: 48)
                             .cornerRadius(10)
                         
@@ -96,7 +95,7 @@ struct OnboardingView: View {
                             .padding()
                     }
                 }
-                .accentColor(tabSelection == 0 ? Color("AccentColor \(colorSchemeSuffix[1])") : Color.white) // Replaced restaurantModel.selectedRestaurant with 1
+                .accentColor(tabSelection == 0 ? Color("AccentColor \(Color.suffixArray[1])") : Color.white) // Replaced restaurantModel.selectedRestaurant with 1
                 .padding()
                 
                 Spacer()

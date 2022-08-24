@@ -46,12 +46,12 @@ struct EventCards: View {
                     } label: {
                         ZStack (alignment: .leading) {
                             Rectangle()
-                                .foregroundColor(Color("ForegroundColor (Generic)").opacity(0.1))
+                                .foregroundColor(Color("ForegroundColor").opacity(0.1))
                                 .frame(height: 40)
                             
                             Text("Learn More")
                                 .font(.custom("AvenirNext-Medium", size: 18))
-                                .foregroundColor(Color("ForegroundColor (Generic)"))
+                                .foregroundColor(Color("ForegroundColor"))
                                 .padding([.horizontal])
                         }
                     }
@@ -96,12 +96,12 @@ struct EventCards: View {
                     } label: {
                         ZStack (alignment: .leading) {
                             Rectangle()
-                                .foregroundColor(Color("ForegroundColor (Generic)").opacity(0.1))
+                                .foregroundColor(Color("ForegroundColor").opacity(0.1))
                                 .frame(height: 40)
                             
                             Text("Learn More")
                                 .font(.custom("AvenirNext-Medium", size: 18))
-                                .foregroundColor(Color("ForegroundColor (Generic)"))
+                                .foregroundColor(Color("ForegroundColor"))
                                 .padding([.horizontal])
                         }
                     }
@@ -146,12 +146,12 @@ struct EventCards: View {
                     } label: {
                         ZStack (alignment: .leading) {
                             Rectangle()
-                                .foregroundColor(Color("ForegroundColor (Generic)").opacity(0.1))
+                                .foregroundColor(Color("ForegroundColor").opacity(0.1))
                                 .frame(height: 40)
                             
                             Text("Learn More")
                                 .font(.custom("AvenirNext-Medium", size: 18))
-                                .foregroundColor(Color("ForegroundColor (Generic)"))
+                                .foregroundColor(Color("ForegroundColor"))
                                 .padding([.horizontal])
                         }
                     }
@@ -196,12 +196,12 @@ struct EventCards: View {
                     } label: {
                         ZStack (alignment: .leading) {
                             Rectangle()
-                                .foregroundColor(Color("ForegroundColor (Generic)").opacity(0.1))
+                                .foregroundColor(Color("ForegroundColor").opacity(0.1))
                                 .frame(height: 40)
                             
                             Text("Learn More")
                                 .font(.custom("AvenirNext-Medium", size: 18))
-                                .foregroundColor(Color("ForegroundColor (Generic)"))
+                                .foregroundColor(Color("ForegroundColor"))
                                 .padding([.horizontal])
                         }
                     }

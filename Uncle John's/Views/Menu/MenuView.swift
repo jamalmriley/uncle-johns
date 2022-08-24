@@ -14,7 +14,6 @@ struct MenuView: View {
     @State private var selectedSubMenu = 0
     @State private var size = 0
     @State var heights = [CGFloat(200)]
-    private var colorSchemeSuffix = ["(DD)", "(UJB)"]
     private var emojis = ["🍩", "🍖"]
     private var menuCategories = [["Food","Beverages"], ["Lunch & Dinner", "Catering"]]
     
@@ -28,7 +27,7 @@ struct MenuView: View {
                     Text("Our Menu")
                         .font(.custom("AvenirNext-Bold", size: 32))
                         .textCase(.uppercase)
-                        .foregroundColor(Color("ForegroundColor \(colorSchemeSuffix[restaurantModel.selectedRestaurant])"))
+                        .foregroundColor(Color("ForegroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
                     
                     CustomSegmentedControl(selection: $selectedSubMenu, options: menuCategories[restaurantModel.selectedRestaurant], width: 350, fontSize: 16)
                 }
@@ -65,7 +64,7 @@ struct MenuView: View {
                 }
                 .padding(.horizontal)
             }
-            .background(Color("BackgroundColor \(colorSchemeSuffix[restaurantModel.selectedRestaurant])"))
+            .background(Color("BackgroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
             
             if restaurantModel.showMenuItemCustomization {
                 Drawer(heights: $heights) {
@@ -83,7 +82,7 @@ struct MenuView: View {
                                     }
                                 } label: {
                                     Image(systemName: "xmark")
-                                        .foregroundColor(Color("ForegroundColor (Generic)"))
+                                        .foregroundColor(Color("ForegroundColor"))
                                 }
                             }
                             .padding(.top)
@@ -110,7 +109,7 @@ struct MenuView: View {
                                         .frame(height: 45)
                                         .frame(maxWidth: .infinity)
                                         .cornerRadius(5)
-                                        .foregroundColor(Color("AccentColor \(colorSchemeSuffix[restaurantModel.selectedRestaurant])"))
+                                        .foregroundColor(Color("AccentColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
                                     
                                     Text("Add to Order")
                                         .foregroundColor(.white)
@@ -142,7 +141,6 @@ struct MenuView_Previews: PreviewProvider {
 
 struct Restaurant0Menu0Section: View {
     @EnvironmentObject var restaurantModel: RestaurantModel
-    var colorSchemeSuffix = ["(DD)", "(UJB)"]
     var columns = [GridItem(.adaptive(minimum: 150), spacing: 25)]
     var itemCategory: String
     
@@ -151,7 +149,7 @@ struct Restaurant0Menu0Section: View {
             Text(itemCategory)
                 .font(.custom("AvenirNext-Bold", size: 24))
                 .textCase(.uppercase)
-                .foregroundColor(Color("ForegroundColor \(colorSchemeSuffix[restaurantModel.selectedRestaurant])"))
+                .foregroundColor(Color("ForegroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
             
             LazyVGrid (columns: columns, spacing: 15) {
                 ForEach(0..<restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu0.filter{$0.itemCategory == itemCategory}.count, id: \.self) { index in
@@ -168,7 +166,6 @@ struct Restaurant0Menu0Section: View {
 }
 struct Restaurant0Menu1Section: View {
     @EnvironmentObject var restaurantModel: RestaurantModel
-    var colorSchemeSuffix = ["(DD)", "(UJB)"]
     var columns = [GridItem(.adaptive(minimum: 150), spacing: 25)]
     var itemCategory: String
     
@@ -177,7 +174,7 @@ struct Restaurant0Menu1Section: View {
             Text(itemCategory)
                 .font(.custom("AvenirNext-Bold", size: 24))
                 .textCase(.uppercase)
-                .foregroundColor(Color("ForegroundColor \(colorSchemeSuffix[restaurantModel.selectedRestaurant])"))
+                .foregroundColor(Color("ForegroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
             
             LazyVGrid (columns: columns, spacing: 15) {
                 ForEach(0..<restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu1.filter{$0.itemCategory == itemCategory}.count, id: \.self) { index in
@@ -193,7 +190,6 @@ struct Restaurant0Menu1Section: View {
 }
 struct Restaurant1Menu0Section: View {
     @EnvironmentObject var restaurantModel: RestaurantModel
-    var colorSchemeSuffix = ["(DD)", "(UJB)"]
     var columns = [GridItem(.adaptive(minimum: 150), spacing: 25)]
     var itemCategory: String
     
@@ -202,7 +198,7 @@ struct Restaurant1Menu0Section: View {
             Text(itemCategory)
                 .font(.custom("AvenirNext-Bold", size: 24))
                 .textCase(.uppercase)
-                .foregroundColor(Color("ForegroundColor \(colorSchemeSuffix[restaurantModel.selectedRestaurant])"))
+                .foregroundColor(Color("ForegroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
             
             LazyVGrid (columns: columns, spacing: 15) {
                 ForEach(0..<restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu0.filter{$0.itemCategory == itemCategory}.count, id: \.self) { index in
@@ -218,7 +214,6 @@ struct Restaurant1Menu0Section: View {
 }
 struct Restaurant1Menu1Section: View {
     @EnvironmentObject var restaurantModel: RestaurantModel
-    var colorSchemeSuffix = ["(DD)", "(UJB)"]
     var columns = [GridItem(.adaptive(minimum: 150), spacing: 25)]
     var itemCategory: String
     
@@ -227,7 +222,7 @@ struct Restaurant1Menu1Section: View {
             Text(itemCategory)
                 .font(.custom("AvenirNext-Bold", size: 24))
                 .textCase(.uppercase)
-                .foregroundColor(Color("ForegroundColor \(colorSchemeSuffix[restaurantModel.selectedRestaurant])"))
+                .foregroundColor(Color("ForegroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
             
             LazyVGrid (columns: columns, spacing: 15) {
                 ForEach(0..<restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu1.filter{$0.itemCategory == itemCategory}.count, id: \.self) { index in

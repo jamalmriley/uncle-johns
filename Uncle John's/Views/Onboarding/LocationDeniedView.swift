@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct LocationDeniedView: View {
-    private var colorSchemeSuffix = ["(DD)", "(UJB)"]
     
     var body: some View {
         ZStack {
@@ -53,7 +52,7 @@ struct LocationDeniedView: View {
                     
                     ZStack {
                         Rectangle()
-                            .foregroundColor(Color("AccentColor \(colorSchemeSuffix[1])")) // Replaced restaurantModel.selectedRestaurant with 1
+                            .foregroundColor(Color("AccentColor \(Color.suffixArray[1])")) // Replaced restaurantModel.selectedRestaurant with 1
                             .frame(height: 48)
                             .cornerRadius(10)
                         
@@ -68,7 +67,7 @@ struct LocationDeniedView: View {
                 
             }
             .padding()
-            .foregroundColor(Color("ForegroundColor \(colorSchemeSuffix[0])")) // Replaced restaurantModel.selectedRestaurant with 0
+            .foregroundColor(Color("ForegroundColor \(Color.suffixArray[0])")) // Replaced restaurantModel.selectedRestaurant with 0
             .multilineTextAlignment(.center)
             .ignoresSafeArea(.all, edges: .all)
         }

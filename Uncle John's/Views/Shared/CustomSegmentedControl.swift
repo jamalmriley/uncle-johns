@@ -40,7 +40,7 @@ struct CustomSegmentedControl: View {
                     Text(options[index])
                         .font(isSelected ? .custom("AvenirNext-Bold", size: fontSize) : .custom("AvenirNext-Medium", size: fontSize))
                         .textCase(.uppercase)
-                        .foregroundColor(isSelected ? Color("ForegroundColor (Generic)") : .gray)
+                        .foregroundColor(isSelected ? Color("ForegroundColor") : .gray)
                 )
             }
         }

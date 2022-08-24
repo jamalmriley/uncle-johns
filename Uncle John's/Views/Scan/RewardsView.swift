@@ -10,12 +10,11 @@ import SwiftUI
 struct RewardsView: View {
     @EnvironmentObject var restaurantModel: RestaurantModel
     @EnvironmentObject var cartModel: CartModel
-    var colorSchemeSuffix = ["(DD)", "(UJB)"]
     
     var body: some View {
         GeometryReader { reader in
             ZStack {
-                Color("BackgroundColor \(restaurantModel.selectedRestaurant == 0 ? "(DD)" : "(UJB)")")
+                Color("BackgroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])")
                     .ignoresSafeArea()
                 
                 VStack {
@@ -29,7 +28,7 @@ struct RewardsView: View {
                                 Text("My Points")
                                     .font(.custom("AvenirNext-Bold", size: 24))
                                     .textCase(.uppercase)
-                                    .foregroundColor(Color("ForegroundColor \(colorSchemeSuffix[restaurantModel.selectedRestaurant])"))
+                                    .foregroundColor(Color("ForegroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
                                 
                                 HStack {
                                     Spacer()
@@ -51,7 +50,7 @@ struct RewardsView: View {
                                                 ZStack(alignment: .trailing) {
                                                     Capsule()
                                                         .frame(width: (reader.size.width - 50) * (773/1000), height: 20)
-                                                        .foregroundColor(Color("AccentColor \(restaurantModel.selectedRestaurant == 0 ? "(DD)" : "(UJB)")"))
+                                                        .foregroundColor(Color("AccentColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
                                                     
                                                     Circle()
                                                         .foregroundColor(.white)
@@ -105,7 +104,7 @@ struct RewardsView: View {
                                 Text("Rewards")
                                     .font(.custom("AvenirNext-Bold", size: 24))
                                     .textCase(.uppercase)
-                                    .foregroundColor(Color("ForegroundColor \(colorSchemeSuffix[restaurantModel.selectedRestaurant])"))
+                                    .foregroundColor(Color("ForegroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
                                 
                                 ScrollView(.horizontal, showsIndicators: false) {
                                     HStack {
@@ -149,7 +148,7 @@ struct RewardsView: View {
                                 Text("Deals")
                                     .font(.custom("AvenirNext-Bold", size: 24))
                                     .textCase(.uppercase)
-                                    .foregroundColor(Color("ForegroundColor \(colorSchemeSuffix[restaurantModel.selectedRestaurant])"))
+                                    .foregroundColor(Color("ForegroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
                                 
                                 ScrollView(.horizontal, showsIndicators: false) {
                                     HStack {
@@ -175,7 +174,7 @@ struct RewardsView: View {
                                                         Text("Get")
                                                             .font(.custom("AvenirNext-Bold", size: 14))
                                                             .textCase(.uppercase)
-                                                            .foregroundColor(Color("AccentColor \(restaurantModel.selectedRestaurant == 0 ? "(DD)" : "(UJB)")"))
+                                                            .foregroundColor(Color("AccentColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
                                                     }
                                                 }
                                                 .buttonStyle(.plain)
@@ -187,7 +186,6 @@ struct RewardsView: View {
                             }
                             .padding(.bottom)
                         }
-                        
                         .padding(.horizontal)
                     }
                 }

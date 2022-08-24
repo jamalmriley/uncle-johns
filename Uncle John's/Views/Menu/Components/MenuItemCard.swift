@@ -10,7 +10,6 @@ import SwiftUI
 struct MenuItemCard: View {
     @EnvironmentObject var cartModel: CartModel
     @EnvironmentObject var restaurantModel: RestaurantModel
-    var colorSchemeSuffix = ["(DD)", "(UJB)"]
     var menuItem: MenuItem
     
     var body: some View {

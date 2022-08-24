@@ -11,13 +11,12 @@ struct HomeView: View {
     @EnvironmentObject var cartModel: CartModel
     @EnvironmentObject var restaurantModel: RestaurantModel
     @Environment(\.colorScheme) var colorScheme
-    var colorSchemeSuffix = ["(DD)", "(UJB)"]
     private var emojis = ["🍩", "🍖"]
     
     var body: some View {
         GeometryReader { reader in
             ZStack(alignment: .top) {
-                Color("BackgroundColor \(restaurantModel.selectedRestaurant == 0 ? "(DD)" : "(UJB)")")
+                Color("BackgroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])")
                     .ignoresSafeArea()
                 
                 if restaurantModel.selectedRestaurant == 0 {
@@ -66,7 +65,7 @@ struct HomeView: View {
                         // MARK: - Support Our Friends!
                         Section(header: Text("Support Our Friends!").font(.custom("AvenirNext-Bold", size: 24))
                             .textCase(.uppercase)
-                            .foregroundColor(Color("ForegroundColor \(colorSchemeSuffix[restaurantModel.selectedRestaurant])"))
+                            .foregroundColor(Color("ForegroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
                             .padding(.bottom, -10)) {
                             let blackOwnedBusinesses = ["Batter & Berries", "Chicago's Home of Chicken & Waffles", "ETA Creative Arts Foundation", "Hyde Park Hair Salon", "Kiwi's Boutique"]
                             
@@ -112,7 +111,7 @@ struct HomeView: View {
                         Section(header: Text("Upcoming Local Events")
                             .font(.custom("AvenirNext-Bold", size: 24))
                             .textCase(.uppercase)
-                            .foregroundColor(Color("ForegroundColor \(colorSchemeSuffix[restaurantModel.selectedRestaurant])"))
+                            .foregroundColor(Color("ForegroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
                             .padding(.bottom, -50)) {
                             
                             // Want to feature your local event in our app? Contact us by clicking "Support" in the "Profile" tab.

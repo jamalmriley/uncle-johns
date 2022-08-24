@@ -25,7 +25,7 @@ struct CartButton: View {
                     .padding(.bottom, 1)
             }
         }
-        .foregroundColor(Color("ForegroundColor (Generic)"))
+        .foregroundColor(Color("ForegroundColor"))
     }
 }
 

@@ -11,7 +11,6 @@ struct CartView: View {
     @EnvironmentObject var cartModel: CartModel
     @EnvironmentObject var restaurantModel: RestaurantModel
     @State var isChecked: Bool = false
-    private var colorSchemeSuffix = ["(DD)", "(UJB)"]
     
     var body: some View {
         let donation = isChecked ? ceil(cartModel.total * 1.1075) - cartModel.total * 1.1075 : 0
@@ -28,10 +27,10 @@ struct CartView: View {
                     // MARK: - Subtotal
                     HStack {
                         Text("Subtotal (\(cartModel.menuItems.count) \(cartModel.menuItems.count == 1 ? "item" : "items"))")
-                            .foregroundColor(Color("ForegroundColor \(colorSchemeSuffix[restaurantModel.selectedRestaurant])"))
+                            .foregroundColor(Color("ForegroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
                         Spacer()
                         Text("$\(String(format: "%.2f", cartModel.total))")
-                            .foregroundColor(Color("ForegroundColor \(colorSchemeSuffix[restaurantModel.selectedRestaurant])"))
+                            .foregroundColor(Color("ForegroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
                             .font(.custom("AvenirNext-Bold", size: 16))
                     }
                     .padding(.bottom, 5)
@@ -39,10 +38,10 @@ struct CartView: View {
                     // MARK: - Tax (10.75%)
                     HStack {
                         Text("Taxes")
-                            .foregroundColor(Color("ForegroundColor \(colorSchemeSuffix[restaurantModel.selectedRestaurant])"))
+                            .foregroundColor(Color("ForegroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
                         Spacer()
                         Text("$\(String(format: "%.2f", cartModel.total * 0.1075))")
-                            .foregroundColor(Color("ForegroundColor \(colorSchemeSuffix[restaurantModel.selectedRestaurant])"))
+                            .foregroundColor(Color("ForegroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
                             .font(.custom("AvenirNext-Bold", size: 16))
                     }
                     .padding(.bottom, 5)
@@ -51,7 +50,7 @@ struct CartView: View {
                     if isChecked {
                         HStack {
                             Text("ACCESS Donation")
-                                .foregroundColor(Color("ForegroundColor \(colorSchemeSuffix[restaurantModel.selectedRestaurant])"))
+                                .foregroundColor(Color("ForegroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
                             
                             Button {
                                 //
@@ -61,7 +60,7 @@ struct CartView: View {
                             
                             Spacer()
                             Text("$\(String(format: "%.2f", donation))")
-                                .foregroundColor(Color("ForegroundColor \(colorSchemeSuffix[restaurantModel.selectedRestaurant])"))
+                                .foregroundColor(Color("ForegroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
                                 .font(.custom("AvenirNext-Bold", size: 16))
                         }
                         .padding(.bottom, 5)
@@ -70,10 +69,10 @@ struct CartView: View {
                     // MARK: - Total
                     HStack {
                         Text("Total")
-                            .foregroundColor(Color("ForegroundColor \(colorSchemeSuffix[restaurantModel.selectedRestaurant])"))
+                            .foregroundColor(Color("ForegroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
                         Spacer()
                         Text("$\(String(format: "%.2f", cartModel.total * 1.1075 + donation))")
-                            .foregroundColor(Color("ForegroundColor \(colorSchemeSuffix[restaurantModel.selectedRestaurant])"))
+                            .foregroundColor(Color("ForegroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
                             .font(.custom("AvenirNext-Bold", size: 16))
                     }
                     .padding(.bottom, 5)
@@ -102,7 +101,7 @@ struct CartView: View {
                         .foregroundColor(.white)
                     
                     Text("Continue Ordering")
-                        .foregroundColor(Color("AccentColor \(colorSchemeSuffix[restaurantModel.selectedRestaurant])"))
+                        .foregroundColor(Color("AccentColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
                         .font(.custom("AvenirNext-Medium", size: 18))
                 }
             }
@@ -119,7 +118,7 @@ struct CartView: View {
                         .frame(maxWidth: .infinity)
                         .cornerRadius(5)
                         .padding(.horizontal)
-                        .foregroundColor(Color("AccentColor \(colorSchemeSuffix[restaurantModel.selectedRestaurant])"))
+                        .foregroundColor(Color("AccentColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
                     
                     Text("Pay ")
                         .foregroundColor(.white)
@@ -149,10 +148,10 @@ struct CartView: View {
                 
             }
             .padding()
-            .background(Color("AccentColor \(colorSchemeSuffix[restaurantModel.selectedRestaurant])"))
+            .background(Color("AccentColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
         }
         .navigationBarHidden(true)
-        .background(Color("BackgroundColor \(colorSchemeSuffix[restaurantModel.selectedRestaurant])"))
+        .background(Color("BackgroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
     }
 }
 

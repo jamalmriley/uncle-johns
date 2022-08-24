@@ -11,7 +11,7 @@ import SwiftUI
 struct Uncle_Johns: App {
     var body: some Scene {
         WindowGroup {
-            LaunchView()
+            SplashScreenView()
                 .environmentObject(AppSettingsModel())
                 .environmentObject(CartModel())
                 .environmentObject(RestaurantModel())

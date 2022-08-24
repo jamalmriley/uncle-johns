@@ -10,12 +10,11 @@ import SwiftUI
 struct ProfileView: View {
     @EnvironmentObject var restaurantModel: RestaurantModel
     @StateObject var settings: AppSettingsModel = AppSettingsModel()
-    var colorSchemeSuffix = ["(DD)", "(UJB)"]
     
     var body: some View {
         GeometryReader { reader in
             ZStack {
-                Color("BackgroundColor \(restaurantModel.selectedRestaurant == 0 ? "(DD)" : "(UJB)")")
+                Color("BackgroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])")
                     .ignoresSafeArea()
                 VStack {
                     Header()
@@ -44,7 +43,7 @@ struct ProfileView: View {
                                 ZStack(alignment: .trailing) {
                                     Capsule()
                                         .frame(width: (reader.size.width - 50) * (773/1000), height: 20)
-                                        .foregroundColor(Color("AccentColor \(restaurantModel.selectedRestaurant == 0 ? "(DD)" : "(UJB)")"))
+                                        .foregroundColor(Color("AccentColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
                                     
                                     Circle()
                                         .foregroundColor(.white)
@@ -139,7 +138,6 @@ struct ProfileView_Previews: PreviewProvider {
 
 struct EmojiButton: View {
     @EnvironmentObject var restaurantModel: RestaurantModel
-    var colorSchemeSuffix = ["(DD)", "(UJB)"]
     var emoji: String = "👋"
     
     var body: some View {
@@ -152,11 +150,6 @@ struct EmojiButton: View {
                     .foregroundColor(.black)
                 Text(emoji)
             }
-            //            .overlay(
-            //                RoundedRectangle(cornerRadius: 10)
-            //                    .stroke(Color("ForegroundColor \(colorSchemeSuffix[restaurantModel.selectedRestaurant])"), lineWidth: 3)
-            //                    .frame(width: 60, height: 60)
-            //            )
         }
     }
 }
