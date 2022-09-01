@@ -15,15 +15,16 @@ struct MenuItemRow: View {
         HStack(spacing: 20) {
             Image(menuItem.image)
                 .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 50)
-                .cornerRadius(10)
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 50, height: 50)
+                .cornerRadius(25)
             
             VStack(alignment: .leading, spacing: 10) {
                 Text(menuItem.name)
-                    .bold()
+                    .font(.custom("AvenirNext-DemiBold", size: 16))
                 
                 Text("$\(String(format: "%.2f", menuItem.price))")
+                    .font(.custom("AvenirNext-Regular", size: 16))
             }
             
             Spacer()
@@ -34,7 +35,6 @@ struct MenuItemRow: View {
                     cartModel.removeFromCart(menuItem: menuItem)
                 }
         }
-        .padding(.horizontal)
         .frame(maxWidth: .infinity, alignment: .leading)
     }
 }

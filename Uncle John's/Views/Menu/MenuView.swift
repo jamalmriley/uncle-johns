@@ -13,6 +13,7 @@ struct MenuView: View {
     @EnvironmentObject var cartModel: CartModel
     @State private var selectedSubMenu = 0
     @State private var size = 0
+    @State private var animate = true
     @State var heights = [CGFloat(200)]
     private var emojis = ["🍩", "🍖"]
     private var menuCategories = [["Food","Beverages"], ["Lunch & Dinner", "Catering"]]
@@ -65,6 +66,11 @@ struct MenuView: View {
                 .padding(.horizontal)
             }
             .background(Color("BackgroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
+            .onTapGesture {
+                withAnimation(.spring()) {
+                    restaurantModel.showMenuItemCustomization = false
+                }
+            }
             
             if restaurantModel.showMenuItemCustomization {
                 Drawer(heights: $heights) {
@@ -74,11 +80,11 @@ struct MenuView: View {
                             // MARK: Menu Item Name and "X" Button
                             
                             HStack {
-                                Text("Item Name").font(.custom("AvenirNext-Bold", size: 24))
+                                Text("\(restaurantModel.currentMenuItemName)").font(.custom("AvenirNext-Bold", size: 24))
                                 Spacer()
                                 Button {
-                                    withAnimation {
-                                        restaurantModel.showMenuItemCustomization.toggle()
+                                    withAnimation(.spring()) {
+                                        restaurantModel.showMenuItemCustomization = false
                                     }
                                 } label: {
                                     Image(systemName: "xmark")
@@ -96,12 +102,14 @@ struct MenuView: View {
                             }
                             
                             Text("Price: ").font(.custom("AvenirNext-Medium", size: 20)) +
-                            Text("$0.00").font(.custom("AvenirNext-Bold", size: 20))
+                            Text("$\(String(format: "%.2f", restaurantModel.currentMenuItemPrice))").font(.custom("AvenirNext-Bold", size: 20))
                             
                             // MARK: "Add to Order" Button
                             Button {
-                                cartModel.addToCart(menuItem: menuList[0])
-                                restaurantModel.showMenuItemCustomization.toggle()
+                                withAnimation(.spring()) {
+                                    cartModel.addToCart(menuItem: MenuItem(name: restaurantModel.currentMenuItemName, image: restaurantModel.currentMenuItemImage, price: restaurantModel.currentMenuItemPrice))
+                                    restaurantModel.showMenuItemCustomization = false
+                                }
                             } label: {
                                 ZStack {
                                     Rectangle()
@@ -124,7 +132,6 @@ struct MenuView: View {
                     }
                 }
                 .transition(.move(edge: .bottom))
-                .animation(.spring())
             }
         }
     }

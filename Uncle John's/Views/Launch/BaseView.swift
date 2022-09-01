@@ -44,23 +44,25 @@ struct BaseView: View {
                         .tag("person.crop.circle")
                     
                 }
+//                .cornerRadius(25, corners: [.bottomLeft, .bottomRight])
                 .ignoresSafeArea(.all, edges: [.horizontal])
                 .onReceive(NotificationCenter.default.publisher(for: UIApplication.willResignActiveNotification)) { _ in
                     // Save progress to database when the app is moving from active to background
                 }
                 
                 ZStack(alignment: .top) {
-                    RoundedRectangle(cornerRadius: 15)
+                    Rectangle()
+                        .foregroundColor(.clear)
                         .foregroundColor(Color("TertiaryColor"))
-                        .frame(height: 90)
+                        .frame(height: 85)
                     HStack(alignment: .center, spacing: 0) {
                         TabButtonV2(image: "house", dimension: 23, label: "Home")
                         TabButtonV2(image: "app.gift", dimension: 23, label: "Rewards")
                         TabButtonOrder(image: "takeoutbag.and.cup.and.straw", dimension: 23, label: "Order")
                         TabButtonV2(image: "person.crop.circle", dimension: 23, label: "Profile")
                     }
-                    .cornerRadius(25, corners: [.topLeft, .topRight])
-                    .padding(.top, 15)
+                    .padding(.top, 10)
+                    //.background(.ultraThinMaterial)
                 }
             }
             .ignoresSafeArea(.all, edges: .all)

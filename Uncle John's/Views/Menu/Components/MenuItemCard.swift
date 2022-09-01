@@ -39,7 +39,12 @@ struct MenuItemCard: View {
             .shadow(radius: 3)
             
             Button {
-                restaurantModel.showMenuItemCustomization.toggle()
+                withAnimation(.spring()) {
+                    restaurantModel.currentMenuItemName = menuItem.name
+                    restaurantModel.currentMenuItemPrice = menuItem.price
+                    restaurantModel.currentMenuItemImage = menuItem.image
+                    restaurantModel.showMenuItemCustomization = true
+                }
                 // cartModel.addToCart(menuItem: menuItem) TODO: Make this line of code update future currentMenuItem in restaurant model so we can then add to card with button with this line of code
                 print("Added to cart")
             } label: {

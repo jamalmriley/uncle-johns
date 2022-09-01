@@ -24,7 +24,10 @@ struct SplashScreenView: View {
                     ForEach(0..<20, id: \.self) { _ in
                         HStack {
                             ForEach(0..<15, id: \.self) { _ in
-                                Circle()
+                                Image("Uncle John's Fire Icon")
+                                    .resizable()
+                                    .renderingMode(.template)
+                                    .aspectRatio(contentMode: .fit)
                                     .foregroundColor(.black)
                                     .frame(width: 25, height: 15)
                             }
@@ -32,7 +35,10 @@ struct SplashScreenView: View {
                         
                         HStack {
                             ForEach(0..<14, id: \.self) { _ in
-                                Circle()
+                                Image("Uncle John's Fire Icon")
+                                    .resizable()
+                                    .renderingMode(.template)
+                                    .aspectRatio(contentMode: .fit)
                                     .foregroundColor(.black)
                                     .frame(width: 25, height: 15)
                             }
