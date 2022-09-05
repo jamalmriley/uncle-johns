@@ -43,6 +43,7 @@ class Restaurant: Decodable, Identifiable, ObservableObject, Equatable {
 }
 
 class menuItem: Decodable {
+    var itemID: Int
     var quantity: Int
     var name: String
     var description: String
@@ -56,4 +57,5 @@ class menuItem: Decodable {
     var menuCategory: String
     var itemCategory: String
     var itemCategoryDesc: String
+    var sizes: [String]
 }

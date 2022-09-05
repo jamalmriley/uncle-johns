@@ -83,17 +83,9 @@ struct ProfileView: View {
                                     .textCase(.uppercase)
                                     .foregroundColor(.white) // Just black or white depending on light/dark mode
                                 
-                                HStack {
-                                    Spacer()
-                                    EmojiButton()
-                                    EmojiButton(emoji: "👋🏻")
-                                    EmojiButton(emoji: "👋🏼")
-                                    EmojiButton(emoji: "👋🏽")
-                                    EmojiButton(emoji: "👋🏾")
-                                    EmojiButton(emoji: "👋🏿")
-                                    Spacer()
-                                }
-                                .padding(.bottom)
+                                EmojiButtons()
+                                    .environmentObject(AppSettingsModel())
+                                    .padding(.bottom)
                                 
                                 Divider()
                             }
@@ -136,19 +128,31 @@ struct ProfileView_Previews: PreviewProvider {
     }
 }
 
-struct EmojiButton: View {
-    @EnvironmentObject var restaurantModel: RestaurantModel
-    var emoji: String = "👋"
+struct EmojiButtons: View {
+    @EnvironmentObject var appSettingsModel: AppSettingsModel
+    var emojis: [String] = ["👋", "👋🏻", "👋🏼", "👋🏽", "👋🏾", "👋🏿"]
     
     var body: some View {
-        Button  {
-            //
-        } label: {
-            ZStack {
-                RoundedRectangle(cornerRadius: 10)
-                    .frame(width: 50, height: 50)
-                    .foregroundColor(.black)
-                Text(emoji)
+        
+        HStack(spacing: 0) {
+            Spacer()
+            ForEach(0..<emojis.count, id: \.self) { index in
+                Button  {
+                    appSettingsModel.emojiIndex = index
+                } label: {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 10)
+                            .strokeBorder(appSettingsModel.emojiIndex == index ? .white : .clear, lineWidth: 2)
+                            .foregroundColor(.clear)
+                            .frame(width: 50, height: 50)
+                        
+                        RoundedRectangle(cornerRadius: 10)
+                            .frame(width: 40, height: 40)
+                            .foregroundColor(.black)
+                        Text(emojis[index])
+                    }
+                }
+                Spacer()
             }
         }
     }

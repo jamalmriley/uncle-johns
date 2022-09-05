@@ -28,6 +28,7 @@
         "saturdayCloseTime": "1899-12-31T04:36:36.000Z",
         "menu0": [
             {
+                "itemID": 0,
                 "quantity": 1,
                 "name": "Donut",
                 "description": "",
@@ -40,9 +41,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Food",
                 "itemCategory": "Our Donuts",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 1,
                 "quantity": 2,
                 "name": "Donuts",
                 "description": "",
@@ -55,9 +58,11 @@
                 "unitPrice": 1.2,
                 "menuCategory": "Food",
                 "itemCategory": "Our Donuts",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 2,
                 "quantity": 6,
                 "name": "Donuts",
                 "description": "",
@@ -70,9 +75,11 @@
                 "unitPrice": 1.16,
                 "menuCategory": "Food",
                 "itemCategory": "Our Donuts",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 3,
                 "quantity": 12,
                 "name": "Donuts",
                 "description": "",
@@ -85,9 +92,11 @@
                 "unitPrice": 1.1,
                 "menuCategory": "Food",
                 "itemCategory": "Our Donuts",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 4,
                 "quantity": 0,
                 "name": "The Big Dat Donut",
                 "description": "",
@@ -100,9 +109,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Food",
                 "itemCategory": "Our Donuts",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 5,
                 "quantity": 0,
                 "name": "Cinnamon Roll",
                 "description": "",
@@ -115,9 +126,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Food",
                 "itemCategory": "Our Donuts",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 6,
                 "quantity": 0,
                 "name": "Bow Tie Donut",
                 "description": "",
@@ -130,9 +143,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Food",
                 "itemCategory": "Our Donuts",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 7,
                 "quantity": 0,
                 "name": "Apple Fritter",
                 "description": "",
@@ -145,9 +160,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Food",
                 "itemCategory": "Our Donuts",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 8,
                 "quantity": 6,
                 "name": "Donut Balls",
                 "description": "",
@@ -160,9 +177,11 @@
                 "unitPrice": 0.24,
                 "menuCategory": "Food",
                 "itemCategory": "Our Donuts",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 9,
                 "quantity": 12,
                 "name": "Donut Balls",
                 "description": "",
@@ -175,9 +194,11 @@
                 "unitPrice": 0.22,
                 "menuCategory": "Food",
                 "itemCategory": "Our Donuts",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 10,
                 "quantity": 0,
                 "name": "Muffin",
                 "description": "",
@@ -190,9 +211,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Food",
                 "itemCategory": "Our Donuts",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 11,
                 "quantity": 0,
                 "name": "Bacon & Egg Toast",
                 "description": "Add coffee or donut for $1.10",
@@ -205,9 +228,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Food",
                 "itemCategory": "Our Sandwiches",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 12,
                 "quantity": 0,
                 "name": "Sausage & Egg Toast",
                 "description": "Add coffee or donut for $1.10",
@@ -220,9 +245,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Food",
                 "itemCategory": "Our Sandwiches",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 13,
                 "quantity": 0,
                 "name": "Ham & Egg Toast",
                 "description": "Add coffee or donut for $1.10",
@@ -235,9 +262,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Food",
                 "itemCategory": "Our Sandwiches",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 14,
                 "quantity": 0,
                 "name": "Turkey Bacon & Egg Toast",
                 "description": "Add coffee or donut for $1.10",
@@ -250,9 +279,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Food",
                 "itemCategory": "Our Sandwiches",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 15,
                 "quantity": 0,
                 "name": "Egg & Cheese Toast",
                 "description": "",
@@ -265,9 +296,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Food",
                 "itemCategory": "Our Sandwiches",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 16,
                 "quantity": 0,
                 "name": "Grilled Cheese Toast",
                 "description": "",
@@ -280,9 +313,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Food",
                 "itemCategory": "Our Sandwiches",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 17,
                 "quantity": 0,
                 "name": "Bacon & Egg Croissant",
                 "description": "Add coffee or donut for $1.10",
@@ -295,9 +330,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Food",
                 "itemCategory": "Our Sandwiches",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 18,
                 "quantity": 0,
                 "name": "Sausage & Egg Croissant",
                 "description": "Add coffee or donut for $1.10",
@@ -310,9 +347,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Food",
                 "itemCategory": "Our Sandwiches",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 19,
                 "quantity": 0,
                 "name": "Ham & Egg Croissant",
                 "description": "Add coffee or donut for $1.10",
@@ -325,9 +364,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Food",
                 "itemCategory": "Our Sandwiches",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 20,
                 "quantity": 0,
                 "name": "Turkey Bacon & Egg Croissant",
                 "description": "Add coffee or donut for $1.10",
@@ -340,9 +381,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Food",
                 "itemCategory": "Our Sandwiches",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 21,
                 "quantity": 0,
                 "name": "Egg & Cheese Croissant",
                 "description": "Add coffee or donut for $2.10",
@@ -355,9 +398,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Food",
                 "itemCategory": "Our Sandwiches",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 22,
                 "quantity": 0,
                 "name": "Extra Meat",
                 "description": "",
@@ -370,9 +415,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Food",
                 "itemCategory": "Our Sandwiches",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 23,
                 "quantity": 0,
                 "name": "Extra Egg",
                 "description": "",
@@ -385,9 +432,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Food",
                 "itemCategory": "Our Sandwiches",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 24,
                 "quantity": 0,
                 "name": "Extra Cheese",
                 "description": "",
@@ -400,11 +449,13 @@
                 "unitPrice": 0,
                 "menuCategory": "Food",
                 "itemCategory": "Our Sandwiches",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             }
         ],
         "menu1": [
             {
+                "itemID": 0,
                 "quantity": 0,
                 "name": "Coffee",
                 "description": "",
@@ -417,9 +468,15 @@
                 "unitPrice": 0,
                 "menuCategory": "Beverages",
                 "itemCategory": "Drinks",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": [
+                    "s.circle.fill",
+                    "m.circle.fill",
+                    "L"
+                ]
             },
             {
+                "itemID": 1,
                 "quantity": 0,
                 "name": "Hot Cocoa",
                 "description": "",
@@ -432,9 +489,14 @@
                 "unitPrice": 0,
                 "menuCategory": "Beverages",
                 "itemCategory": "Drinks",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": [
+                    "s.circle.fill",
+                    "L"
+                ]
             },
             {
+                "itemID": 2,
                 "quantity": 0,
                 "name": "Tea",
                 "description": "",
@@ -447,9 +509,14 @@
                 "unitPrice": 0,
                 "menuCategory": "Beverages",
                 "itemCategory": "Drinks",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": [
+                    "s.circle.fill",
+                    "L"
+                ]
             },
             {
+                "itemID": 3,
                 "quantity": 0,
                 "name": "Iced Coffee",
                 "description": "",
@@ -462,9 +529,15 @@
                 "unitPrice": 0,
                 "menuCategory": "Beverages",
                 "itemCategory": "Drinks",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": [
+                    "s.circle.fill",
+                    "m.circle.fill",
+                    "L"
+                ]
             },
             {
+                "itemID": 4,
                 "quantity": 0,
                 "name": "White Milk (2%)",
                 "description": "",
@@ -477,9 +550,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Beverages",
                 "itemCategory": "Drinks",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 5,
                 "quantity": 0,
                 "name": "Chocolate Milk",
                 "description": "",
@@ -492,9 +567,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Beverages",
                 "itemCategory": "Drinks",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 6,
                 "quantity": 0,
                 "name": "Apple Juice",
                 "description": "",
@@ -507,9 +584,14 @@
                 "unitPrice": 0,
                 "menuCategory": "Beverages",
                 "itemCategory": "Juices",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": [
+                    "s.circle.fill",
+                    "L"
+                ]
             },
             {
+                "itemID": 7,
                 "quantity": 0,
                 "name": "Orange Juice",
                 "description": "",
@@ -522,9 +604,14 @@
                 "unitPrice": 0,
                 "menuCategory": "Beverages",
                 "itemCategory": "Juices",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": [
+                    "s.circle.fill",
+                    "L"
+                ]
             },
             {
+                "itemID": 8,
                 "quantity": 0,
                 "name": "V8 Splash",
                 "description": "",
@@ -537,9 +624,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Beverages",
                 "itemCategory": "Juices",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 9,
                 "quantity": 0,
                 "name": "Bottled Water",
                 "description": "",
@@ -552,9 +641,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Beverages",
                 "itemCategory": "Juices",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 10,
                 "quantity": 0,
                 "name": "Cappuccino",
                 "description": "",
@@ -567,9 +658,14 @@
                 "unitPrice": 0,
                 "menuCategory": "Beverages",
                 "itemCategory": "Juices",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": [
+                    "s.circle.fill",
+                    "L"
+                ]
             },
             {
+                "itemID": 11,
                 "quantity": 0,
                 "name": "Flavor Shot",
                 "description": "",
@@ -582,9 +678,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Beverages",
                 "itemCategory": "Juices",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 12,
                 "quantity": 0,
                 "name": "Smoothie",
                 "description": "",
@@ -597,7 +695,12 @@
                 "unitPrice": 0,
                 "menuCategory": "Beverages",
                 "itemCategory": "Fruit Smoothies",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": [
+                    "s.circle.fill",
+                    "m.circle.fill",
+                    "L"
+                ]
             }
         ]
     },
@@ -630,6 +733,7 @@
         "saturdayCloseTime": "1899-12-31T05:36:36.000Z",
         "menu0": [
             {
+                "itemID": 0,
                 "quantity": 0,
                 "name": "Uncle John's Special",
                 "description": "(4) pieces of fried chicken, boneless and dark meat. Includes seasoned fries, peppers and bread.",
@@ -642,9 +746,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Lunch Specials",
-                "itemCategoryDesc": "Available Monday - Saturday from 11 AM to 3 PM."
+                "itemCategoryDesc": "Available Monday - Saturday from 11 AM to 3 PM.",
+                "sizes": []
             },
             {
+                "itemID": 1,
                 "quantity": 0,
                 "name": "Rib Tips",
                 "description": "Half pound of pork ribs. Includes fries and bread.",
@@ -657,9 +763,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Lunch Specials",
-                "itemCategoryDesc": "Available Monday - Saturday from 11 AM to 3 PM."
+                "itemCategoryDesc": "Available Monday - Saturday from 11 AM to 3 PM.",
+                "sizes": []
             },
             {
+                "itemID": 2,
                 "quantity": 0,
                 "name": "Hot Links",
                 "description": "(2) jumbo sausages. Includes fries and bread.",
@@ -672,9 +780,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Lunch Specials",
-                "itemCategoryDesc": "Available Monday - Saturday from 11 AM to 3 PM."
+                "itemCategoryDesc": "Available Monday - Saturday from 11 AM to 3 PM.",
+                "sizes": []
             },
             {
+                "itemID": 3,
                 "quantity": 0,
                 "name": "Rib Tips & Hot Link Combo",
                 "description": "Half pound of pork rib tips and (1) hot sausage link. Includes fries and drink.",
@@ -687,9 +797,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Lunch Specials",
-                "itemCategoryDesc": "Available Monday - Saturday from 11 AM to 3 PM."
+                "itemCategoryDesc": "Available Monday - Saturday from 11 AM to 3 PM.",
+                "sizes": []
             },
             {
+                "itemID": 4,
                 "quantity": 0,
                 "name": "Chicken Gizzards",
                 "description": "Half pound of fried chicken gizzards. Includes fries and bread.",
@@ -702,9 +814,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Lunch Specials",
-                "itemCategoryDesc": "Available Monday - Saturday from 11 AM to 3 PM."
+                "itemCategoryDesc": "Available Monday - Saturday from 11 AM to 3 PM.",
+                "sizes": []
             },
             {
+                "itemID": 5,
                 "quantity": 0,
                 "name": "Jerk Rib Tips",
                 "description": "Half pound of jerk-flavored pork rib tips. Includes fries and bread.",
@@ -717,9 +831,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Lunch Specials",
-                "itemCategoryDesc": "Available Monday - Saturday from 11 AM to 3 PM."
+                "itemCategoryDesc": "Available Monday - Saturday from 11 AM to 3 PM.",
+                "sizes": []
             },
             {
+                "itemID": 6,
                 "quantity": 0,
                 "name": "Turkey Tips",
                 "description": "Half pound of turkey rib tips. Includes fries and bread.",
@@ -732,9 +848,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Lunch Specials",
-                "itemCategoryDesc": "Available Monday - Saturday from 11 AM to 3 PM."
+                "itemCategoryDesc": "Available Monday - Saturday from 11 AM to 3 PM.",
+                "sizes": []
             },
             {
+                "itemID": 7,
                 "quantity": 0,
                 "name": "Full Slab",
                 "description": "(12) meaty bones of traditional pork ribs. Includes fries, bread and slaw!",
@@ -747,9 +865,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Ribs",
-                "itemCategoryDesc": "Everything from original pork slabs to jerk-seasoned tips."
+                "itemCategoryDesc": "Everything from original pork slabs to jerk-seasoned tips.",
+                "sizes": []
             },
             {
+                "itemID": 8,
                 "quantity": 0,
                 "name": "Half Slab",
                 "description": "(6) meaty bones of traditional pork ribs. Includes fries, bread and slaw!",
@@ -762,9 +882,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Ribs",
-                "itemCategoryDesc": "Everything from original pork slabs to jerk-seasoned tips."
+                "itemCategoryDesc": "Everything from original pork slabs to jerk-seasoned tips.",
+                "sizes": []
             },
             {
+                "itemID": 9,
                 "quantity": 0,
                 "name": "Rib Tips",
                 "description": "",
@@ -777,9 +899,16 @@
                 "unitPrice": 0,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Ribs",
-                "itemCategoryDesc": "Everything from original pork slabs to jerk-seasoned tips."
+                "itemCategoryDesc": "Everything from original pork slabs to jerk-seasoned tips.",
+                "sizes": [
+                    "s.circle.fill",
+                    "m.circle.fill",
+                    "l.circle.fill",
+                    "j.circle.fill"
+                ]
             },
             {
+                "itemID": 10,
                 "quantity": 0,
                 "name": "Turkey Tips",
                 "description": "",
@@ -792,9 +921,15 @@
                 "unitPrice": 0,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Ribs",
-                "itemCategoryDesc": "Everything from original pork slabs to jerk-seasoned tips."
+                "itemCategoryDesc": "Everything from original pork slabs to jerk-seasoned tips.",
+                "sizes": [
+                    "s.circle.fill",
+                    "m.circle.fill",
+                    "L"
+                ]
             },
             {
+                "itemID": 11,
                 "quantity": 0,
                 "name": "Jerk Rib Tips",
                 "description": "",
@@ -807,9 +942,16 @@
                 "unitPrice": 0,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Ribs",
-                "itemCategoryDesc": "Everything from original pork slabs to jerk-seasoned tips."
+                "itemCategoryDesc": "Everything from original pork slabs to jerk-seasoned tips.",
+                "sizes": [
+                    "s.circle.fill",
+                    "m.circle.fill",
+                    "l.circle.fill",
+                    "j.circle.fill"
+                ]
             },
             {
+                "itemID": 12,
                 "quantity": 0,
                 "name": "Hot Links",
                 "description": "Includes fries, bread and slaw.",
@@ -822,9 +964,16 @@
                 "unitPrice": 0,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Hot Links",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": [
+                    "s.circle.fill",
+                    "m.circle.fill",
+                    "l.circle.fill",
+                    "j.circle.fill"
+                ]
             },
             {
+                "itemID": 13,
                 "quantity": 0,
                 "name": "Turkey Links",
                 "description": "",
@@ -837,9 +986,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Hot Links",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 14,
                 "quantity": 0,
                 "name": "White Meat (1/2 lb)",
                 "description": "(2) golden-fried chicken wings and (2) breasts. Includes fries, bread and slaw!",
@@ -852,9 +1003,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Chicken",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 15,
                 "quantity": 0,
                 "name": "White Meat (1/4 lb)",
                 "description": "(1) golden-fried chicken breast and (1) wing. Includes fries, bread and slaw!",
@@ -867,9 +1020,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Chicken",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 16,
                 "quantity": 0,
                 "name": "Gizzards",
                 "description": "Half pound of golden-fried chicken gizzards. Includes fries, bread and slaw!",
@@ -882,9 +1037,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Chicken",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 17,
                 "quantity": 0,
                 "name": "Half BBQ Chicken",
                 "description": "Half pound of barbecued chicken. Includes fries, bread and slaw!",
@@ -897,9 +1054,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Chicken",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 18,
                 "quantity": 4,
                 "name": "Chicken Wings",
                 "description": "(4) golden fried chicken wings. Includes fries, bread and slaw!",
@@ -912,9 +1071,11 @@
                 "unitPrice": 1.65,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Chicken",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 19,
                 "quantity": 6,
                 "name": "Chicken Wings",
                 "description": "(6) golden fried chicken wings. Includes fries, bread and slaw!",
@@ -927,9 +1088,11 @@
                 "unitPrice": 1.63,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Chicken",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 20,
                 "quantity": 3,
                 "name": "Chicken Wings",
                 "description": "(3) golden fried chicken legs. Includes fries, bread and slaw!",
@@ -942,9 +1105,11 @@
                 "unitPrice": 1.23,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Chicken",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 21,
                 "quantity": 5,
                 "name": "Chicken Wings",
                 "description": "(5) golden fried chicken legs. Includes fries, bread and slaw!",
@@ -957,9 +1122,11 @@
                 "unitPrice": 1.18,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Chicken",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 22,
                 "quantity": 4,
                 "name": "Pc. Fillet",
                 "description": "(4) pieces of golden-fried fish fillets. Includes fries, bread and slaw!",
@@ -972,9 +1139,11 @@
                 "unitPrice": 3.56,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Fish",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 23,
                 "quantity": 2,
                 "name": "Pc. Fillet",
                 "description": "(2) pieces of golden-fried fish fillets. Includes fries, bread and slaw!",
@@ -987,9 +1156,11 @@
                 "unitPrice": 4.13,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Fish",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 24,
                 "quantity": 0,
                 "name": "Half Slab & Hot Link",
                 "description": "(6) bones of traditional pork ribs and (1) hot link. Includes fries, bread and slaw!",
@@ -1002,9 +1173,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Combos",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 25,
                 "quantity": 0,
                 "name": "Half Slab & Wings",
                 "description": "(6) bones of traditional pork ribs and (3) wings. Includes fries, bread and slaw!",
@@ -1017,9 +1190,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Combos",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 26,
                 "quantity": 0,
                 "name": "Turkey Tips & Links",
                 "description": "Half pound of barbecued turkey meat and (2) turkey links. Includes fries, bread and slaw!",
@@ -1032,9 +1207,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Combos",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 27,
                 "quantity": 0,
                 "name": "Turkey Tips & Link",
                 "description": "Half pound of barbecued turkey meat and (1) turkey link. Includes fries, bread and slaw!",
@@ -1047,9 +1224,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Combos",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 28,
                 "quantity": 0,
                 "name": "Rib Tips & Hot Links",
                 "description": "Half pound of traditional pork rib tips and a choice of (1), (2), or (3) hot links. Includes fries, bread and slaw!",
@@ -1062,9 +1241,15 @@
                 "unitPrice": 0,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Combos",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": [
+                    "s.circle.fill",
+                    "l.circle.fill",
+                    "j.circle.fill"
+                ]
             },
             {
+                "itemID": 29,
                 "quantity": 0,
                 "name": "Wings & Rib Tips",
                 "description": "(3) golden-fried chicken wings and half pound of traditional pork rib tips. Includes fries, bread and slaw!",
@@ -1077,9 +1262,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Combos",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 30,
                 "quantity": 0,
                 "name": "Wings & Hot Links",
                 "description": "(3) golden-fried chicken wings and (3) hot links. Includes fries, bread and slaw!",
@@ -1092,9 +1279,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Combos",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 31,
                 "quantity": 0,
                 "name": "Legs & Hot Links",
                 "description": "(3) golden-fried chicken legs and (3) hot links. Includes fries, bread and slaw!",
@@ -1107,9 +1296,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Combos",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 32,
                 "quantity": 0,
                 "name": "Legs & Rib Tips",
                 "description": "(3) golden-fried chicken legs and half pound of traditional pork rib tips. Includes fries, bread and slaw!",
@@ -1122,9 +1313,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Combos",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 33,
                 "quantity": 0,
                 "name": "Legs, Hot Links, & Rib Tips",
                 "description": "$2 OFF ON TUE/WED - (5) golden-fried chicken legs, (3) hot links and half pound of traditional pork rib tips. Includes fries, bread and slaw!",
@@ -1137,9 +1330,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Combos",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 34,
                 "quantity": 0,
                 "name": "French Fries",
                 "description": "",
@@ -1152,9 +1347,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Sides & Extras",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 35,
                 "quantity": 0,
                 "name": "Coleslaw",
                 "description": "",
@@ -1167,9 +1364,15 @@
                 "unitPrice": 0,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Sides & Extras",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": [
+                    "s.circle.fill",
+                    "m.circle.fill",
+                    "L"
+                ]
             },
             {
+                "itemID": 36,
                 "quantity": 0,
                 "name": "Extra Wing",
                 "description": "",
@@ -1182,9 +1385,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Sides & Extras",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 37,
                 "quantity": 0,
                 "name": "Extra Hot Link",
                 "description": "",
@@ -1197,9 +1402,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Sides & Extras",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 38,
                 "quantity": 0,
                 "name": "Extra Turkey Link",
                 "description": "",
@@ -1212,9 +1419,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Sides & Extras",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 39,
                 "quantity": 0,
                 "name": "Extra Peppers",
                 "description": "(3) pieces of hot peppers.",
@@ -1227,9 +1436,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Sides & Extras",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 40,
                 "quantity": 0,
                 "name": "Slice of Bread",
                 "description": "",
@@ -1242,9 +1453,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Sides & Extras",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 41,
                 "quantity": 0,
                 "name": "Loaf of Bread",
                 "description": "",
@@ -1257,9 +1470,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Sides & Extras",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 42,
                 "quantity": 0,
                 "name": "Sauce",
                 "description": "",
@@ -1272,11 +1487,16 @@
                 "unitPrice": 0,
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Sides & Extras",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": [
+                    "s.circle.fill",
+                    "L"
+                ]
             }
         ],
         "menu1": [
             {
+                "itemID": 0,
                 "quantity": 0,
                 "name": "Rib Tips",
                 "description": "Full pan of traditional pork rib tips. Full pans feed 25-30 people, and half pans feed 12-15 people.",
@@ -1289,9 +1509,14 @@
                 "unitPrice": 0,
                 "menuCategory": "Catering",
                 "itemCategory": "Rib & Turkey Tips",
-                "itemCategoryDesc": "Everything from original pork slabs to jerk-seasoned tips."
+                "itemCategoryDesc": "Everything from original pork slabs to jerk-seasoned tips.",
+                "sizes": [
+                    "circle.lefthalf.filled",
+                    "circle.fill"
+                ]
             },
             {
+                "itemID": 1,
                 "quantity": 0,
                 "name": "Turkey Tips",
                 "description": "Full pan of barbecued turkey meat. Full pans feed 25-30 people, and half pans feed 12-15 people.",
@@ -1304,9 +1529,14 @@
                 "unitPrice": 0,
                 "menuCategory": "Catering",
                 "itemCategory": "Rib & Turkey Tips",
-                "itemCategoryDesc": "Everything from original pork slabs to jerk-seasoned tips."
+                "itemCategoryDesc": "Everything from original pork slabs to jerk-seasoned tips.",
+                "sizes": [
+                    "circle.lefthalf.filled",
+                    "circle.fill"
+                ]
             },
             {
+                "itemID": 2,
                 "quantity": 0,
                 "name": "Jerk Tips",
                 "description": "Full pan of jerk-seasoned rib tips. Full pans feed 30-35 people, and half pans feed 15-20 people.",
@@ -1319,9 +1549,14 @@
                 "unitPrice": 0,
                 "menuCategory": "Catering",
                 "itemCategory": "Rib & Turkey Tips",
-                "itemCategoryDesc": "Everything from original pork slabs to jerk-seasoned tips."
+                "itemCategoryDesc": "Everything from original pork slabs to jerk-seasoned tips.",
+                "sizes": [
+                    "circle.lefthalf.filled",
+                    "circle.fill"
+                ]
             },
             {
+                "itemID": 3,
                 "quantity": 0,
                 "name": "Hot Links",
                 "description": "",
@@ -1334,9 +1569,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Catering",
                 "itemCategory": "Hot & Turkey Links",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 4,
                 "quantity": 0,
                 "name": "Frozen Hot Links",
                 "description": "15 or 30 pounds of traditional hot sausages blended with special spices. Pricing varies.",
@@ -1349,9 +1586,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Catering",
                 "itemCategory": "Hot & Turkey Links",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 5,
                 "quantity": 0,
                 "name": "Tukey Links",
                 "description": "Pan of turkey sausages blended with special spices.",
@@ -1364,9 +1603,14 @@
                 "unitPrice": 0,
                 "menuCategory": "Catering",
                 "itemCategory": "Hot & Turkey Links",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": [
+                    "circle.lefthalf.filled",
+                    "circle.fill"
+                ]
             },
             {
+                "itemID": 6,
                 "quantity": 25,
                 "name": "Chicken Wings",
                 "description": "(25) pieces of golden-fried chicken wings.",
@@ -1379,9 +1623,11 @@
                 "unitPrice": 1.16,
                 "menuCategory": "Catering",
                 "itemCategory": "Chicken",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 7,
                 "quantity": 50,
                 "name": "Chicken Wings",
                 "description": "(50) pieces of golden-fried chicken wings.",
@@ -1394,9 +1640,11 @@
                 "unitPrice": 1.26,
                 "menuCategory": "Catering",
                 "itemCategory": "Chicken",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 8,
                 "quantity": 75,
                 "name": "Chicken Wings",
                 "description": "(75) pieces of golden-fried chicken wings.",
@@ -1409,9 +1657,11 @@
                 "unitPrice": 1.01,
                 "menuCategory": "Catering",
                 "itemCategory": "Chicken",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 9,
                 "quantity": 100,
                 "name": "Chicken Wings",
                 "description": "(100) pieces of golden-fried chicken wings.",
@@ -1424,9 +1674,11 @@
                 "unitPrice": 0.95,
                 "menuCategory": "Catering",
                 "itemCategory": "Chicken",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 10,
                 "quantity": 25,
                 "name": "Chicken Legs",
                 "description": "(25) pieces of golden-fried chicken legs.",
@@ -1439,9 +1691,11 @@
                 "unitPrice": 0.88,
                 "menuCategory": "Catering",
                 "itemCategory": "Chicken",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 11,
                 "quantity": 50,
                 "name": "Chicken Legs",
                 "description": "(50) pieces of golden-fried chicken legs.",
@@ -1454,9 +1708,11 @@
                 "unitPrice": 0.78,
                 "menuCategory": "Catering",
                 "itemCategory": "Chicken",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 12,
                 "quantity": 100,
                 "name": "Chicken Legs",
                 "description": "(100) pieces of golden-fried chicken legs.",
@@ -1469,9 +1725,11 @@
                 "unitPrice": 0.7,
                 "menuCategory": "Catering",
                 "itemCategory": "Chicken",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 13,
                 "quantity": 0,
                 "name": "Rib Tips & Hot Links",
                 "description": "Full pan of traditional pork rib tips AND hot links. Full pans feed 25-30 people, and half pans feed 10-12 people.",
@@ -1484,9 +1742,14 @@
                 "unitPrice": 0,
                 "menuCategory": "Catering",
                 "itemCategory": "Combos",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": [
+                    "circle.lefthalf.filled",
+                    "circle.fill"
+                ]
             },
             {
+                "itemID": 14,
                 "quantity": 0,
                 "name": "Tukey Tips & Links",
                 "description": "Pan of barbecued turkey meat AND turkey links.",
@@ -1499,9 +1762,14 @@
                 "unitPrice": 0,
                 "menuCategory": "Catering",
                 "itemCategory": "Combos",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": [
+                    "circle.lefthalf.filled",
+                    "circle.fill"
+                ]
             },
             {
+                "itemID": 15,
                 "quantity": 0,
                 "name": "French Fries",
                 "description": "",
@@ -1514,9 +1782,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Catering",
                 "itemCategory": "Sides & Extras",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 16,
                 "quantity": 0,
                 "name": "Large Sauce",
                 "description": "",
@@ -1529,9 +1799,11 @@
                 "unitPrice": 0,
                 "menuCategory": "Catering",
                 "itemCategory": "Sides & Extras",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             },
             {
+                "itemID": 17,
                 "quantity": 0,
                 "name": "Small Sauce",
                 "description": "",
@@ -1544,7 +1816,8 @@
                 "unitPrice": 0,
                 "menuCategory": "Catering",
                 "itemCategory": "Sides & Extras",
-                "itemCategoryDesc": ""
+                "itemCategoryDesc": "",
+                "sizes": []
             }
         ]
     }

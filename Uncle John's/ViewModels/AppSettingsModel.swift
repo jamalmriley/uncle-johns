@@ -10,6 +10,7 @@ import UIKit
 
 public final class AppSettingsModel: ObservableObject {
     @Published public var iconIndex: Int = 0
+    @Published var emojiIndex = 0
     
     public private(set) var icons: [Icon] = []
     public var currentIconName: String? {

@@ -25,7 +25,9 @@ class RestaurantModel: NSObject, CLLocationManagerDelegate, ObservableObject {
     @Published var showMenuItemCustomization: Bool = false
     @Published var showRestaurantPopUpCard = false
     
+    @Published var currentMenuItemID = 0
     @Published var currentMenuItemName: String = "Menu Item"
+    @Published var currentMenuItemDesc: String = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim..."
     @Published var currentMenuItemPrice: Double = 0
     @Published var currentMenuItemImage: String = "BBQ"
     

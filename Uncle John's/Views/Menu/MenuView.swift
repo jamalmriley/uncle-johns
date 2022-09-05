@@ -14,7 +14,7 @@ struct MenuView: View {
     @State private var selectedSubMenu = 0
     @State private var size = 0
     @State private var animate = true
-    @State var heights = [CGFloat(200)]
+    @State var heights = [CGFloat(100), CGFloat(150), CGFloat(200), CGFloat(300)]
     private var emojis = ["🍩", "🍖"]
     private var menuCategories = [["Food","Beverages"], ["Lunch & Dinner", "Catering"]]
     
@@ -78,7 +78,6 @@ struct MenuView: View {
                         VStack(alignment: .leading) {
                             
                             // MARK: Menu Item Name and "X" Button
-                            
                             HStack {
                                 Text("\(restaurantModel.currentMenuItemName)").font(.custom("AvenirNext-Bold", size: 24))
                                 Spacer()
@@ -93,13 +92,27 @@ struct MenuView: View {
                             }
                             .padding(.top)
                             
-                            // MARK: Size Selection
-                            HStack {
-                                Text("Select Size:")
-                                    .font(.custom("AvenirNext-Medium", size: 20))
-                                CustomSegmentedControl(selection: $size, options: ["S", "M", "L", "XL"], width: 200, fontSize: 16)
-                                Spacer()
+                            if restaurantModel.currentMenuItemDesc != "" {
+                                Text(restaurantModel.currentMenuItemDesc)
+                                    .font(.custom("AvenirNext-Medium", size: 16))
+                                    .lineLimit(2)
+                                    .padding(.bottom)
                             }
+                            
+                            // MARK: Size Selection
+                            let sizes = selectedSubMenu == 0 ?
+                            restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu0[restaurantModel.currentMenuItemID].sizes :
+                            restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu1[restaurantModel.currentMenuItemID].sizes
+                            
+                            if sizes.count > 0 {
+                                HStack {
+                                    Text("Select Size:")
+                                        .font(.custom("AvenirNext-Medium", size: 20))
+                                    SFSegmentedControl(selection: $size, options: sizes, width: 200)
+                                    Spacer()
+                                }
+                            }
+                            
                             
                             Text("Price: ").font(.custom("AvenirNext-Medium", size: 20)) +
                             Text("$\(String(format: "%.2f", restaurantModel.currentMenuItemPrice))").font(.custom("AvenirNext-Bold", size: 20))
@@ -107,7 +120,7 @@ struct MenuView: View {
                             // MARK: "Add to Order" Button
                             Button {
                                 withAnimation(.spring()) {
-                                    cartModel.addToCart(menuItem: MenuItem(name: restaurantModel.currentMenuItemName, image: restaurantModel.currentMenuItemImage, price: restaurantModel.currentMenuItemPrice))
+                                    cartModel.addToCart(menuItem: MenuItem(itemID: restaurantModel.currentMenuItemID, name: restaurantModel.currentMenuItemName, image: restaurantModel.currentMenuItemImage, price: restaurantModel.currentMenuItemPrice, desc: restaurantModel.currentMenuItemDesc))
                                     restaurantModel.showMenuItemCustomization = false
                                 }
                             } label: {
@@ -148,7 +161,6 @@ struct MenuView_Previews: PreviewProvider {
 
 struct Restaurant0Menu0Section: View {
     @EnvironmentObject var restaurantModel: RestaurantModel
-    var columns = [GridItem(.adaptive(minimum: 150), spacing: 25)]
     var itemCategory: String
     
     var body: some View {
@@ -158,22 +170,19 @@ struct Restaurant0Menu0Section: View {
                 .textCase(.uppercase)
                 .foregroundColor(Color("ForegroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
             
-            LazyVGrid (columns: columns, spacing: 15) {
-                ForEach(0..<restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu0.filter{$0.itemCategory == itemCategory}.count, id: \.self) { index in
-                    let quantityHeader: String = restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu0[index].quantity > 0 ? "(\(restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu0[index].quantity)) " : ""
-                    let menuItemName: String = quantityHeader + restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu0[index].name
-                    let menuItemPrice: Double = Double(restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu0[index].singleSizePrice)
-                    
-                    MenuItemCard(menuItem: MenuItem(name: menuItemName, image: "BBQ", price: menuItemPrice))
-                }
+            ForEach(restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu0.filter{$0.itemCategory == itemCategory}, id: \.itemID) { item in
+                let quantityHeader: String = item.quantity > 0 ? "(\(item.quantity)) " : ""
+                let menuItemName: String = quantityHeader + item.name
+                let menuItemPrice: Double = Double(item.singleSizePrice)
+                
+                MenuItemRow(menuItem: MenuItem(itemID: item.itemID, name: menuItemName, image: "BBQ", price: menuItemPrice, desc: item.description))
+                    .padding(5)
             }
-            .padding()
         }
     }
 }
 struct Restaurant0Menu1Section: View {
     @EnvironmentObject var restaurantModel: RestaurantModel
-    var columns = [GridItem(.adaptive(minimum: 150), spacing: 25)]
     var itemCategory: String
     
     var body: some View {
@@ -183,21 +192,19 @@ struct Restaurant0Menu1Section: View {
                 .textCase(.uppercase)
                 .foregroundColor(Color("ForegroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
             
-            LazyVGrid (columns: columns, spacing: 15) {
-                ForEach(0..<restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu1.filter{$0.itemCategory == itemCategory}.count, id: \.self) { index in
-                    let menuItemName: String = restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu1[index].name
-                    let menuItemPrice: Double = restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu1[index].singleSizePrice > 0 ? Double(restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu1[index].singleSizePrice) : Double(restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu1[index].price1)
-                    
-                    MenuItemCard(menuItem: MenuItem(name: menuItemName, image: "BBQ", price: menuItemPrice))
-                }
+            ForEach(restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu1.filter{$0.itemCategory == itemCategory}, id: \.itemID) { item in
+                let quantityHeader: String = item.quantity > 0 ? "(\(item.quantity)) " : ""
+                let menuItemName: String = quantityHeader + item.name
+                let menuItemPrice: Double = Double(item.singleSizePrice > 0 ? item.singleSizePrice : item.price1)
+                
+                MenuItemRow(menuItem: MenuItem(itemID: item.itemID, name: menuItemName, image: "BBQ", price: menuItemPrice, desc: item.description))
+                    .padding(5)
             }
-            .padding()
         }
     }
 }
 struct Restaurant1Menu0Section: View {
     @EnvironmentObject var restaurantModel: RestaurantModel
-    var columns = [GridItem(.adaptive(minimum: 150), spacing: 25)]
     var itemCategory: String
     
     var body: some View {
@@ -207,21 +214,19 @@ struct Restaurant1Menu0Section: View {
                 .textCase(.uppercase)
                 .foregroundColor(Color("ForegroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
             
-            LazyVGrid (columns: columns, spacing: 15) {
-                ForEach(0..<restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu0.filter{$0.itemCategory == itemCategory}.count, id: \.self) { index in
-                    let menuItemName: String = restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu0[index].name
-                    let menuItemPrice: Double = restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu0[index].singleSizePrice > 0 ? Double(restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu0[index].singleSizePrice) : Double(restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu0[index].price1)
-                    
-                    MenuItemCard(menuItem: MenuItem(name: menuItemName, image: "BBQ", price: menuItemPrice))
-                }
+            ForEach(restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu0.filter{$0.itemCategory == itemCategory}, id: \.itemID) { item in
+                let quantityHeader: String = item.quantity > 0 ? "(\(item.quantity)) " : ""
+                let menuItemName: String = quantityHeader + item.name
+                let menuItemPrice: Double = Double(item.singleSizePrice > 0 ? item.singleSizePrice : item.price1)
+                
+                MenuItemRow(menuItem: MenuItem(itemID: item.itemID, name: menuItemName, image: "BBQ", price: menuItemPrice, desc: item.description))
+                    .padding(5)
             }
-            .padding()
         }
     }
 }
 struct Restaurant1Menu1Section: View {
     @EnvironmentObject var restaurantModel: RestaurantModel
-    var columns = [GridItem(.adaptive(minimum: 150), spacing: 25)]
     var itemCategory: String
     
     var body: some View {
@@ -231,15 +236,14 @@ struct Restaurant1Menu1Section: View {
                 .textCase(.uppercase)
                 .foregroundColor(Color("ForegroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
             
-            LazyVGrid (columns: columns, spacing: 15) {
-                ForEach(0..<restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu1.filter{$0.itemCategory == itemCategory}.count, id: \.self) { index in
-                    let menuItemName: String = restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu1[index].name
-                    let menuItemPrice: Double = restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu1[index].singleSizePrice > 0 ? Double(restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu1[index].singleSizePrice) : Double(restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu1[index].price1)
-                    
-                    MenuItemCard(menuItem: MenuItem(name: menuItemName, image: "BBQ", price: menuItemPrice))
-                }
+            ForEach(restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu1.filter{$0.itemCategory == itemCategory}, id: \.itemID) { item in
+                let quantityHeader: String = item.quantity > 0 ? "(\(item.quantity)) " : ""
+                let menuItemName: String = quantityHeader + item.name
+                let menuItemPrice: Double = Double(item.singleSizePrice > 0 ? item.singleSizePrice : item.price1)
+                
+                MenuItemRow(menuItem: MenuItem(itemID: item.itemID, name: menuItemName, image: "BBQ", price: menuItemPrice, desc: item.description))
+                    .padding(5)
             }
-            .padding()
         }
     }
 }

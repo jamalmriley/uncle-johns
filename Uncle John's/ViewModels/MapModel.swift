@@ -5,6 +5,7 @@
 //  Created by Jamal Riley on 7/4/22.
 //
 
+import Foundation
 import MapKit
 
 enum MapDetails {
