@@ -6,10 +6,23 @@
 //
 
 import SwiftUI
+import Firebase
+import LocalAuthentication
 
 struct ProfileView: View {
+    @EnvironmentObject var authModel: AuthModel
     @EnvironmentObject var restaurantModel: RestaurantModel
     @StateObject var settings: AppSettingsModel = AppSettingsModel()
+    
+    // Biometric Properties
+    @AppStorage("use_biometrics") var useBiometrics: Bool = false
+    
+    // Keychain Properties
+    @Keychain(key: "use_biometrics_email", account: "BiometricsLogin") var storedEmail
+    @Keychain(key: "use_biometrics_password", account: "BiometricsLogin") var storedPassword
+    
+    // Login Status
+    @AppStorage("log_status") var logStatus: Bool = false
     
     var body: some View {
         GeometryReader { reader in
@@ -105,12 +118,64 @@ struct ProfileView: View {
                             ProfileMenuOption(menuOption: "The Legal Stuff", view: AnyView(ComingSoonView()))
                             
                             HStack {
+                                if useBiometrics {
+                                    // Clear FaceID
+                                    Button {
+                                        useBiometrics = false
+                                        storedEmail = nil
+                                        storedPassword = nil
+                                    } label: {
+                                        ZStack {
+                                            Capsule()
+                                                .stroke(Color("ForegroundColor"), lineWidth: 2)
+                                                .frame(width: 175, height: 50)
+                                            
+                                            HStack {
+                                                Image(systemName: LAContext().biometryType == .faceID ? "faceid" : "touchid")
+                                                    .resizable()
+                                                    .renderingMode(.template)
+                                                    .aspectRatio(contentMode: .fit)
+                                                    .frame(width: 25, height: 25)
+                                                
+                                                Text("Disable " + String(LAContext().biometryType == .faceID ? "Face ID" : "Touch ID"))
+                                                    .font(.custom("AvenirNext-Medium", size: 16))
+                                            }
+                                            .foregroundColor(Color("ForegroundColor"))
+                                        }
+                                    }
+                                }
+                                if logStatus {
+                                    Spacer()
+                                    Button {
+                                        try? Auth.auth().signOut()
+                                        authModel.checkLogin()
+                                    } label: {
+                                        ZStack {
+                                            Capsule()
+                                                .frame(width: 150, height: 50)
+                                                .foregroundColor(.red)
+                                            
+                                            HStack {
+                                                Image(systemName: "rectangle.portrait.and.arrow.right")
+                                                Text("Log Out")
+                                                    .font(.custom("AvenirNext-Medium", size: 18))
+                                            }
+                                        }
+                                    }
+                                    .buttonStyle(.plain)
+                                    Spacer()
+                                }
+                            }
+                            .padding(.vertical)
+                            
+                            HStack {
                                 Spacer()
                                 Text("v1.0")
                                     .font(.custom("AvenirNext-Medium", size: 13))
                                     .foregroundColor(.gray)
                                 Spacer()
                             }
+                            .padding(.bottom)
                         }
                         .padding(.horizontal)
                     }
@@ -123,6 +188,7 @@ struct ProfileView: View {
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
         ProfileView()
+            .environmentObject(AuthModel())
             .environmentObject(RestaurantModel())
             .colorScheme(.dark)
     }

@@ -6,13 +6,20 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct Uncle_Johns: App {
+    
+    init() {
+        FirebaseApp.configure()
+    }
+    
     var body: some Scene {
         WindowGroup {
             SplashScreenView()
                 .environmentObject(AppSettingsModel())
+                .environmentObject(AuthModel())
                 .environmentObject(CartModel())
                 .environmentObject(RestaurantModel())
         }

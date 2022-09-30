@@ -7,7 +7,7 @@
 
 import Foundation
 
-// first name, last name, orders, useBiometrics, restaurantFavorites[false, false, true, ..., false], the usual
+// TODO: first name, last name, orders, useBiometrics, restaurantFavorites[false, false, true, ..., false], the usual
 class User {
     var firstName: String = ""
     var lastName: String = ""

@@ -5,7 +5,6 @@
 //  Created by Jamal Riley on 7/4/22.
 //
 
-/*
 import SwiftUI
 import Firebase
 import LocalAuthentication
@@ -109,4 +108,3 @@ class AuthModel: ObservableObject {
         }
     }
 }
-*/

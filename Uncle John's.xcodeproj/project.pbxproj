@@ -50,6 +50,13 @@
 		89B3FEC22873339300D6DFD0 /* RestaurantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B3FEC12873339300D6DFD0 /* RestaurantModel.swift */; };
 		89B3FEC42873340000D6DFD0 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B3FEC32873340000D6DFD0 /* Restaurant.swift */; };
 		89B3FECC28733EBA00D6DFD0 /* restaurants.json in Resources */ = {isa = PBXBuildFile; fileRef = 89B3FECB28733EBA00D6DFD0 /* restaurants.json */; };
+		89C81BC328E69947009DF591 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89C81BC228E69947009DF591 /* GoogleService-Info.plist */; };
+		89C81BC628E69A17009DF591 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 89C81BC528E69A17009DF591 /* FirebaseAuth */; };
+		89C81BC828E69A17009DF591 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 89C81BC728E69A17009DF591 /* FirebaseFirestore */; };
+		89C81BCA28E69DCA009DF591 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C81BC928E69DCA009DF591 /* UserService.swift */; };
+		89C81BCC28E69E1F009DF591 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C81BCB28E69E1F009DF591 /* KeychainHelper.swift */; };
+		89C81BCE28E69E4B009DF591 /* KeychainPropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C81BCD28E69E4B009DF591 /* KeychainPropertyWrapper.swift */; };
+		89C81BD028E69ED3009DF591 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C81BCF28E69ED3009DF591 /* LoginView.swift */; };
 		89F9F552287F14C800DFCAD2 /* Uncle John's App Icon (Light)@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89F9F546287F14C800DFCAD2 /* Uncle John's App Icon (Light)@3x.png */; };
 		89F9F553287F14C800DFCAD2 /* Uncle John's App Icon (Dark)@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89F9F547287F14C800DFCAD2 /* Uncle John's App Icon (Dark)@2x.png */; };
 		89F9F554287F14C800DFCAD2 /* Uncle John's App Icon (Dark)@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89F9F548287F14C800DFCAD2 /* Uncle John's App Icon (Dark)@3x.png */; };
@@ -111,6 +118,11 @@
 		89B3FEC12873339300D6DFD0 /* RestaurantModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantModel.swift; sourceTree = "<group>"; };
 		89B3FEC32873340000D6DFD0 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		89B3FECB28733EBA00D6DFD0 /* restaurants.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = restaurants.json; sourceTree = "<group>"; };
+		89C81BC228E69947009DF591 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		89C81BC928E69DCA009DF591 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		89C81BCB28E69E1F009DF591 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		89C81BCD28E69E4B009DF591 /* KeychainPropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainPropertyWrapper.swift; sourceTree = "<group>"; };
+		89C81BCF28E69ED3009DF591 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		89F9F545287F136400DFCAD2 /* Uncle-John-s-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Uncle-John-s-Info.plist"; sourceTree = SOURCE_ROOT; };
 		89F9F546287F14C800DFCAD2 /* Uncle John's App Icon (Light)@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Uncle John's App Icon (Light)@3x.png"; sourceTree = "<group>"; };
 		89F9F547287F14C800DFCAD2 /* Uncle John's App Icon (Dark)@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Uncle John's App Icon (Dark)@2x.png"; sourceTree = "<group>"; };
@@ -135,6 +147,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				897AC58A28B3C8DD0099D52C /* Drawer in Frameworks */,
+				89C81BC628E69A17009DF591 /* FirebaseAuth in Frameworks */,
+				89C81BC828E69A17009DF591 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +260,7 @@
 				899CC5EF28B6024100E0F6D3 /* SplashScreenView.swift */,
 				8909C79128A3FDD6004FDE79 /* LaunchView.swift */,
 				8911BF702879FAA200486EDA /* BaseView.swift */,
+				89C81BCF28E69ED3009DF591 /* LoginView.swift */,
 			);
 			path = Launch;
 			sourceTree = "<group>";
@@ -269,6 +284,7 @@
 		89B122FB28725C710011CE40 /* Uncle John's */ = {
 			isa = PBXGroup;
 			children = (
+				89C81BC228E69947009DF591 /* GoogleService-Info.plist */,
 				89F9F545287F136400DFCAD2 /* Uncle-John-s-Info.plist */,
 				89B122FC28725C710011CE40 /* Uncle_Johns.swift */,
 				89B1230A2872A1860011CE40 /* Models */,
@@ -346,6 +362,9 @@
 				89F9F551287F14C800DFCAD2 /* Uncle John's App Icon (Light)@2x.png */,
 				89F9F546287F14C800DFCAD2 /* Uncle John's App Icon (Light)@3x.png */,
 				899CC5EA28B5D56300E0F6D3 /* Extensions.swift */,
+				89C81BC928E69DCA009DF591 /* UserService.swift */,
+				89C81BCB28E69E1F009DF591 /* KeychainHelper.swift */,
+				89C81BCD28E69E4B009DF591 /* KeychainPropertyWrapper.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -368,6 +387,8 @@
 			name = "Uncle John's";
 			packageProductDependencies = (
 				897AC58928B3C8DD0099D52C /* Drawer */,
+				89C81BC528E69A17009DF591 /* FirebaseAuth */,
+				89C81BC728E69A17009DF591 /* FirebaseFirestore */,
 			);
 			productName = "Uncle John's";
 			productReference = 89B122F928725C710011CE40 /* Uncle John's.app */;
@@ -399,6 +420,7 @@
 			mainGroup = 89B122F028725C710011CE40;
 			packageReferences = (
 				897AC58828B3C8DD0099D52C /* XCRemoteSwiftPackageReference "swiftui-drawer" */,
+				89C81BC428E69A17009DF591 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 89B122FA28725C710011CE40 /* Products */;
 			projectDirPath = "";
@@ -423,6 +445,7 @@
 				89F9F558287F14C800DFCAD2 /* Dat Donut App Icon (Dark).png in Resources */,
 				89F9F552287F14C800DFCAD2 /* Uncle John's App Icon (Light)@3x.png in Resources */,
 				89F9F55D287F14C800DFCAD2 /* Uncle John's App Icon (Light)@2x.png in Resources */,
+				89C81BC328E69947009DF591 /* GoogleService-Info.plist in Resources */,
 				89B3FECC28733EBA00D6DFD0 /* restaurants.json in Resources */,
 				89F9F55A287F14C800DFCAD2 /* Dat Donut App Icon (Light).png in Resources */,
 				89F9F559287F14C800DFCAD2 /* Uncle John's App Icon (Dark).png in Resources */,
@@ -443,6 +466,7 @@
 				8909C79228A3FDD6004FDE79 /* LaunchView.swift in Sources */,
 				89F9F563287F271000DFCAD2 /* Icon.swift in Sources */,
 				8901CF0228AE7FC400021DCA /* FireGrid.swift in Sources */,
+				89C81BD028E69ED3009DF591 /* LoginView.swift in Sources */,
 				8911BF77287A4FF600486EDA /* ProfileView.swift in Sources */,
 				89B3FEC0287332D600D6DFD0 /* MapModel.swift in Sources */,
 				89B3FEC22873339300D6DFD0 /* RestaurantModel.swift in Sources */,
@@ -457,14 +481,17 @@
 				898FCCDD28A08FCC003C283F /* CartButton.swift in Sources */,
 				8909C79028A3FD59004FDE79 /* LocationDeniedView.swift in Sources */,
 				899CC5F028B6024100E0F6D3 /* SplashScreenView.swift in Sources */,
+				89C81BCA28E69DCA009DF591 /* UserService.swift in Sources */,
 				890ED43628C5A030003C9798 /* SFSegmentedControl.swift in Sources */,
 				898FCCD828A08C64003C283F /* MenuView.swift in Sources */,
+				89C81BCE28E69E4B009DF591 /* KeychainPropertyWrapper.swift in Sources */,
 				8909C78E28A3FCA4004FDE79 /* OnboardingView.swift in Sources */,
 				89B3FEBE287332BC00D6DFD0 /* WeatherModel.swift in Sources */,
 				899CC5EB28B5D56300E0F6D3 /* Extensions.swift in Sources */,
 				89F9F561287F17F900DFCAD2 /* SettingsView.swift in Sources */,
 				890ED43428C560CD003C9798 /* MenuItemRow.swift in Sources */,
 				8904ED9F288480090045565B /* PaymentCards.swift in Sources */,
+				89C81BCC28E69E1F009DF591 /* KeychainHelper.swift in Sources */,
 				89F9F55F287F152200DFCAD2 /* AppSettingsModel.swift in Sources */,
 				89B122FD28725C710011CE40 /* Uncle_Johns.swift in Sources */,
 				8911BF7A287ABBC700486EDA /* Header.swift in Sources */,
@@ -613,6 +640,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Uncle-John-s-Info.plist";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Use your face to quickly log into the app!";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Grant the app permission to help Uncle John's know when to start your order and track your ETA.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -644,6 +672,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Uncle-John-s-Info.plist";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Use your face to quickly log into the app!";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Grant the app permission to help Uncle John's know when to start your order and track your ETA.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -695,6 +724,14 @@
 				kind = branch;
 			};
 		};
+		89C81BC428E69A17009DF591 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -702,6 +739,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 897AC58828B3C8DD0099D52C /* XCRemoteSwiftPackageReference "swiftui-drawer" */;
 			productName = Drawer;
+		};
+		89C81BC528E69A17009DF591 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 89C81BC428E69A17009DF591 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		89C81BC728E69A17009DF591 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 89C81BC428E69A17009DF591 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

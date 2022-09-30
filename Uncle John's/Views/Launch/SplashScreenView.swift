@@ -17,34 +17,7 @@ struct SplashScreenView: View {
             LaunchView()
         } else {
             ZStack {
-                Color("LaunchBackgroundColor")
-                    .ignoresSafeArea()
-                
-                VStack {
-                    ForEach(0..<20, id: \.self) { _ in
-                        HStack {
-                            ForEach(0..<15, id: \.self) { _ in
-                                Image("Uncle John's Fire Icon")
-                                    .resizable()
-                                    .renderingMode(.template)
-                                    .aspectRatio(contentMode: .fit)
-                                    .foregroundColor(.black)
-                                    .frame(width: 25, height: 15)
-                            }
-                        }
-                        
-                        HStack {
-                            ForEach(0..<14, id: \.self) { _ in
-                                Image("Uncle John's Fire Icon")
-                                    .resizable()
-                                    .renderingMode(.template)
-                                    .aspectRatio(contentMode: .fit)
-                                    .foregroundColor(.black)
-                                    .frame(width: 25, height: 15)
-                            }
-                        }
-                    }
-                }
+                PatternBackground()
                 
                 Image("Uncle John's Barbeque Icon")
                     .resizable()
@@ -73,5 +46,40 @@ struct SplashScreenView: View {
 struct SplashScreenView_Previews: PreviewProvider {
     static var previews: some View {
         SplashScreenView()
+    }
+}
+
+struct PatternBackground: View {
+    var body: some View {
+        ZStack {
+            Color("LaunchBackgroundColor")
+                .ignoresSafeArea()
+            
+            VStack {
+                ForEach(0..<20, id: \.self) { _ in
+                    HStack {
+                        ForEach(0..<15, id: \.self) { _ in
+                            Image("Uncle John's Fire Icon")
+                                .resizable()
+                                .renderingMode(.template)
+                                .aspectRatio(contentMode: .fit)
+                                .foregroundColor(.black)
+                                .frame(width: 25, height: 15)
+                        }
+                    }
+                    
+                    HStack {
+                        ForEach(0..<14, id: \.self) { _ in
+                            Image("Uncle John's Fire Icon")
+                                .resizable()
+                                .renderingMode(.template)
+                                .aspectRatio(contentMode: .fit)
+                                .foregroundColor(.black)
+                                .frame(width: 25, height: 15)
+                        }
+                    }
+                }
+            }
+        }
     }
 }
