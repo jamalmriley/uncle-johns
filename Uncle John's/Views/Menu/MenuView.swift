@@ -11,6 +11,7 @@ import SwiftUI
 struct MenuView: View {
     @EnvironmentObject var restaurantModel: RestaurantModel
     @EnvironmentObject var cartModel: CartModel
+    @State private var isGridShowing = false
     @State private var selectedSubMenu = 0
     @State private var size = 0
     @State private var animate = true
@@ -25,10 +26,40 @@ struct MenuView: View {
                 
                 // MARK: - Submenu Selection
                 Group {
-                    Text("Our Menu")
-                        .font(.custom("AvenirNext-Bold", size: 32))
-                        .textCase(.uppercase)
-                        .foregroundColor(Color("ForegroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
+                    HStack {
+                        Text("Our Menu")
+                            .font(.custom("AvenirNext-Bold", size: 32))
+                            .textCase(.uppercase)
+                            .foregroundColor(Color("ForegroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
+                        
+                        Spacer()
+                        
+                        Button {
+                            //
+                        } label: {
+                            Image(systemName: "line.3.horizontal.decrease.circle.fill")
+                                .resizable()
+                                .renderingMode(.template)
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 23, height: 20)
+                        }
+                        .buttonStyle(.plain)
+                        
+                        Button {
+                            withAnimation {
+                                isGridShowing.toggle()
+                            }
+                        } label: {
+                            Image(systemName: isGridShowing ? "rectangle.grid.1x2.fill" : "square.grid.2x2.fill")
+                                .resizable()
+                                .renderingMode(.template)
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 23, height: 20)
+                                .padding(.leading, 10)
+                        }
+                        .buttonStyle(.plain)
+                    }
+                    .padding(.horizontal, 25)
                     
                     CustomSegmentedControl(selection: $selectedSubMenu, options: menuCategories[restaurantModel.selectedRestaurant], width: 350, fontSize: 16)
                 }
@@ -37,29 +68,24 @@ struct MenuView: View {
                 VStack {
                     ScrollView (showsIndicators: false) {
                         if restaurantModel.selectedRestaurant == 0 && selectedSubMenu == 0 {
-                            Restaurant0Menu0Section(itemCategory: "Our Donuts")
-                            Restaurant0Menu0Section(itemCategory: "Our Sandwiches")
+                            ForEach(["Our Donuts", "Our Sandwiches"], id: \.self) { itemCategory in
+                                Restaurant0Menu0Section(itemCategory: itemCategory, isGridShowing: isGridShowing)
+                            }
                         }
                         else if restaurantModel.selectedRestaurant == 0 && selectedSubMenu == 1 {
-                            Restaurant0Menu1Section(itemCategory: "Drinks")
-                            Restaurant0Menu1Section(itemCategory: "Juices")
-                            Restaurant0Menu1Section(itemCategory: "Fruit Smoothies")
+                            ForEach(["Drinks", "Juices", "Fruit Smoothies"], id: \.self) { itemCategory in
+                                Restaurant0Menu1Section(itemCategory: itemCategory, isGridShowing: isGridShowing)
+                            }
                         }
                         else if restaurantModel.selectedRestaurant == 1 && selectedSubMenu == 0 {
-                            Restaurant1Menu0Section(itemCategory: "Lunch Specials")
-                            Restaurant1Menu0Section(itemCategory: "Ribs")
-                            Restaurant1Menu0Section(itemCategory: "Hot Links")
-                            Restaurant1Menu0Section(itemCategory: "Chicken")
-                            Restaurant1Menu0Section(itemCategory: "Fish")
-                            Restaurant1Menu0Section(itemCategory: "Combos")
-                            Restaurant1Menu0Section(itemCategory: "Sides & Extras")
+                            ForEach(["Lunch Specials", "Ribs", "Hot Links", "Chicken", "Fish", "Combos", "Sides & Extras"], id: \.self) { itemCategory in
+                                Restaurant1Menu0Section(itemCategory: itemCategory, isGridShowing: isGridShowing)
+                            }
                         }
                         else if restaurantModel.selectedRestaurant == 1 && selectedSubMenu == 1 {
-                            Restaurant1Menu1Section(itemCategory: "Rib & Turkey Tips")
-                            Restaurant1Menu1Section(itemCategory: "Hot & Turkey Links")
-                            Restaurant1Menu1Section(itemCategory: "Chicken")
-                            Restaurant1Menu1Section(itemCategory: "Combos")
-                            Restaurant1Menu1Section(itemCategory: "Sides & Extras")
+                            ForEach(["Rib & Turkey Tips", "Hot & Turkey Links", "Chicken", "Combos", "Sides & Extras"], id: \.self) { itemCategory in
+                                Restaurant1Menu1Section(itemCategory: itemCategory, isGridShowing: isGridShowing)
+                            }
                         }
                     }
                 }
@@ -162,6 +188,7 @@ struct MenuView_Previews: PreviewProvider {
 struct Restaurant0Menu0Section: View {
     @EnvironmentObject var restaurantModel: RestaurantModel
     var itemCategory: String
+    var isGridShowing: Bool
     
     var body: some View {
         VStack {
@@ -170,13 +197,29 @@ struct Restaurant0Menu0Section: View {
                 .textCase(.uppercase)
                 .foregroundColor(Color("ForegroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
             
-            ForEach(restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu0.filter{$0.itemCategory == itemCategory}, id: \.itemID) { item in
-                let quantityHeader: String = item.quantity > 0 ? "(\(item.quantity)) " : ""
-                let menuItemName: String = quantityHeader + item.name
-                let menuItemPrice: Double = Double(item.singleSizePrice)
+            if isGridShowing {
+                let columns = [GridItem(.adaptive(minimum: 150))]
+                let items = restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu0.filter{$0.itemCategory == itemCategory}
                 
-                MenuItemRow(menuItem: MenuItem(itemID: item.itemID, name: menuItemName, image: "BBQ", price: menuItemPrice, desc: item.description))
-                    .padding(5)
+                LazyVGrid(columns: columns, spacing: 20) {
+                    ForEach(items, id: \.itemID) { item in
+                        let quantityHeader: String = item.quantity > 0 ? "(\(item.quantity)) " : ""
+                        let menuItemName: String = quantityHeader + item.name
+                        let menuItemPrice: Double = Double(item.singleSizePrice)
+                        MenuItemCard(menuItem: MenuItem(itemID: item.itemID, name: menuItemName, image: "BBQ", price: menuItemPrice, desc: item.description))
+                    }
+                }
+                .padding(.horizontal)
+                
+            } else {
+                ForEach(restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu0.filter{$0.itemCategory == itemCategory}, id: \.itemID) { item in
+                    let quantityHeader: String = item.quantity > 0 ? "(\(item.quantity)) " : ""
+                    let menuItemName: String = quantityHeader + item.name
+                    let menuItemPrice: Double = Double(item.singleSizePrice)
+                    
+                    MenuItemRow(menuItem: MenuItem(itemID: item.itemID, name: menuItemName, image: "BBQ", price: menuItemPrice, desc: item.description))
+                        .padding(5)
+                }
             }
         }
     }
@@ -184,6 +227,7 @@ struct Restaurant0Menu0Section: View {
 struct Restaurant0Menu1Section: View {
     @EnvironmentObject var restaurantModel: RestaurantModel
     var itemCategory: String
+    var isGridShowing: Bool
     
     var body: some View {
         VStack {
@@ -192,13 +236,30 @@ struct Restaurant0Menu1Section: View {
                 .textCase(.uppercase)
                 .foregroundColor(Color("ForegroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
             
-            ForEach(restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu1.filter{$0.itemCategory == itemCategory}, id: \.itemID) { item in
-                let quantityHeader: String = item.quantity > 0 ? "(\(item.quantity)) " : ""
-                let menuItemName: String = quantityHeader + item.name
-                let menuItemPrice: Double = Double(item.singleSizePrice > 0 ? item.singleSizePrice : item.price1)
+            if isGridShowing {
+                let columns = [GridItem(.adaptive(minimum: 150))]
+                let items = restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu1.filter{$0.itemCategory == itemCategory}
                 
-                MenuItemRow(menuItem: MenuItem(itemID: item.itemID, name: menuItemName, image: "BBQ", price: menuItemPrice, desc: item.description))
-                    .padding(5)
+                LazyVGrid(columns: columns, spacing: 20) {
+                    ForEach(items, id: \.itemID) { item in
+                        let quantityHeader: String = item.quantity > 0 ? "(\(item.quantity)) " : ""
+                        let menuItemName: String = quantityHeader + item.name
+                        let menuItemPrice: Double = Double(item.singleSizePrice > 0 ? item.singleSizePrice : item.price1)
+                        
+                        MenuItemCard(menuItem: MenuItem(itemID: item.itemID, name: menuItemName, image: "BBQ", price: menuItemPrice, desc: item.description))
+                    }
+                }
+                .padding(.horizontal)
+                
+            } else {
+                ForEach(restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu1.filter{$0.itemCategory == itemCategory}, id: \.itemID) { item in
+                    let quantityHeader: String = item.quantity > 0 ? "(\(item.quantity)) " : ""
+                    let menuItemName: String = quantityHeader + item.name
+                    let menuItemPrice: Double = Double(item.singleSizePrice > 0 ? item.singleSizePrice : item.price1)
+                    
+                    MenuItemRow(menuItem: MenuItem(itemID: item.itemID, name: menuItemName, image: "BBQ", price: menuItemPrice, desc: item.description))
+                        .padding(5)
+                }
             }
         }
     }
@@ -206,6 +267,7 @@ struct Restaurant0Menu1Section: View {
 struct Restaurant1Menu0Section: View {
     @EnvironmentObject var restaurantModel: RestaurantModel
     var itemCategory: String
+    var isGridShowing: Bool
     
     var body: some View {
         VStack {
@@ -214,13 +276,30 @@ struct Restaurant1Menu0Section: View {
                 .textCase(.uppercase)
                 .foregroundColor(Color("ForegroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
             
-            ForEach(restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu0.filter{$0.itemCategory == itemCategory}, id: \.itemID) { item in
-                let quantityHeader: String = item.quantity > 0 ? "(\(item.quantity)) " : ""
-                let menuItemName: String = quantityHeader + item.name
-                let menuItemPrice: Double = Double(item.singleSizePrice > 0 ? item.singleSizePrice : item.price1)
+            if isGridShowing {
+                let columns = [GridItem(.adaptive(minimum: 150))]
+                let items = restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu0.filter{$0.itemCategory == itemCategory}
                 
-                MenuItemRow(menuItem: MenuItem(itemID: item.itemID, name: menuItemName, image: "BBQ", price: menuItemPrice, desc: item.description))
-                    .padding(5)
+                LazyVGrid(columns: columns, spacing: 20) {
+                    ForEach(items, id: \.itemID) { item in
+                        let quantityHeader: String = item.quantity > 0 ? "(\(item.quantity)) " : ""
+                        let menuItemName: String = quantityHeader + item.name
+                        let menuItemPrice: Double = Double(item.singleSizePrice > 0 ? item.singleSizePrice : item.price1)
+                        
+                        MenuItemCard(menuItem: MenuItem(itemID: item.itemID, name: menuItemName, image: "BBQ", price: menuItemPrice, desc: item.description))
+                    }
+                }
+                .padding(.horizontal)
+                
+            } else {
+                ForEach(restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu0.filter{$0.itemCategory == itemCategory}, id: \.itemID) { item in
+                    let quantityHeader: String = item.quantity > 0 ? "(\(item.quantity)) " : ""
+                    let menuItemName: String = quantityHeader + item.name
+                    let menuItemPrice: Double = Double(item.singleSizePrice > 0 ? item.singleSizePrice : item.price1)
+                    
+                    MenuItemRow(menuItem: MenuItem(itemID: item.itemID, name: menuItemName, image: "BBQ", price: menuItemPrice, desc: item.description))
+                        .padding(5)
+                }
             }
         }
     }
@@ -228,6 +307,7 @@ struct Restaurant1Menu0Section: View {
 struct Restaurant1Menu1Section: View {
     @EnvironmentObject var restaurantModel: RestaurantModel
     var itemCategory: String
+    var isGridShowing: Bool
     
     var body: some View {
         VStack {
@@ -236,13 +316,29 @@ struct Restaurant1Menu1Section: View {
                 .textCase(.uppercase)
                 .foregroundColor(Color("ForegroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
             
-            ForEach(restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu1.filter{$0.itemCategory == itemCategory}, id: \.itemID) { item in
-                let quantityHeader: String = item.quantity > 0 ? "(\(item.quantity)) " : ""
-                let menuItemName: String = quantityHeader + item.name
-                let menuItemPrice: Double = Double(item.singleSizePrice > 0 ? item.singleSizePrice : item.price1)
+            if isGridShowing {
+                let columns = [GridItem(.adaptive(minimum: 150))]
+                let items = restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu1.filter{$0.itemCategory == itemCategory}
                 
-                MenuItemRow(menuItem: MenuItem(itemID: item.itemID, name: menuItemName, image: "BBQ", price: menuItemPrice, desc: item.description))
-                    .padding(5)
+                LazyVGrid(columns: columns, spacing: 20) {
+                    ForEach(items, id: \.itemID) { item in
+                        let quantityHeader: String = item.quantity > 0 ? "(\(item.quantity)) " : ""
+                        let menuItemName: String = quantityHeader + item.name
+                        let menuItemPrice: Double = Double(item.singleSizePrice > 0 ? item.singleSizePrice : item.price1)
+                        MenuItemCard(menuItem: MenuItem(itemID: item.itemID, name: menuItemName, image: "BBQ", price: menuItemPrice, desc: item.description))
+                    }
+                }
+                .padding(.horizontal)
+                
+            } else {
+                ForEach(restaurantModel.restaurants[restaurantModel.selectedRestaurant].menu1.filter{$0.itemCategory == itemCategory}, id: \.itemID) { item in
+                    let quantityHeader: String = item.quantity > 0 ? "(\(item.quantity)) " : ""
+                    let menuItemName: String = quantityHeader + item.name
+                    let menuItemPrice: Double = Double(item.singleSizePrice > 0 ? item.singleSizePrice : item.price1)
+                    
+                    MenuItemRow(menuItem: MenuItem(itemID: item.itemID, name: menuItemName, image: "BBQ", price: menuItemPrice, desc: item.description))
+                        .padding(5)
+                }
             }
         }
     }

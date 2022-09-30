@@ -11,7 +11,7 @@ struct CustomSegmentedControl: View {
     @Binding var selection: Int
     var options: [String]
     let width: CGFloat
-    let color = Color("TertiaryColor")
+    let color = Color("TertiaryColorInverse")
     let fontSize: CGFloat
     
     var body: some View {
@@ -40,7 +40,7 @@ struct CustomSegmentedControl: View {
                     Text(options[index])
                         .font(isSelected ? .custom("AvenirNext-Bold", size: fontSize) : .custom("AvenirNext-Medium", size: fontSize))
                         .textCase(.uppercase)
-                        .foregroundColor(isSelected ? Color("ForegroundColor") : .gray)
+                        .foregroundColor(isSelected ? Color("TertiaryColor") : .gray)
                 )
             }
         }

@@ -56,6 +56,8 @@ struct MenuItemRow: View {
                                 .frame(width: 50, height: 30)
                                 .foregroundColor(Color("AccentColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
                             Image(systemName: "bag.fill.badge.plus")
+                                .renderingMode(.template)
+                                .foregroundColor(.white)
                         }
                     }
                     .buttonStyle(.plain)

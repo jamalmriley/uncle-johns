@@ -17,10 +17,8 @@ struct MenuItemCard: View {
             ZStack(alignment: .bottomLeading) {
                 Image(menuItem.image)
                     .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 160, height: 240)
+                    .frame(width: 150, height: 225)
                     .cornerRadius(20)
-                    .scaledToFit()
                 
                 // MARK: - Menu Item Name and Price
                 VStack(alignment: .leading) {
@@ -31,30 +29,34 @@ struct MenuItemCard: View {
                         .font(.custom("AvenirNext-Medium", size: 16))
                 }
                 .padding()
-                .frame(width: 160, height: 70, alignment: .leading)
+                .frame(width: 150, height: 70, alignment: .leading)
                 .background(.ultraThinMaterial)
                 .cornerRadius(20)
             }
-            .frame(width: 160, height: 240)
             .shadow(radius: 3)
             
             Button {
                 withAnimation(.spring()) {
+                    print(menuItem.itemID)
+                    restaurantModel.currentMenuItemID = menuItem.itemID
                     restaurantModel.currentMenuItemName = menuItem.name
                     restaurantModel.currentMenuItemPrice = menuItem.price
                     restaurantModel.currentMenuItemImage = menuItem.image
+                    restaurantModel.currentMenuItemDesc = menuItem.desc
                     restaurantModel.showMenuItemCustomization = true
                 }
-                // cartModel.addToCart(menuItem: menuItem) TODO: Make this line of code update future currentMenuItem in restaurant model so we can then add to card with button with this line of code
-                print("Added to cart")
             } label: {
-                Image(systemName: "plus")
-                    .padding(10)
-                    .foregroundColor(.white)
-                    .background(.black)
-                    .cornerRadius(50)
-                    .padding([.top, .trailing])
+                ZStack {
+                    Capsule()
+                        .frame(width: 40, height: 40)
+                        .foregroundColor(Color("AccentColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
+                    Image(systemName: "bag.fill.badge.plus")
+                        .renderingMode(.template)
+                        .foregroundColor(.white)
+                }
             }
+            .buttonStyle(.plain)
+            .padding([.top, .trailing], 10)
         }
         .contextMenu {
             Text(menuItem.name)
@@ -77,14 +79,22 @@ struct MenuItemCard: View {
                 Label("Add to Favorites", systemImage: "star")
             }
         }
+        .frame(width: 150, height: 225)
     }
 }
 
 struct MenuItemCard_Previews: PreviewProvider {
     static var previews: some View {
-        MenuView()
+        ZStack {
+            Color.black.ignoresSafeArea()
+            VStack {
+                MenuItemRow(menuItem: MenuItem(itemID: 1, name: "Test", image: "BBQ", price: 3.99, desc: "A delicious menu item you have to try!"))
+                    .padding()
+                MenuItemCard(menuItem: MenuItem(itemID: 1, name: "Test", image: "BBQ", price: 3.99, desc: "A delicious menu item you have to try!"))
+            }
             .environmentObject(CartModel())
             .environmentObject(RestaurantModel())
             .colorScheme(.dark)
+        }
     }
 }
