@@ -5,8 +5,43 @@
 //  Created by Jamal Riley on 8/7/22.
 //
 
+import AVKit
 import Drawer
 import SwiftUI
+
+class HapticManager {
+    static let instance = HapticManager()
+    
+    func notification(type: UINotificationFeedbackGenerator.FeedbackType) {
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(type)
+    } // .error .success .warning
+    
+    func impact(style: UIImpactFeedbackGenerator.FeedbackStyle) {
+        let generator = UIImpactFeedbackGenerator(style: style)
+        generator.impactOccurred()
+    } // .soft .light .medium .rigid .heavy
+}
+class SoundManager {
+    static let instance = SoundManager()
+    
+    var player: AVAudioPlayer?
+    
+    enum SoundOption: String {
+        case ding_ding
+    }
+    
+    func playSound(sound: SoundOption) {
+        guard let url = Bundle.main.url(forResource: sound.rawValue, withExtension: ".mp3") else { return }
+        
+        do {
+            player = try AVAudioPlayer(contentsOf: url)
+            player?.play()
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
+}
 
 struct MenuView: View {
     @EnvironmentObject var restaurantModel: RestaurantModel
@@ -15,6 +50,7 @@ struct MenuView: View {
     @State private var selectedSubMenu = 0
     @State private var size = 0
     @State private var animate = true
+    @State private var addedToOrder = false
     @State var heights = [CGFloat(100), CGFloat(150), CGFloat(200), CGFloat(300)]
     private var emojis = ["🍩", "🍖"]
     private var menuCategories = [["Food","Beverages"], ["Lunch & Dinner", "Catering"]]
@@ -63,7 +99,7 @@ struct MenuView: View {
                     
                     CustomSegmentedControl(selection: $selectedSubMenu, options: menuCategories[restaurantModel.selectedRestaurant], width: 350, fontSize: 16)
                 }
-                
+
                 // MARK: - Menu Item Sections
                 VStack {
                     ScrollView (showsIndicators: false) {
@@ -145,7 +181,11 @@ struct MenuView: View {
                             
                             // MARK: "Add to Order" Button
                             Button {
+                                SoundManager.instance.playSound(sound: .ding_ding)
+                                HapticManager.instance.notification(type: .success)
+                                
                                 withAnimation(.spring()) {
+                                    addedToOrder.toggle()
                                     cartModel.addToCart(menuItem: MenuItem(itemID: restaurantModel.currentMenuItemID, name: restaurantModel.currentMenuItemName, image: restaurantModel.currentMenuItemImage, price: restaurantModel.currentMenuItemPrice, desc: restaurantModel.currentMenuItemDesc))
                                     restaurantModel.showMenuItemCustomization = false
                                 }
@@ -172,6 +212,42 @@ struct MenuView: View {
                 }
                 .transition(.move(edge: .bottom))
             }
+            
+            if addedToOrder {
+                AddedToOrder(show: $addedToOrder)
+                    .onAppear {
+                        Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { timer in
+                            withAnimation(.easeInOut(duration: 2)) {
+                                self.addedToOrder.toggle()
+                            }
+                        }
+                    }
+            }
+        }
+    }
+}
+
+struct AddedToOrder: View {
+    @EnvironmentObject var restaurantModel: RestaurantModel
+    @Binding var show: Bool
+    
+    var body: some View {
+        HStack {
+            Text("Added to order!")
+                .foregroundColor(Color("ForegroundColor"))
+                .font(.custom("AvenirNext-Medium", size: 22))
+            
+            Image(systemName: "checkmark.circle.fill")
+                .resizable()
+                .renderingMode(.template)
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 17, height: 17)
+                .foregroundColor(.green)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(.ultraThinMaterial)
+        .onTapGesture {
+            show.toggle()
         }
     }
 }

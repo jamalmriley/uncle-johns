@@ -27,6 +27,7 @@
 		8911BF7A287ABBC700486EDA /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8911BF79287ABBC600486EDA /* Header.swift */; };
 		892C2BAE28A9BE760059D245 /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892C2BAD28A9BE760059D245 /* CustomSegmentedControl.swift */; };
 		897AC58A28B3C8DD0099D52C /* Drawer in Frameworks */ = {isa = PBXBuildFile; productRef = 897AC58928B3C8DD0099D52C /* Drawer */; };
+		897FFBBE28E8A1BE002BA371 /* ding_ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 897FFBBD28E8A1BE002BA371 /* ding_ding.mp3 */; };
 		8989F72028BE5DAE000FC2B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8989F71F28BE5DAE000FC2B3 /* ContentView.swift */; };
 		898FCCD228A0856C003C283F /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FCCD128A0856C003C283F /* MenuItem.swift */; };
 		898FCCD628A0871A003C283F /* MenuItemCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FCCD528A0871A003C283F /* MenuItemCard.swift */; };
@@ -94,6 +95,7 @@
 		8911BF76287A4FF600486EDA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		8911BF79287ABBC600486EDA /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		892C2BAD28A9BE760059D245 /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
+		897FFBBD28E8A1BE002BA371 /* ding_ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ding_ding.mp3; sourceTree = "<group>"; };
 		8989F71F28BE5DAE000FC2B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		898FCCD128A0856C003C283F /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		898FCCD528A0871A003C283F /* MenuItemCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemCard.swift; sourceTree = "<group>"; };
@@ -191,6 +193,14 @@
 				89F9F560287F17F900DFCAD2 /* SettingsView.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		897FFBBC28E8A163002BA371 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				897FFBBD28E8A1BE002BA371 /* ding_ding.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 		898FCCD928A08EC0003C283F /* Home */ = {
@@ -348,6 +358,7 @@
 		89B1230D2872A1AD0011CE40 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				897FFBBC28E8A163002BA371 /* Sounds */,
 				89B3FECB28733EBA00D6DFD0 /* restaurants.json */,
 				89F9F54C287F14C800DFCAD2 /* Dat Donut App Icon (Dark).png */,
 				89F9F54A287F14C800DFCAD2 /* Dat Donut App Icon (Dark)@2x.png */,
@@ -440,6 +451,7 @@
 				89F9F554287F14C800DFCAD2 /* Uncle John's App Icon (Dark)@3x.png in Resources */,
 				89F9F556287F14C800DFCAD2 /* Dat Donut App Icon (Dark)@2x.png in Resources */,
 				89F9F55B287F14C800DFCAD2 /* Dat Donut App Icon (Light)@2x.png in Resources */,
+				897FFBBE28E8A1BE002BA371 /* ding_ding.mp3 in Resources */,
 				89B1230428725C740011CE40 /* Preview Assets.xcassets in Resources */,
 				89F9F55C287F14C800DFCAD2 /* Dat Donut App Icon (Light)@3x.png in Resources */,
 				89F9F558287F14C800DFCAD2 /* Dat Donut App Icon (Dark).png in Resources */,
