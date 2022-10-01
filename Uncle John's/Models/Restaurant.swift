@@ -58,4 +58,5 @@ class menuItem: Decodable {
     var itemCategory: String
     var itemCategoryDesc: String
     var sizes: [String]
+    var drawerHeight: Int
 }

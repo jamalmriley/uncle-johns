@@ -49,6 +49,7 @@ struct MenuItemRow: View {
                             restaurantModel.currentMenuItemImage = menuItem.image
                             restaurantModel.currentMenuItemDesc = menuItem.desc
                             restaurantModel.showMenuItemCustomization = true
+                            restaurantModel.heights = [CGFloat(menuItem.drawerHeight)]
                         }
                     } label: {
                         ZStack {
@@ -102,7 +103,7 @@ struct MenuItemRow_Previews: PreviewProvider {
         ZStack {
             Color.black.ignoresSafeArea()
             
-            MenuItemRow(menuItem: MenuItem(itemID: 0, name: "Test", image: "BBQ", price: 99.99, desc: ""))
+            MenuItemRow(menuItem: MenuItem(itemID: 0, name: "Test", image: "BBQ", price: 99.99, desc: "", drawerHeight: 100))
                 .environmentObject(CartModel())
                 .environmentObject(RestaurantModel())
                 .colorScheme(.dark)

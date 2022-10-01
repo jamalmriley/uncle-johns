@@ -48,10 +48,9 @@ struct MenuView: View {
     @EnvironmentObject var cartModel: CartModel
     @State private var isGridShowing = false
     @State private var selectedSubMenu = 0
-    @State private var size = 0
-    @State private var animate = true
     @State private var addedToOrder = false
-    @State var heights = [CGFloat(100), CGFloat(150), CGFloat(200), CGFloat(300)]
+    @State private var itemSize = 0
+    @State private var animate = true
     private var emojis = ["🍩", "🍖"]
     private var menuCategories = [["Food","Beverages"], ["Lunch & Dinner", "Catering"]]
     
@@ -135,7 +134,7 @@ struct MenuView: View {
             }
             
             if restaurantModel.showMenuItemCustomization {
-                Drawer(heights: $heights) {
+                Drawer(heights: $restaurantModel.heights) {
                     ZStack(alignment: .bottom) {
                         VStack(alignment: .leading) {
                             
@@ -170,7 +169,7 @@ struct MenuView: View {
                                 HStack {
                                     Text("Select Size:")
                                         .font(.custom("AvenirNext-Medium", size: 20))
-                                    SFSegmentedControl(selection: $size, options: sizes, width: 200)
+                                    SFSegmentedControl(selection: $itemSize, options: sizes, width: 200)
                                     Spacer()
                                 }
                             }
@@ -186,7 +185,7 @@ struct MenuView: View {
                                 
                                 withAnimation(.spring()) {
                                     addedToOrder.toggle()
-                                    cartModel.addToCart(menuItem: MenuItem(itemID: restaurantModel.currentMenuItemID, name: restaurantModel.currentMenuItemName, image: restaurantModel.currentMenuItemImage, price: restaurantModel.currentMenuItemPrice, desc: restaurantModel.currentMenuItemDesc))
+                                    cartModel.addToCart(menuItem: MenuItem(itemID: restaurantModel.currentMenuItemID, name: restaurantModel.currentMenuItemName, image: restaurantModel.currentMenuItemImage, price: restaurantModel.currentMenuItemPrice, desc: restaurantModel.currentMenuItemDesc, drawerHeight: 0))
                                     restaurantModel.showMenuItemCustomization = false
                                 }
                             } label: {
@@ -222,6 +221,11 @@ struct MenuView: View {
                             }
                         }
                     }
+                    .onTapGesture {
+                        withAnimation(.easeInOut(duration: 2)) {
+                            self.addedToOrder.toggle()
+                        }
+                    }
             }
         }
     }
@@ -246,9 +250,6 @@ struct AddedToOrder: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(.ultraThinMaterial)
-        .onTapGesture {
-            show.toggle()
-        }
     }
 }
 
@@ -282,7 +283,7 @@ struct Restaurant0Menu0Section: View {
                         let quantityHeader: String = item.quantity > 0 ? "(\(item.quantity)) " : ""
                         let menuItemName: String = quantityHeader + item.name
                         let menuItemPrice: Double = Double(item.singleSizePrice)
-                        MenuItemCard(menuItem: MenuItem(itemID: item.itemID, name: menuItemName, image: "BBQ", price: menuItemPrice, desc: item.description))
+                        MenuItemCard(menuItem: MenuItem(itemID: item.itemID, name: menuItemName, image: "BBQ", price: menuItemPrice, desc: item.description, drawerHeight: item.drawerHeight))
                     }
                 }
                 .padding(.horizontal)
@@ -293,7 +294,7 @@ struct Restaurant0Menu0Section: View {
                     let menuItemName: String = quantityHeader + item.name
                     let menuItemPrice: Double = Double(item.singleSizePrice)
                     
-                    MenuItemRow(menuItem: MenuItem(itemID: item.itemID, name: menuItemName, image: "BBQ", price: menuItemPrice, desc: item.description))
+                    MenuItemRow(menuItem: MenuItem(itemID: item.itemID, name: menuItemName, image: "BBQ", price: menuItemPrice, desc: item.description, drawerHeight: item.drawerHeight))
                         .padding(5)
                 }
             }
@@ -322,7 +323,7 @@ struct Restaurant0Menu1Section: View {
                         let menuItemName: String = quantityHeader + item.name
                         let menuItemPrice: Double = Double(item.singleSizePrice > 0 ? item.singleSizePrice : item.price1)
                         
-                        MenuItemCard(menuItem: MenuItem(itemID: item.itemID, name: menuItemName, image: "BBQ", price: menuItemPrice, desc: item.description))
+                        MenuItemCard(menuItem: MenuItem(itemID: item.itemID, name: menuItemName, image: "BBQ", price: menuItemPrice, desc: item.description, drawerHeight: item.drawerHeight))
                     }
                 }
                 .padding(.horizontal)
@@ -333,7 +334,7 @@ struct Restaurant0Menu1Section: View {
                     let menuItemName: String = quantityHeader + item.name
                     let menuItemPrice: Double = Double(item.singleSizePrice > 0 ? item.singleSizePrice : item.price1)
                     
-                    MenuItemRow(menuItem: MenuItem(itemID: item.itemID, name: menuItemName, image: "BBQ", price: menuItemPrice, desc: item.description))
+                    MenuItemRow(menuItem: MenuItem(itemID: item.itemID, name: menuItemName, image: "BBQ", price: menuItemPrice, desc: item.description, drawerHeight: item.drawerHeight))
                         .padding(5)
                 }
             }
@@ -362,7 +363,7 @@ struct Restaurant1Menu0Section: View {
                         let menuItemName: String = quantityHeader + item.name
                         let menuItemPrice: Double = Double(item.singleSizePrice > 0 ? item.singleSizePrice : item.price1)
                         
-                        MenuItemCard(menuItem: MenuItem(itemID: item.itemID, name: menuItemName, image: "BBQ", price: menuItemPrice, desc: item.description))
+                        MenuItemCard(menuItem: MenuItem(itemID: item.itemID, name: menuItemName, image: "BBQ", price: menuItemPrice, desc: item.description, drawerHeight: item.drawerHeight))
                     }
                 }
                 .padding(.horizontal)
@@ -373,7 +374,7 @@ struct Restaurant1Menu0Section: View {
                     let menuItemName: String = quantityHeader + item.name
                     let menuItemPrice: Double = Double(item.singleSizePrice > 0 ? item.singleSizePrice : item.price1)
                     
-                    MenuItemRow(menuItem: MenuItem(itemID: item.itemID, name: menuItemName, image: "BBQ", price: menuItemPrice, desc: item.description))
+                    MenuItemRow(menuItem: MenuItem(itemID: item.itemID, name: menuItemName, image: "BBQ", price: menuItemPrice, desc: item.description, drawerHeight: item.drawerHeight))
                         .padding(5)
                 }
             }
@@ -401,7 +402,7 @@ struct Restaurant1Menu1Section: View {
                         let quantityHeader: String = item.quantity > 0 ? "(\(item.quantity)) " : ""
                         let menuItemName: String = quantityHeader + item.name
                         let menuItemPrice: Double = Double(item.singleSizePrice > 0 ? item.singleSizePrice : item.price1)
-                        MenuItemCard(menuItem: MenuItem(itemID: item.itemID, name: menuItemName, image: "BBQ", price: menuItemPrice, desc: item.description))
+                        MenuItemCard(menuItem: MenuItem(itemID: item.itemID, name: menuItemName, image: "BBQ", price: menuItemPrice, desc: item.description, drawerHeight: item.drawerHeight))
                     }
                 }
                 .padding(.horizontal)
@@ -412,7 +413,7 @@ struct Restaurant1Menu1Section: View {
                     let menuItemName: String = quantityHeader + item.name
                     let menuItemPrice: Double = Double(item.singleSizePrice > 0 ? item.singleSizePrice : item.price1)
                     
-                    MenuItemRow(menuItem: MenuItem(itemID: item.itemID, name: menuItemName, image: "BBQ", price: menuItemPrice, desc: item.description))
+                    MenuItemRow(menuItem: MenuItem(itemID: item.itemID, name: menuItemName, image: "BBQ", price: menuItemPrice, desc: item.description, drawerHeight: item.drawerHeight))
                         .padding(5)
                 }
             }

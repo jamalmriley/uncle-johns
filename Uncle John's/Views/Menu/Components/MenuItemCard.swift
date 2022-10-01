@@ -25,8 +25,8 @@ struct MenuItemCard: View {
                     Text(menuItem.name)
                         .font(.custom("AvenirNext-Bold", size: 16))
                     
-                    Text("$\(String(format: "%.2f", menuItem.price))")
-                        .font(.custom("AvenirNext-Medium", size: 16))
+                    Text("$\(String(format: "%.2f", menuItem.price)) | 123 cal")
+                        .font(.custom("AvenirNext-Medium", size: 14))
                 }
                 .padding()
                 .frame(width: 150, height: 70, alignment: .leading)
@@ -44,6 +44,7 @@ struct MenuItemCard: View {
                     restaurantModel.currentMenuItemImage = menuItem.image
                     restaurantModel.currentMenuItemDesc = menuItem.desc
                     restaurantModel.showMenuItemCustomization = true
+                    restaurantModel.heights = [CGFloat(menuItem.drawerHeight)]
                 }
             } label: {
                 ZStack {
@@ -88,9 +89,9 @@ struct MenuItemCard_Previews: PreviewProvider {
         ZStack {
             Color.black.ignoresSafeArea()
             VStack {
-                MenuItemRow(menuItem: MenuItem(itemID: 1, name: "Test", image: "BBQ", price: 3.99, desc: "A delicious menu item you have to try!"))
+                MenuItemRow(menuItem: MenuItem(itemID: 1, name: "Test", image: "BBQ", price: 3.99, desc: "A delicious menu item you have to try!", drawerHeight: 100))
                     .padding()
-                MenuItemCard(menuItem: MenuItem(itemID: 1, name: "Test", image: "BBQ", price: 3.99, desc: "A delicious menu item you have to try!"))
+                MenuItemCard(menuItem: MenuItem(itemID: 1, name: "Test", image: "BBQ", price: 3.99, desc: "A delicious menu item you have to try!", drawerHeight: 100))
             }
             .environmentObject(CartModel())
             .environmentObject(RestaurantModel())

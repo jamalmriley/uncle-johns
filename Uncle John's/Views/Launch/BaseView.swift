@@ -50,6 +50,8 @@ struct BaseView: View {
                     // Save progress to database when the app is moving from active to background
                 }
                 
+                Divider()
+                
                 ZStack(alignment: .top) {
                     Rectangle()
                         .foregroundColor(.clear)

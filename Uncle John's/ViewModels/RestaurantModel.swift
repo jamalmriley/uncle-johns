@@ -34,6 +34,8 @@ class RestaurantModel: NSObject, CLLocationManagerDelegate, ObservableObject {
     @Published var routeDistance: Double = 0
     @Published var routeETA: Double = 0
     
+    @Published var heights = [CGFloat(100)]
+    
     override init() {
         
         // Initializes NSObject

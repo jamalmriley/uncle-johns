@@ -42,7 +42,8 @@
                 "menuCategory": "Food",
                 "itemCategory": "Our Donuts",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 100
             },
             {
                 "itemID": 1,
@@ -59,7 +60,8 @@
                 "menuCategory": "Food",
                 "itemCategory": "Our Donuts",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 100
             },
             {
                 "itemID": 2,
@@ -76,7 +78,8 @@
                 "menuCategory": "Food",
                 "itemCategory": "Our Donuts",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 100
             },
             {
                 "itemID": 3,
@@ -93,7 +96,8 @@
                 "menuCategory": "Food",
                 "itemCategory": "Our Donuts",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 100
             },
             {
                 "itemID": 4,
@@ -110,7 +114,8 @@
                 "menuCategory": "Food",
                 "itemCategory": "Our Donuts",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 100
             },
             {
                 "itemID": 5,
@@ -127,7 +132,8 @@
                 "menuCategory": "Food",
                 "itemCategory": "Our Donuts",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 100
             },
             {
                 "itemID": 6,
@@ -144,7 +150,8 @@
                 "menuCategory": "Food",
                 "itemCategory": "Our Donuts",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 100
             },
             {
                 "itemID": 7,
@@ -161,7 +168,8 @@
                 "menuCategory": "Food",
                 "itemCategory": "Our Donuts",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 100
             },
             {
                 "itemID": 8,
@@ -178,7 +186,8 @@
                 "menuCategory": "Food",
                 "itemCategory": "Our Donuts",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 100
             },
             {
                 "itemID": 9,
@@ -195,7 +204,8 @@
                 "menuCategory": "Food",
                 "itemCategory": "Our Donuts",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 100
             },
             {
                 "itemID": 10,
@@ -212,7 +222,8 @@
                 "menuCategory": "Food",
                 "itemCategory": "Our Donuts",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 100
             },
             {
                 "itemID": 11,
@@ -229,7 +240,8 @@
                 "menuCategory": "Food",
                 "itemCategory": "Our Sandwiches",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 150
             },
             {
                 "itemID": 12,
@@ -246,7 +258,8 @@
                 "menuCategory": "Food",
                 "itemCategory": "Our Sandwiches",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 150
             },
             {
                 "itemID": 13,
@@ -263,7 +276,8 @@
                 "menuCategory": "Food",
                 "itemCategory": "Our Sandwiches",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 150
             },
             {
                 "itemID": 14,
@@ -280,7 +294,8 @@
                 "menuCategory": "Food",
                 "itemCategory": "Our Sandwiches",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 150
             },
             {
                 "itemID": 15,
@@ -297,7 +312,8 @@
                 "menuCategory": "Food",
                 "itemCategory": "Our Sandwiches",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 100
             },
             {
                 "itemID": 16,
@@ -314,7 +330,8 @@
                 "menuCategory": "Food",
                 "itemCategory": "Our Sandwiches",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 100
             },
             {
                 "itemID": 17,
@@ -331,7 +348,8 @@
                 "menuCategory": "Food",
                 "itemCategory": "Our Sandwiches",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 150
             },
             {
                 "itemID": 18,
@@ -348,7 +366,8 @@
                 "menuCategory": "Food",
                 "itemCategory": "Our Sandwiches",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 150
             },
             {
                 "itemID": 19,
@@ -365,7 +384,8 @@
                 "menuCategory": "Food",
                 "itemCategory": "Our Sandwiches",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 150
             },
             {
                 "itemID": 20,
@@ -382,7 +402,8 @@
                 "menuCategory": "Food",
                 "itemCategory": "Our Sandwiches",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 200
             },
             {
                 "itemID": 21,
@@ -399,7 +420,8 @@
                 "menuCategory": "Food",
                 "itemCategory": "Our Sandwiches",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 150
             },
             {
                 "itemID": 22,
@@ -416,7 +438,8 @@
                 "menuCategory": "Food",
                 "itemCategory": "Our Sandwiches",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 100
             },
             {
                 "itemID": 23,
@@ -433,7 +456,8 @@
                 "menuCategory": "Food",
                 "itemCategory": "Our Sandwiches",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 100
             },
             {
                 "itemID": 24,
@@ -450,7 +474,8 @@
                 "menuCategory": "Food",
                 "itemCategory": "Our Sandwiches",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 100
             }
         ],
         "menu1": [
@@ -472,8 +497,9 @@
                 "sizes": [
                     "s.circle.fill",
                     "m.circle.fill",
-                    "L"
-                ]
+                    "l.circle.fill"
+                ],
+                "drawerHeight": 175
             },
             {
                 "itemID": 1,
@@ -492,8 +518,9 @@
                 "itemCategoryDesc": "",
                 "sizes": [
                     "s.circle.fill",
-                    "L"
-                ]
+                    "l.circle.fill"
+                ],
+                "drawerHeight": 175
             },
             {
                 "itemID": 2,
@@ -512,8 +539,9 @@
                 "itemCategoryDesc": "",
                 "sizes": [
                     "s.circle.fill",
-                    "L"
-                ]
+                    "l.circle.fill"
+                ],
+                "drawerHeight": 175
             },
             {
                 "itemID": 3,
@@ -533,8 +561,9 @@
                 "sizes": [
                     "s.circle.fill",
                     "m.circle.fill",
-                    "L"
-                ]
+                    "l.circle.fill"
+                ],
+                "drawerHeight": 175
             },
             {
                 "itemID": 4,
@@ -551,7 +580,8 @@
                 "menuCategory": "Beverages",
                 "itemCategory": "Drinks",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 100
             },
             {
                 "itemID": 5,
@@ -568,7 +598,8 @@
                 "menuCategory": "Beverages",
                 "itemCategory": "Drinks",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 100
             },
             {
                 "itemID": 6,
@@ -587,8 +618,9 @@
                 "itemCategoryDesc": "",
                 "sizes": [
                     "s.circle.fill",
-                    "L"
-                ]
+                    "l.circle.fill"
+                ],
+                "drawerHeight": 175
             },
             {
                 "itemID": 7,
@@ -607,8 +639,9 @@
                 "itemCategoryDesc": "",
                 "sizes": [
                     "s.circle.fill",
-                    "L"
-                ]
+                    "l.circle.fill"
+                ],
+                "drawerHeight": 175
             },
             {
                 "itemID": 8,
@@ -625,7 +658,8 @@
                 "menuCategory": "Beverages",
                 "itemCategory": "Juices",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 100
             },
             {
                 "itemID": 9,
@@ -642,7 +676,8 @@
                 "menuCategory": "Beverages",
                 "itemCategory": "Juices",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 100
             },
             {
                 "itemID": 10,
@@ -661,8 +696,9 @@
                 "itemCategoryDesc": "",
                 "sizes": [
                     "s.circle.fill",
-                    "L"
-                ]
+                    "l.circle.fill"
+                ],
+                "drawerHeight": 175
             },
             {
                 "itemID": 11,
@@ -679,7 +715,8 @@
                 "menuCategory": "Beverages",
                 "itemCategory": "Juices",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 100
             },
             {
                 "itemID": 12,
@@ -699,8 +736,9 @@
                 "sizes": [
                     "s.circle.fill",
                     "m.circle.fill",
-                    "L"
-                ]
+                    "l.circle.fill"
+                ],
+                "drawerHeight": 175
             }
         ]
     },
@@ -747,7 +785,8 @@
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Lunch Specials",
                 "itemCategoryDesc": "Available Monday - Saturday from 11 AM to 3 PM.",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 175
             },
             {
                 "itemID": 1,
@@ -764,7 +803,8 @@
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Lunch Specials",
                 "itemCategoryDesc": "Available Monday - Saturday from 11 AM to 3 PM.",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 150
             },
             {
                 "itemID": 2,
@@ -781,7 +821,8 @@
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Lunch Specials",
                 "itemCategoryDesc": "Available Monday - Saturday from 11 AM to 3 PM.",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 150
             },
             {
                 "itemID": 3,
@@ -798,7 +839,8 @@
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Lunch Specials",
                 "itemCategoryDesc": "Available Monday - Saturday from 11 AM to 3 PM.",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 175
             },
             {
                 "itemID": 4,
@@ -815,7 +857,8 @@
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Lunch Specials",
                 "itemCategoryDesc": "Available Monday - Saturday from 11 AM to 3 PM.",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 175
             },
             {
                 "itemID": 5,
@@ -832,7 +875,8 @@
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Lunch Specials",
                 "itemCategoryDesc": "Available Monday - Saturday from 11 AM to 3 PM.",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 175
             },
             {
                 "itemID": 6,
@@ -849,7 +893,8 @@
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Lunch Specials",
                 "itemCategoryDesc": "Available Monday - Saturday from 11 AM to 3 PM.",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 175
             },
             {
                 "itemID": 7,
@@ -866,7 +911,8 @@
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Ribs",
                 "itemCategoryDesc": "Everything from original pork slabs to jerk-seasoned tips.",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 175
             },
             {
                 "itemID": 8,
@@ -883,7 +929,8 @@
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Ribs",
                 "itemCategoryDesc": "Everything from original pork slabs to jerk-seasoned tips.",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 175
             },
             {
                 "itemID": 9,
@@ -905,7 +952,8 @@
                     "m.circle.fill",
                     "l.circle.fill",
                     "j.circle.fill"
-                ]
+                ],
+                "drawerHeight": 175
             },
             {
                 "itemID": 10,
@@ -925,8 +973,9 @@
                 "sizes": [
                     "s.circle.fill",
                     "m.circle.fill",
-                    "L"
-                ]
+                    "l.circle.fill"
+                ],
+                "drawerHeight": 175
             },
             {
                 "itemID": 11,
@@ -948,7 +997,8 @@
                     "m.circle.fill",
                     "l.circle.fill",
                     "j.circle.fill"
-                ]
+                ],
+                "drawerHeight": 175
             },
             {
                 "itemID": 12,
@@ -970,7 +1020,8 @@
                     "m.circle.fill",
                     "l.circle.fill",
                     "j.circle.fill"
-                ]
+                ],
+                "drawerHeight": 200
             },
             {
                 "itemID": 13,
@@ -987,7 +1038,8 @@
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Hot Links",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 100
             },
             {
                 "itemID": 14,
@@ -1004,7 +1056,8 @@
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Chicken",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 175
             },
             {
                 "itemID": 15,
@@ -1021,7 +1074,8 @@
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Chicken",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 175
             },
             {
                 "itemID": 16,
@@ -1038,7 +1092,8 @@
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Chicken",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 175
             },
             {
                 "itemID": 17,
@@ -1055,7 +1110,8 @@
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Chicken",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 175
             },
             {
                 "itemID": 18,
@@ -1072,7 +1128,8 @@
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Chicken",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 175
             },
             {
                 "itemID": 19,
@@ -1089,7 +1146,8 @@
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Chicken",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 175
             },
             {
                 "itemID": 20,
@@ -1106,7 +1164,8 @@
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Chicken",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 175
             },
             {
                 "itemID": 21,
@@ -1123,7 +1182,8 @@
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Chicken",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 175
             },
             {
                 "itemID": 22,
@@ -1140,7 +1200,8 @@
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Fish",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 175
             },
             {
                 "itemID": 23,
@@ -1157,7 +1218,8 @@
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Fish",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 175
             },
             {
                 "itemID": 24,
@@ -1174,7 +1236,8 @@
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Combos",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 175
             },
             {
                 "itemID": 25,
@@ -1191,7 +1254,8 @@
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Combos",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 175
             },
             {
                 "itemID": 26,
@@ -1208,7 +1272,8 @@
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Combos",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 175
             },
             {
                 "itemID": 27,
@@ -1225,7 +1290,8 @@
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Combos",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 175
             },
             {
                 "itemID": 28,
@@ -1246,7 +1312,8 @@
                     "s.circle.fill",
                     "l.circle.fill",
                     "j.circle.fill"
-                ]
+                ],
+                "drawerHeight": 225
             },
             {
                 "itemID": 29,
@@ -1263,7 +1330,8 @@
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Combos",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 175
             },
             {
                 "itemID": 30,
@@ -1280,7 +1348,8 @@
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Combos",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 175
             },
             {
                 "itemID": 31,
@@ -1297,7 +1366,8 @@
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Combos",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 175
             },
             {
                 "itemID": 32,
@@ -1314,7 +1384,8 @@
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Combos",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 175
             },
             {
                 "itemID": 33,
@@ -1331,7 +1402,8 @@
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Combos",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 175
             },
             {
                 "itemID": 34,
@@ -1348,7 +1420,8 @@
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Sides & Extras",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 100
             },
             {
                 "itemID": 35,
@@ -1368,8 +1441,9 @@
                 "sizes": [
                     "s.circle.fill",
                     "m.circle.fill",
-                    "L"
-                ]
+                    "l.circle.fill"
+                ],
+                "drawerHeight": 175
             },
             {
                 "itemID": 36,
@@ -1386,7 +1460,8 @@
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Sides & Extras",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 100
             },
             {
                 "itemID": 37,
@@ -1403,7 +1478,8 @@
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Sides & Extras",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 100
             },
             {
                 "itemID": 38,
@@ -1420,7 +1496,8 @@
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Sides & Extras",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 100
             },
             {
                 "itemID": 39,
@@ -1437,7 +1514,8 @@
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Sides & Extras",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 100
             },
             {
                 "itemID": 40,
@@ -1454,7 +1532,8 @@
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Sides & Extras",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 100
             },
             {
                 "itemID": 41,
@@ -1471,7 +1550,8 @@
                 "menuCategory": "Lunch & Dinner",
                 "itemCategory": "Sides & Extras",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 100
             },
             {
                 "itemID": 42,
@@ -1490,8 +1570,9 @@
                 "itemCategoryDesc": "",
                 "sizes": [
                     "s.circle.fill",
-                    "L"
-                ]
+                    "l.circle.fill"
+                ],
+                "drawerHeight": 175
             }
         ],
         "menu1": [
@@ -1513,7 +1594,8 @@
                 "sizes": [
                     "circle.lefthalf.filled",
                     "circle.fill"
-                ]
+                ],
+                "drawerHeight": 225
             },
             {
                 "itemID": 1,
@@ -1533,7 +1615,8 @@
                 "sizes": [
                     "circle.lefthalf.filled",
                     "circle.fill"
-                ]
+                ],
+                "drawerHeight": 225
             },
             {
                 "itemID": 2,
@@ -1553,7 +1636,8 @@
                 "sizes": [
                     "circle.lefthalf.filled",
                     "circle.fill"
-                ]
+                ],
+                "drawerHeight": 225
             },
             {
                 "itemID": 3,
@@ -1570,7 +1654,8 @@
                 "menuCategory": "Catering",
                 "itemCategory": "Hot & Turkey Links",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 100
             },
             {
                 "itemID": 4,
@@ -1587,7 +1672,8 @@
                 "menuCategory": "Catering",
                 "itemCategory": "Hot & Turkey Links",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 175
             },
             {
                 "itemID": 5,
@@ -1607,7 +1693,8 @@
                 "sizes": [
                     "circle.lefthalf.filled",
                     "circle.fill"
-                ]
+                ],
+                "drawerHeight": 225
             },
             {
                 "itemID": 6,
@@ -1624,7 +1711,8 @@
                 "menuCategory": "Catering",
                 "itemCategory": "Chicken",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 150
             },
             {
                 "itemID": 7,
@@ -1641,7 +1729,8 @@
                 "menuCategory": "Catering",
                 "itemCategory": "Chicken",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 150
             },
             {
                 "itemID": 8,
@@ -1658,7 +1747,8 @@
                 "menuCategory": "Catering",
                 "itemCategory": "Chicken",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 150
             },
             {
                 "itemID": 9,
@@ -1675,7 +1765,8 @@
                 "menuCategory": "Catering",
                 "itemCategory": "Chicken",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 150
             },
             {
                 "itemID": 10,
@@ -1692,7 +1783,8 @@
                 "menuCategory": "Catering",
                 "itemCategory": "Chicken",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 150
             },
             {
                 "itemID": 11,
@@ -1709,7 +1801,8 @@
                 "menuCategory": "Catering",
                 "itemCategory": "Chicken",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 150
             },
             {
                 "itemID": 12,
@@ -1726,7 +1819,8 @@
                 "menuCategory": "Catering",
                 "itemCategory": "Chicken",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 150
             },
             {
                 "itemID": 13,
@@ -1746,7 +1840,8 @@
                 "sizes": [
                     "circle.lefthalf.filled",
                     "circle.fill"
-                ]
+                ],
+                "drawerHeight": 225
             },
             {
                 "itemID": 14,
@@ -1766,7 +1861,8 @@
                 "sizes": [
                     "circle.lefthalf.filled",
                     "circle.fill"
-                ]
+                ],
+                "drawerHeight": 225
             },
             {
                 "itemID": 15,
@@ -1783,7 +1879,8 @@
                 "menuCategory": "Catering",
                 "itemCategory": "Sides & Extras",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 100
             },
             {
                 "itemID": 16,
@@ -1800,7 +1897,8 @@
                 "menuCategory": "Catering",
                 "itemCategory": "Sides & Extras",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 100
             },
             {
                 "itemID": 17,
@@ -1817,7 +1915,8 @@
                 "menuCategory": "Catering",
                 "itemCategory": "Sides & Extras",
                 "itemCategoryDesc": "",
-                "sizes": []
+                "sizes": [],
+                "drawerHeight": 100
             }
         ]
     }
