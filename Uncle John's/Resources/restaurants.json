@@ -43,7 +43,7 @@
                 "itemCategory": "Our Donuts",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 100
+                "drawerHeight": 125
             },
             {
                 "itemID": 1,
@@ -61,7 +61,7 @@
                 "itemCategory": "Our Donuts",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 100
+                "drawerHeight": 125
             },
             {
                 "itemID": 2,
@@ -79,7 +79,7 @@
                 "itemCategory": "Our Donuts",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 100
+                "drawerHeight": 125
             },
             {
                 "itemID": 3,
@@ -97,7 +97,7 @@
                 "itemCategory": "Our Donuts",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 100
+                "drawerHeight": 125
             },
             {
                 "itemID": 4,
@@ -115,7 +115,7 @@
                 "itemCategory": "Our Donuts",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 100
+                "drawerHeight": 125
             },
             {
                 "itemID": 5,
@@ -133,7 +133,7 @@
                 "itemCategory": "Our Donuts",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 100
+                "drawerHeight": 125
             },
             {
                 "itemID": 6,
@@ -151,7 +151,7 @@
                 "itemCategory": "Our Donuts",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 100
+                "drawerHeight": 125
             },
             {
                 "itemID": 7,
@@ -169,7 +169,7 @@
                 "itemCategory": "Our Donuts",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 100
+                "drawerHeight": 125
             },
             {
                 "itemID": 8,
@@ -187,7 +187,7 @@
                 "itemCategory": "Our Donuts",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 100
+                "drawerHeight": 125
             },
             {
                 "itemID": 9,
@@ -205,7 +205,7 @@
                 "itemCategory": "Our Donuts",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 100
+                "drawerHeight": 125
             },
             {
                 "itemID": 10,
@@ -223,7 +223,7 @@
                 "itemCategory": "Our Donuts",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 100
+                "drawerHeight": 125
             },
             {
                 "itemID": 11,
@@ -241,7 +241,7 @@
                 "itemCategory": "Our Sandwiches",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 150
+                "drawerHeight": 175
             },
             {
                 "itemID": 12,
@@ -259,7 +259,7 @@
                 "itemCategory": "Our Sandwiches",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 150
+                "drawerHeight": 175
             },
             {
                 "itemID": 13,
@@ -277,7 +277,7 @@
                 "itemCategory": "Our Sandwiches",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 150
+                "drawerHeight": 175
             },
             {
                 "itemID": 14,
@@ -295,7 +295,7 @@
                 "itemCategory": "Our Sandwiches",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 150
+                "drawerHeight": 175
             },
             {
                 "itemID": 15,
@@ -313,7 +313,7 @@
                 "itemCategory": "Our Sandwiches",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 100
+                "drawerHeight": 125
             },
             {
                 "itemID": 16,
@@ -331,7 +331,7 @@
                 "itemCategory": "Our Sandwiches",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 100
+                "drawerHeight": 125
             },
             {
                 "itemID": 17,
@@ -349,7 +349,7 @@
                 "itemCategory": "Our Sandwiches",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 150
+                "drawerHeight": 175
             },
             {
                 "itemID": 18,
@@ -367,7 +367,7 @@
                 "itemCategory": "Our Sandwiches",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 150
+                "drawerHeight": 175
             },
             {
                 "itemID": 19,
@@ -385,7 +385,7 @@
                 "itemCategory": "Our Sandwiches",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 150
+                "drawerHeight": 175
             },
             {
                 "itemID": 20,
@@ -403,7 +403,7 @@
                 "itemCategory": "Our Sandwiches",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 200
+                "drawerHeight": 225
             },
             {
                 "itemID": 21,
@@ -421,7 +421,7 @@
                 "itemCategory": "Our Sandwiches",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 150
+                "drawerHeight": 175
             },
             {
                 "itemID": 22,
@@ -439,7 +439,7 @@
                 "itemCategory": "Our Sandwiches",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 100
+                "drawerHeight": 125
             },
             {
                 "itemID": 23,
@@ -457,7 +457,7 @@
                 "itemCategory": "Our Sandwiches",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 100
+                "drawerHeight": 125
             },
             {
                 "itemID": 24,
@@ -475,7 +475,7 @@
                 "itemCategory": "Our Sandwiches",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 100
+                "drawerHeight": 125
             }
         ],
         "menu1": [
@@ -499,7 +499,7 @@
                     "m.circle.fill",
                     "l.circle.fill"
                 ],
-                "drawerHeight": 175
+                "drawerHeight": 200
             },
             {
                 "itemID": 1,
@@ -520,7 +520,7 @@
                     "s.circle.fill",
                     "l.circle.fill"
                 ],
-                "drawerHeight": 175
+                "drawerHeight": 200
             },
             {
                 "itemID": 2,
@@ -541,7 +541,7 @@
                     "s.circle.fill",
                     "l.circle.fill"
                 ],
-                "drawerHeight": 175
+                "drawerHeight": 200
             },
             {
                 "itemID": 3,
@@ -563,7 +563,7 @@
                     "m.circle.fill",
                     "l.circle.fill"
                 ],
-                "drawerHeight": 175
+                "drawerHeight": 200
             },
             {
                 "itemID": 4,
@@ -581,7 +581,7 @@
                 "itemCategory": "Drinks",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 100
+                "drawerHeight": 125
             },
             {
                 "itemID": 5,
@@ -599,7 +599,7 @@
                 "itemCategory": "Drinks",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 100
+                "drawerHeight": 125
             },
             {
                 "itemID": 6,
@@ -620,7 +620,7 @@
                     "s.circle.fill",
                     "l.circle.fill"
                 ],
-                "drawerHeight": 175
+                "drawerHeight": 200
             },
             {
                 "itemID": 7,
@@ -641,7 +641,7 @@
                     "s.circle.fill",
                     "l.circle.fill"
                 ],
-                "drawerHeight": 175
+                "drawerHeight": 200
             },
             {
                 "itemID": 8,
@@ -659,7 +659,7 @@
                 "itemCategory": "Juices",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 100
+                "drawerHeight": 125
             },
             {
                 "itemID": 9,
@@ -677,7 +677,7 @@
                 "itemCategory": "Juices",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 100
+                "drawerHeight": 125
             },
             {
                 "itemID": 10,
@@ -698,7 +698,7 @@
                     "s.circle.fill",
                     "l.circle.fill"
                 ],
-                "drawerHeight": 175
+                "drawerHeight": 200
             },
             {
                 "itemID": 11,
@@ -716,7 +716,7 @@
                 "itemCategory": "Juices",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 100
+                "drawerHeight": 125
             },
             {
                 "itemID": 12,
@@ -738,7 +738,7 @@
                     "m.circle.fill",
                     "l.circle.fill"
                 ],
-                "drawerHeight": 175
+                "drawerHeight": 200
             }
         ]
     },
@@ -786,7 +786,7 @@
                 "itemCategory": "Lunch Specials",
                 "itemCategoryDesc": "Available Monday - Saturday from 11 AM to 3 PM.",
                 "sizes": [],
-                "drawerHeight": 175
+                "drawerHeight": 200
             },
             {
                 "itemID": 1,
@@ -804,7 +804,7 @@
                 "itemCategory": "Lunch Specials",
                 "itemCategoryDesc": "Available Monday - Saturday from 11 AM to 3 PM.",
                 "sizes": [],
-                "drawerHeight": 150
+                "drawerHeight": 175
             },
             {
                 "itemID": 2,
@@ -822,7 +822,7 @@
                 "itemCategory": "Lunch Specials",
                 "itemCategoryDesc": "Available Monday - Saturday from 11 AM to 3 PM.",
                 "sizes": [],
-                "drawerHeight": 150
+                "drawerHeight": 175
             },
             {
                 "itemID": 3,
@@ -840,7 +840,7 @@
                 "itemCategory": "Lunch Specials",
                 "itemCategoryDesc": "Available Monday - Saturday from 11 AM to 3 PM.",
                 "sizes": [],
-                "drawerHeight": 175
+                "drawerHeight": 200
             },
             {
                 "itemID": 4,
@@ -858,7 +858,7 @@
                 "itemCategory": "Lunch Specials",
                 "itemCategoryDesc": "Available Monday - Saturday from 11 AM to 3 PM.",
                 "sizes": [],
-                "drawerHeight": 175
+                "drawerHeight": 200
             },
             {
                 "itemID": 5,
@@ -876,7 +876,7 @@
                 "itemCategory": "Lunch Specials",
                 "itemCategoryDesc": "Available Monday - Saturday from 11 AM to 3 PM.",
                 "sizes": [],
-                "drawerHeight": 175
+                "drawerHeight": 200
             },
             {
                 "itemID": 6,
@@ -894,7 +894,7 @@
                 "itemCategory": "Lunch Specials",
                 "itemCategoryDesc": "Available Monday - Saturday from 11 AM to 3 PM.",
                 "sizes": [],
-                "drawerHeight": 175
+                "drawerHeight": 200
             },
             {
                 "itemID": 7,
@@ -912,7 +912,7 @@
                 "itemCategory": "Ribs",
                 "itemCategoryDesc": "Everything from original pork slabs to jerk-seasoned tips.",
                 "sizes": [],
-                "drawerHeight": 175
+                "drawerHeight": 200
             },
             {
                 "itemID": 8,
@@ -930,7 +930,7 @@
                 "itemCategory": "Ribs",
                 "itemCategoryDesc": "Everything from original pork slabs to jerk-seasoned tips.",
                 "sizes": [],
-                "drawerHeight": 175
+                "drawerHeight": 200
             },
             {
                 "itemID": 9,
@@ -953,7 +953,7 @@
                     "l.circle.fill",
                     "j.circle.fill"
                 ],
-                "drawerHeight": 175
+                "drawerHeight": 200
             },
             {
                 "itemID": 10,
@@ -975,7 +975,7 @@
                     "m.circle.fill",
                     "l.circle.fill"
                 ],
-                "drawerHeight": 175
+                "drawerHeight": 200
             },
             {
                 "itemID": 11,
@@ -998,7 +998,7 @@
                     "l.circle.fill",
                     "j.circle.fill"
                 ],
-                "drawerHeight": 175
+                "drawerHeight": 200
             },
             {
                 "itemID": 12,
@@ -1021,7 +1021,7 @@
                     "l.circle.fill",
                     "j.circle.fill"
                 ],
-                "drawerHeight": 200
+                "drawerHeight": 225
             },
             {
                 "itemID": 13,
@@ -1039,7 +1039,7 @@
                 "itemCategory": "Hot Links",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 100
+                "drawerHeight": 125
             },
             {
                 "itemID": 14,
@@ -1057,7 +1057,7 @@
                 "itemCategory": "Chicken",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 175
+                "drawerHeight": 200
             },
             {
                 "itemID": 15,
@@ -1075,7 +1075,7 @@
                 "itemCategory": "Chicken",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 175
+                "drawerHeight": 200
             },
             {
                 "itemID": 16,
@@ -1093,7 +1093,7 @@
                 "itemCategory": "Chicken",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 175
+                "drawerHeight": 200
             },
             {
                 "itemID": 17,
@@ -1111,7 +1111,7 @@
                 "itemCategory": "Chicken",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 175
+                "drawerHeight": 200
             },
             {
                 "itemID": 18,
@@ -1129,7 +1129,7 @@
                 "itemCategory": "Chicken",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 175
+                "drawerHeight": 200
             },
             {
                 "itemID": 19,
@@ -1147,7 +1147,7 @@
                 "itemCategory": "Chicken",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 175
+                "drawerHeight": 200
             },
             {
                 "itemID": 20,
@@ -1165,7 +1165,7 @@
                 "itemCategory": "Chicken",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 175
+                "drawerHeight": 200
             },
             {
                 "itemID": 21,
@@ -1183,7 +1183,7 @@
                 "itemCategory": "Chicken",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 175
+                "drawerHeight": 200
             },
             {
                 "itemID": 22,
@@ -1201,7 +1201,7 @@
                 "itemCategory": "Fish",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 175
+                "drawerHeight": 200
             },
             {
                 "itemID": 23,
@@ -1219,7 +1219,7 @@
                 "itemCategory": "Fish",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 175
+                "drawerHeight": 200
             },
             {
                 "itemID": 24,
@@ -1237,7 +1237,7 @@
                 "itemCategory": "Combos",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 175
+                "drawerHeight": 200
             },
             {
                 "itemID": 25,
@@ -1255,7 +1255,7 @@
                 "itemCategory": "Combos",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 175
+                "drawerHeight": 200
             },
             {
                 "itemID": 26,
@@ -1273,7 +1273,7 @@
                 "itemCategory": "Combos",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 175
+                "drawerHeight": 200
             },
             {
                 "itemID": 27,
@@ -1291,7 +1291,7 @@
                 "itemCategory": "Combos",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 175
+                "drawerHeight": 200
             },
             {
                 "itemID": 28,
@@ -1313,7 +1313,7 @@
                     "l.circle.fill",
                     "j.circle.fill"
                 ],
-                "drawerHeight": 225
+                "drawerHeight": 250
             },
             {
                 "itemID": 29,
@@ -1331,7 +1331,7 @@
                 "itemCategory": "Combos",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 175
+                "drawerHeight": 200
             },
             {
                 "itemID": 30,
@@ -1349,7 +1349,7 @@
                 "itemCategory": "Combos",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 175
+                "drawerHeight": 200
             },
             {
                 "itemID": 31,
@@ -1367,7 +1367,7 @@
                 "itemCategory": "Combos",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 175
+                "drawerHeight": 200
             },
             {
                 "itemID": 32,
@@ -1385,7 +1385,7 @@
                 "itemCategory": "Combos",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 175
+                "drawerHeight": 200
             },
             {
                 "itemID": 33,
@@ -1403,7 +1403,7 @@
                 "itemCategory": "Combos",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 175
+                "drawerHeight": 200
             },
             {
                 "itemID": 34,
@@ -1421,7 +1421,7 @@
                 "itemCategory": "Sides & Extras",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 100
+                "drawerHeight": 125
             },
             {
                 "itemID": 35,
@@ -1443,7 +1443,7 @@
                     "m.circle.fill",
                     "l.circle.fill"
                 ],
-                "drawerHeight": 175
+                "drawerHeight": 200
             },
             {
                 "itemID": 36,
@@ -1461,7 +1461,7 @@
                 "itemCategory": "Sides & Extras",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 100
+                "drawerHeight": 125
             },
             {
                 "itemID": 37,
@@ -1479,7 +1479,7 @@
                 "itemCategory": "Sides & Extras",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 100
+                "drawerHeight": 125
             },
             {
                 "itemID": 38,
@@ -1497,7 +1497,7 @@
                 "itemCategory": "Sides & Extras",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 100
+                "drawerHeight": 125
             },
             {
                 "itemID": 39,
@@ -1515,7 +1515,7 @@
                 "itemCategory": "Sides & Extras",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 100
+                "drawerHeight": 125
             },
             {
                 "itemID": 40,
@@ -1533,7 +1533,7 @@
                 "itemCategory": "Sides & Extras",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 100
+                "drawerHeight": 125
             },
             {
                 "itemID": 41,
@@ -1551,7 +1551,7 @@
                 "itemCategory": "Sides & Extras",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 100
+                "drawerHeight": 125
             },
             {
                 "itemID": 42,
@@ -1572,7 +1572,7 @@
                     "s.circle.fill",
                     "l.circle.fill"
                 ],
-                "drawerHeight": 175
+                "drawerHeight": 200
             }
         ],
         "menu1": [
@@ -1595,7 +1595,7 @@
                     "circle.lefthalf.filled",
                     "circle.fill"
                 ],
-                "drawerHeight": 225
+                "drawerHeight": 250
             },
             {
                 "itemID": 1,
@@ -1616,7 +1616,7 @@
                     "circle.lefthalf.filled",
                     "circle.fill"
                 ],
-                "drawerHeight": 225
+                "drawerHeight": 250
             },
             {
                 "itemID": 2,
@@ -1637,7 +1637,7 @@
                     "circle.lefthalf.filled",
                     "circle.fill"
                 ],
-                "drawerHeight": 225
+                "drawerHeight": 250
             },
             {
                 "itemID": 3,
@@ -1655,7 +1655,7 @@
                 "itemCategory": "Hot & Turkey Links",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 100
+                "drawerHeight": 125
             },
             {
                 "itemID": 4,
@@ -1673,7 +1673,7 @@
                 "itemCategory": "Hot & Turkey Links",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 175
+                "drawerHeight": 200
             },
             {
                 "itemID": 5,
@@ -1694,7 +1694,7 @@
                     "circle.lefthalf.filled",
                     "circle.fill"
                 ],
-                "drawerHeight": 225
+                "drawerHeight": 250
             },
             {
                 "itemID": 6,
@@ -1712,7 +1712,7 @@
                 "itemCategory": "Chicken",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 150
+                "drawerHeight": 175
             },
             {
                 "itemID": 7,
@@ -1730,7 +1730,7 @@
                 "itemCategory": "Chicken",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 150
+                "drawerHeight": 175
             },
             {
                 "itemID": 8,
@@ -1748,7 +1748,7 @@
                 "itemCategory": "Chicken",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 150
+                "drawerHeight": 175
             },
             {
                 "itemID": 9,
@@ -1766,7 +1766,7 @@
                 "itemCategory": "Chicken",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 150
+                "drawerHeight": 175
             },
             {
                 "itemID": 10,
@@ -1784,7 +1784,7 @@
                 "itemCategory": "Chicken",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 150
+                "drawerHeight": 175
             },
             {
                 "itemID": 11,
@@ -1802,7 +1802,7 @@
                 "itemCategory": "Chicken",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 150
+                "drawerHeight": 175
             },
             {
                 "itemID": 12,
@@ -1820,7 +1820,7 @@
                 "itemCategory": "Chicken",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 150
+                "drawerHeight": 175
             },
             {
                 "itemID": 13,
@@ -1841,7 +1841,7 @@
                     "circle.lefthalf.filled",
                     "circle.fill"
                 ],
-                "drawerHeight": 225
+                "drawerHeight": 250
             },
             {
                 "itemID": 14,
@@ -1862,7 +1862,7 @@
                     "circle.lefthalf.filled",
                     "circle.fill"
                 ],
-                "drawerHeight": 225
+                "drawerHeight": 250
             },
             {
                 "itemID": 15,
@@ -1880,7 +1880,7 @@
                 "itemCategory": "Sides & Extras",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 100
+                "drawerHeight": 125
             },
             {
                 "itemID": 16,
@@ -1898,7 +1898,7 @@
                 "itemCategory": "Sides & Extras",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 100
+                "drawerHeight": 125
             },
             {
                 "itemID": 17,
@@ -1916,7 +1916,7 @@
                 "itemCategory": "Sides & Extras",
                 "itemCategoryDesc": "",
                 "sizes": [],
-                "drawerHeight": 100
+                "drawerHeight": 125
             }
         ]
     }

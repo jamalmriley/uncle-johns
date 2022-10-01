@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SFSegmentedControl: View {
+    @EnvironmentObject var restaurantModel: RestaurantModel
     @Binding var selection: Int
     var options: [String]
     let width: CGFloat
@@ -32,6 +33,7 @@ struct SFSegmentedControl: View {
                                                              dampingFraction: 2,
                                                              blendDuration: 0.5)) {
                                 selection = index
+                                restaurantModel.showMenuItemCustomization = false
                             }
                         }
                 }
