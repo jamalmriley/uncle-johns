@@ -12,6 +12,7 @@ import LocalAuthentication
 struct ProfileView: View {
     @EnvironmentObject var authModel: AuthModel
     @EnvironmentObject var restaurantModel: RestaurantModel
+    @EnvironmentObject var cartModel: CartModel
     @StateObject var settings: AppSettingsModel = AppSettingsModel()
     
     // Biometric Properties
@@ -31,7 +32,7 @@ struct ProfileView: View {
                     .ignoresSafeArea()
                 VStack {
                     Header()
-                        .environmentObject(CartModel())
+                    
                     Spacer()
                     
                     Text("Hi, Jamal")
@@ -190,6 +191,7 @@ struct ProfileView_Previews: PreviewProvider {
         ProfileView()
             .environmentObject(AuthModel())
             .environmentObject(RestaurantModel())
+            .environmentObject(CartModel())
             .colorScheme(.dark)
     }
 }

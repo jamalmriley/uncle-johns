@@ -30,14 +30,14 @@ struct OnboardingView: View {
             .ignoresSafeArea(.all, edges: .all)
             
             VStack {
+                Image("Uncle John's Barbeque Icon")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 200, height: 100)
+                    .offset(y: 150)
+                
                 TabView(selection: $tabSelection) {
                     VStack {
-                        Image("Uncle John's Barbeque Icon")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 200)
-                            .padding(.bottom)
-                        
                         Text("Welcome!")
                             .font(.custom("AvenirNext-Bold", size: 24))
                             .textCase(.uppercase)
@@ -46,18 +46,22 @@ struct OnboardingView: View {
                         Text("The Uncle John's app allows you to seamlessly order from Uncle John's and Dat Donut!")
                             .font(.custom("AvenirNext-Medium", size: 16))
                     }
-                    .foregroundColor(Color("ForegroundColor \(Color.suffixArray[0])")) // Replaced restaurantModel.selectedRestaurant with 0
-                    .multilineTextAlignment(.center)
                     .padding(.horizontal)
                     .tag(0)
                     
                     VStack {
-                        Image("Uncle John's Barbeque Icon")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 200)
+                        Text("Can we notify you?")
+                            .font(.custom("AvenirNext-Bold", size: 24))
+                            .textCase(.uppercase)
                             .padding(.bottom)
                         
+                        Text("Let us send you notifications about your orders, deals, and more! Click the button below.")
+                            .font(.custom("AvenirNext-Medium", size: 16))
+                    }
+                    .padding(.horizontal)
+                    .tag(1)
+                    
+                    VStack {
                         Text("Ready to start ordering?")
                             .font(.custom("AvenirNext-Bold", size: 24))
                             .textCase(.uppercase)
@@ -66,21 +70,28 @@ struct OnboardingView: View {
                         Text("We'll show you the best route to head over to Uncle John's! Click the button below.")
                             .font(.custom("AvenirNext-Medium", size: 16))
                     }
-                    .foregroundColor(Color("ForegroundColor \(Color.suffixArray[0])")) // Replaced restaurantModel.selectedRestaurant with 0
-                    .multilineTextAlignment(.center)
                     .padding(.horizontal)
-                    .tag(1)
+                    .tag(2)
                 }
-                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+                .foregroundColor(Color("ForegroundColor \(Color.suffixArray[0])")) // Replaced restaurantModel.selectedRestaurant with 0
+                .multilineTextAlignment(.center)
+                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
+                
+                HStack {
+                    ForEach(0...2, id: \.self) { index in
+                        Capsule()
+                            .foregroundColor(.white)
+                            .frame(width: tabSelection == index ? 18 : 6, height: 6)
+                    }
+                }
                 
                 // Button
                 Button {
-                    if tabSelection == 0 {
-                        tabSelection = 1
-                    }
-                    else {
-                        // Request permission for geolocating
-                        restaurantModel.requestGeolocationPermission()
+                    switch tabSelection {
+                    case 0: tabSelection += 1
+                    // case 1: print("Ruh-roh")
+                    case 2: restaurantModel.requestGeolocationPermission() // Request permission for geolocating
+                    default: tabSelection += 1
                     }
                     
                 } label: {
@@ -90,7 +101,7 @@ struct OnboardingView: View {
                             .frame(height: 48)
                             .cornerRadius(10)
                         
-                        Text( tabSelection == 0 ? "Next" : "Get My Location")
+                        Text(tabSelection == 0 ? "Next" : tabSelection == 1 ? "Allow Notifications" : "Get My Location")
                             .font(.custom("AvenirNext-Medium", size: 18))
                             .padding()
                     }

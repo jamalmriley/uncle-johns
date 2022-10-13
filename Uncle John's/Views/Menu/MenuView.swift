@@ -295,7 +295,7 @@ struct Restaurant0Menu0Section: View {
                     let menuItemPrice: Double = Double(item.singleSizePrice)
                     
                     MenuItemRow(menuItem: MenuItem(itemID: item.itemID, name: menuItemName, image: "BBQ", price: menuItemPrice, desc: item.description, drawerHeight: item.drawerHeight))
-                        .padding(5)
+                        .padding(.vertical, 5)
                 }
             }
         }
@@ -335,7 +335,7 @@ struct Restaurant0Menu1Section: View {
                     let menuItemPrice: Double = Double(item.singleSizePrice > 0 ? item.singleSizePrice : item.price1)
                     
                     MenuItemRow(menuItem: MenuItem(itemID: item.itemID, name: menuItemName, image: "BBQ", price: menuItemPrice, desc: item.description, drawerHeight: item.drawerHeight))
-                        .padding(5)
+                        .padding(.vertical, 5)
                 }
             }
         }
@@ -375,7 +375,7 @@ struct Restaurant1Menu0Section: View {
                     let menuItemPrice: Double = Double(item.singleSizePrice > 0 ? item.singleSizePrice : item.price1)
                     
                     MenuItemRow(menuItem: MenuItem(itemID: item.itemID, name: menuItemName, image: "BBQ", price: menuItemPrice, desc: item.description, drawerHeight: item.drawerHeight))
-                        .padding(5)
+                        .padding(.vertical, 5)
                 }
             }
         }
@@ -414,7 +414,7 @@ struct Restaurant1Menu1Section: View {
                     let menuItemPrice: Double = Double(item.singleSizePrice > 0 ? item.singleSizePrice : item.price1)
                     
                     MenuItemRow(menuItem: MenuItem(itemID: item.itemID, name: menuItemName, image: "BBQ", price: menuItemPrice, desc: item.description, drawerHeight: item.drawerHeight))
-                        .padding(5)
+                        .padding(.vertical, 5)
                 }
             }
         }
