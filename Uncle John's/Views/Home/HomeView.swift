@@ -118,6 +118,20 @@ struct HomeView: View {
                             EventCards()
                         }
                         
+                        /*
+                        ZStack(alignment: .topTrailing) {
+                            Rectangle()
+                                .background(.thinMaterial)
+                                .frame(width: 350, height: 280)
+                            
+                            Image("Test Graphic 1")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(height: 175)
+                                .offset(x: 10, y: -15)
+                        }
+                        */
+                        
                         HomeTile(image: "BBQ", header: "Join Uncle John's Rewards!", description: "Get access to special discounts & deals, earn points toward free meals, and get a gift on your birthday!", buttonLabel: "Join now")
                         HomeTile()
                         HomeTile(image: "Ukraine", header: "We stand with Ukraine.", description: "We stand with Ukraine and are working to contribute aid and relief for its citizens.", buttonLabel: "Learn more")

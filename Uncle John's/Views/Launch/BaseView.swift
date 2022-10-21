@@ -44,7 +44,7 @@ struct BaseView: View {
                         .tag("person.crop.circle")
                     
                 }
-//                .cornerRadius(25, corners: [.bottomLeft, .bottomRight])
+                //                .cornerRadius(25, corners: [.bottomLeft, .bottomRight])
                 .ignoresSafeArea(.all, edges: [.horizontal])
                 .onReceive(NotificationCenter.default.publisher(for: UIApplication.willResignActiveNotification)) { _ in
                     // Save progress to database when the app is moving from active to background
@@ -96,7 +96,6 @@ struct BaseView: View {
                         .frame(width: 10, height: 10)
                         .padding([.bottom, .leading], 15)
                         .opacity(0) // MARK: Use for unseen notifications/updates on respective page.
-                    
                 }
                 
                 Text(label)
@@ -132,23 +131,6 @@ struct BaseView: View {
                     .font(.custom("AvenirNext-Medium", size: 13))
             }
         }
-    }
-}
-
-extension View {
-    func cornerRadius(_ radius: CGFloat, corners: UIRectCorner) -> some View {
-        clipShape(RoundedCorner(radius: radius, corners: corners))
-    }
-}
-
-struct RoundedCorner: Shape {
-    
-    var radius: CGFloat = .infinity
-    var corners: UIRectCorner = .allCorners
-    
-    func path(in rect: CGRect) -> Path {
-        let path = UIBezierPath(roundedRect: rect, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
-        return Path(path.cgPath)
     }
 }
 

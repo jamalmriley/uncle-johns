@@ -22,6 +22,7 @@ struct Uncle_Johns: App {
                 .environmentObject(AuthModel())
                 .environmentObject(CartModel())
                 .environmentObject(RestaurantModel())
+                .environmentObject(ChatModel())
         }
     }
 }

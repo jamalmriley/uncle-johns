@@ -115,7 +115,7 @@ struct ProfileView: View {
                                 .environmentObject(settings))
                             )
                             
-                            ProfileMenuOption(menuOption: "Support", view: AnyView(ComingSoonView()))
+                            ProfileMenuOption(menuOption: "Chat with Support", view: AnyView(ChatView()))
                             ProfileMenuOption(menuOption: "The Legal Stuff", view: AnyView(ComingSoonView()))
                             
                             HStack {
