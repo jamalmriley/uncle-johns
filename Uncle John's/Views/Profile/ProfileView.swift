@@ -105,17 +105,17 @@ struct ProfileView: View {
                             }
                             
                             // MARK: - Profile Menu Options
-                            ProfileMenuOption(menuOption: "Payment Methods", view: AnyView(ComingSoonView()))
+                            ProfileMenuOption(menuOption: "My Wallet", view: AnyView(PaymentMethodsView()
+                                .navigationBarTitleDisplayMode(.inline)))
                             ProfileMenuOption(menuOption: "Recent Orders", view: AnyView(ComingSoonView()))
-                            ProfileMenuOption(menuOption: "Gift Cards", view: AnyView(ComingSoonView()))
                             
                             ProfileMenuOption(menuOption: "App Settings", view: AnyView(
                                 SettingsView()
                                 .navigationBarTitleDisplayMode(.inline)
-                                .environmentObject(settings))
-                            )
+                                .environmentObject(settings)))
                             
-                            ProfileMenuOption(menuOption: "Chat with Support", view: AnyView(ChatView()))
+                            ProfileMenuOption(menuOption: "Chat with Support", view: AnyView(ChatView()
+                                .navigationBarTitleDisplayMode(.inline)))
                             ProfileMenuOption(menuOption: "The Legal Stuff", view: AnyView(ComingSoonView()))
                             
                             HStack {

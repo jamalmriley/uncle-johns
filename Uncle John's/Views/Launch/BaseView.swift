@@ -20,7 +20,6 @@ struct BaseView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {
-                
                 TabView(selection: $currentTab) {
                     
                     HomeView()
@@ -54,8 +53,8 @@ struct BaseView: View {
                 
                 ZStack(alignment: .top) {
                     Rectangle()
-                        .foregroundColor(.clear)
-                        .foregroundColor(Color("TertiaryColor"))
+                        .foregroundColor(.black)
+                        .opacity(0.2)
                         .frame(height: 85)
                     HStack(alignment: .center, spacing: 0) {
                         TabButtonV2(image: "house", dimension: 23, label: "Home")
@@ -68,7 +67,7 @@ struct BaseView: View {
                 }
             }
             .ignoresSafeArea(.all, edges: .all)
-            .background(Color("BackgroundColor (UJB)"))
+            .background(Color("BackgroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
             .navigationTitle("Back")
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarHidden(true)

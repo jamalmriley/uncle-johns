@@ -38,6 +38,9 @@
 		898C56232901AAFA00E88B5E /* MessageField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898C56222901AAFA00E88B5E /* MessageField.swift */; };
 		898C56252901B02A00E88B5E /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898C56242901B02A00E88B5E /* ChatModel.swift */; };
 		898C56282901B64800E88B5E /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 898C56272901B64800E88B5E /* FirebaseFirestoreSwift */; };
+		898C562C2902F4B600E88B5E /* PaymentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898C562B2902F4B600E88B5E /* PaymentCard.swift */; };
+		898C562E2902FB0B00E88B5E /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898C562D2902FB0B00E88B5E /* Card.swift */; };
+		898C56302902FB9500E88B5E /* PaymentMethodsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898C562F2902FB9500E88B5E /* PaymentMethodsView.swift */; };
 		898FCCD228A0856C003C283F /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FCCD128A0856C003C283F /* MenuItem.swift */; };
 		898FCCD628A0871A003C283F /* MenuItemCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FCCD528A0871A003C283F /* MenuItemCard.swift */; };
 		898FCCD828A08C64003C283F /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898FCCD728A08C63003C283F /* MenuView.swift */; };
@@ -112,6 +115,9 @@
 		898C56202901A4F800E88B5E /* MessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
 		898C56222901AAFA00E88B5E /* MessageField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageField.swift; sourceTree = "<group>"; };
 		898C56242901B02A00E88B5E /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
+		898C562B2902F4B600E88B5E /* PaymentCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCard.swift; sourceTree = "<group>"; };
+		898C562D2902FB0B00E88B5E /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		898C562F2902FB9500E88B5E /* PaymentMethodsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodsView.swift; sourceTree = "<group>"; };
 		898FCCD128A0856C003C283F /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		898FCCD528A0871A003C283F /* MenuItemCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemCard.swift; sourceTree = "<group>"; };
 		898FCCD728A08C63003C283F /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
@@ -248,6 +254,8 @@
 		898C562A2902F3DF00E88B5E /* PaymentMethodsView */ = {
 			isa = PBXGroup;
 			children = (
+				898C562F2902FB9500E88B5E /* PaymentMethodsView.swift */,
+				898C562B2902F4B600E88B5E /* PaymentCard.swift */,
 			);
 			path = PaymentMethodsView;
 			sourceTree = "<group>";
@@ -375,6 +383,7 @@
 				89B3FEB9287331FF00D6DFD0 /* Weather.swift */,
 				898FCCD128A0856C003C283F /* MenuItem.swift */,
 				898C561E2901A47800E88B5E /* Message.swift */,
+				898C562D2902FB0B00E88B5E /* Card.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -543,12 +552,14 @@
 				898C56252901B02A00E88B5E /* ChatModel.swift in Sources */,
 				89B3FEB8287331EE00D6DFD0 /* User.swift in Sources */,
 				89B122FF28725C710011CE40 /* OldMenuView.swift in Sources */,
+				898C562E2902FB0B00E88B5E /* Card.swift in Sources */,
 				8911BF75287A4FE200486EDA /* RewardsView.swift in Sources */,
 				892C2BAE28A9BE760059D245 /* CustomSegmentedControl.swift in Sources */,
 				8911BF73287A4FC700486EDA /* HomeView.swift in Sources */,
 				898C561B29004E8300E88B5E /* ChatTitleRow.swift in Sources */,
 				898FCCE728A0A32C003C283F /* HomeTile.swift in Sources */,
 				898FCCDD28A08FCC003C283F /* CartButton.swift in Sources */,
+				898C562C2902F4B600E88B5E /* PaymentCard.swift in Sources */,
 				8909C79028A3FD59004FDE79 /* LocationDeniedView.swift in Sources */,
 				899CC5F028B6024100E0F6D3 /* SplashScreenView.swift in Sources */,
 				89C81BCA28E69DCA009DF591 /* UserService.swift in Sources */,
@@ -573,6 +584,7 @@
 				898FCCD628A0871A003C283F /* MenuItemCard.swift in Sources */,
 				8911BF712879FAA200486EDA /* BaseView.swift in Sources */,
 				8901CEFE28ADF27A00021DCA /* EventCards.swift in Sources */,
+				898C56302902FB9500E88B5E /* PaymentMethodsView.swift in Sources */,
 				89B3FEBA287331FF00D6DFD0 /* Weather.swift in Sources */,
 				898FCCE328A09574003C283F /* MenuItemCartRow.swift in Sources */,
 				890C22DE28C0FAFE00848726 /* DirectionsMap.swift in Sources */,
