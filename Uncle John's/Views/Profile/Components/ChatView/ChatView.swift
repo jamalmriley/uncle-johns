@@ -13,23 +13,19 @@ struct ChatView: View {
     
     var body: some View {
         VStack {
-            VStack {
-                ChatTitleRow()
-                
-                ScrollViewReader { proxy in
-                    ScrollView(showsIndicators: false) {
-                        ForEach(chatModel.messages, id: \.id) { message in
-                            MessageBubble(message: message)
-                        }
-                        .padding(.top, 20)
+            ScrollViewReader { proxy in
+                ScrollView(showsIndicators: false) {
+                    ForEach(chatModel.messages, id: \.id) { message in
+                        MessageBubble(message: message)
                     }
-                    .padding(.top, 5)
-                    .background(Color("BackgroundColor"))
-                    .cornerRadius(30, corners: [.topLeft, .topRight])
-                    .onChange(of: chatModel.lastMessageId) { id in
-                        withAnimation {
-                            proxy.scrollTo(id, anchor: .bottom)
-                        }
+                    .padding(.top, 20)
+                }
+                .padding(.top, 5)
+                .background(Color("BackgroundColor"))
+                .cornerRadius(30, corners: [.topLeft, .topRight])
+                .onChange(of: chatModel.lastMessageId) { id in
+                    withAnimation {
+                        proxy.scrollTo(id, anchor: .bottom)
                     }
                 }
             }
@@ -38,6 +34,10 @@ struct ChatView: View {
             MessageField()
                 .environmentObject(ChatModel())
         }
+        .safeAreaInset(edge: .top) {
+            ChatTitleRow()
+        }
+        .navigationBarHidden(true)
         .background(Color("BackgroundColor"))
     }
 }
@@ -46,6 +46,6 @@ struct ChatView_Previews: PreviewProvider {
     static var previews: some View {
         ChatView()
             .environmentObject(RestaurantModel())
-            .colorScheme(.light)
+            .colorScheme(.dark)
     }
 }

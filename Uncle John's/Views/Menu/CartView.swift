@@ -337,7 +337,9 @@ struct CartView: View {
                     }
                 }
                 .padding()
-                .background(Color("AccentColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
+                .background(
+                    LinearGradient(gradient: Gradient(colors: [Color("AccentColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"), Color("BackgroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])")]), startPoint: .top, endPoint: .bottom)
+                )
             }
             .navigationBarHidden(true)
             .background(Color("BackgroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))

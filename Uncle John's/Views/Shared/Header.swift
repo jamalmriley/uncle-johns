@@ -21,13 +21,15 @@ struct Header: View {
                 Spacer()
                 
                 NavigationLink {
-                    CartView()
-                        .environmentObject(cartModel)
+                    if cartModel.menuItems.count > 0 {
+                        CartView()
+                            .environmentObject(cartModel)
+                    } else {
+                        EmptyCartView()
+                    }
                 } label: {
                     CartButton(numOfMenuItems: cartModel.menuItems.count)
                 }
-                .disabled(cartModel.menuItems.count <= 0)
-                
             }
             .overlay {
                 Image(restaurantModel.selectedRestaurant == 0 ? "Dat Donut Header" : colorScheme == .light ? "Uncle John's Header (Light)" : "Uncle John's Header (Dark)")

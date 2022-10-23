@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ChatTitleRow: View {
+    @Environment(\.presentationMode) var presentationMode
     var imageURL = URL(string: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80")
     var name = "Rebecca B."
     
@@ -39,11 +40,26 @@ struct ChatTitleRow: View {
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             
-            Image(systemName: "phone.fill")
-                .foregroundColor(.gray)
-                .padding(10)
-                .background(.white)
-                .cornerRadius(20)
+            Button {
+                //
+            } label: {
+                Image(systemName: "phone.fill")
+                    .foregroundColor(.gray)
+                    .padding(10)
+                    .background(.white)
+                    .cornerRadius(20)
+            }
+            
+            Button {
+                self.presentationMode.wrappedValue.dismiss()
+            } label: {
+                Image(systemName: "xmark")
+                    .foregroundColor(.gray)
+                    .padding(10)
+                    .background(.white)
+                    .cornerRadius(20)
+            }
+
         }
         .padding()
     }
