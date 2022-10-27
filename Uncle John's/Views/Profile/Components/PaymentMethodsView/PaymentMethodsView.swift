@@ -8,14 +8,25 @@
 import SwiftUI
 
 struct PaymentMethodsView: View {
+    @EnvironmentObject var restaurantModel: RestaurantModel
+    @Environment(\.presentationMode) var presentationMode
     @State var cards: [Card] = []
     @State var isBlurEnabled: Bool = false
     @State var isRoationEnabled: Bool = true
     // TODO: add gift cards and coupons/promotions
     var body: some View {
-        VStack(spacing: 20) {
-            Toggle("Enable Blur", isOn: $isBlurEnabled)
-            Toggle("Turn On Rotation", isOn: $isRoationEnabled)
+        VStack {
+            Text("My Saved Rewards")
+                .font(.custom("AvenirNext-Bold", size: 24))
+                .textCase(.uppercase)
+                .foregroundColor(Color("ForegroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
+            
+            Spacer()
+            
+            Text("Payment Methods")
+                .font(.custom("AvenirNext-Bold", size: 24))
+                .textCase(.uppercase)
+                .foregroundColor(Color("ForegroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
             
             BoomerangCard(isBlurEnabled: isBlurEnabled, isRoationEnabled: isRoationEnabled, cards: $cards)
@@ -23,8 +34,31 @@ struct PaymentMethodsView: View {
                 .padding(.horizontal, 15)
         }
         .padding(15)
+        .safeAreaInset(edge: .top) {
+            VStack {
+                HStack {
+                    Text("My Wallet")
+                        .font(.custom("AvenirNext-Bold", size: 30))
+                        .foregroundColor(.white)
+                    Spacer()
+                    Button {
+                        self.presentationMode.wrappedValue.dismiss()
+                    } label: {
+                        Image(systemName: "xmark")
+                            .renderingMode(.template)
+                            .frame(width: 25, height: 25)
+                            .foregroundColor(.white)
+                    }
+                }
+            }
+            .padding()
+            .background(
+                LinearGradient(gradient: Gradient(colors: [Color("AccentColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"), Color("BackgroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])")]), startPoint: .top, endPoint: .bottom)
+            )
+        }
+        .navigationBarHidden(true)
         .background {
-            Color("BackgroundColor")
+            Color("BackgroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])")
                 .ignoresSafeArea()
         }
         .onAppear(perform: setupCards)
@@ -49,6 +83,7 @@ struct PaymentMethodsView: View {
 struct WalletView_Previews: PreviewProvider {
     static var previews: some View {
         PaymentMethodsView()
+            .environmentObject(RestaurantModel())
             .colorScheme(.dark)
     }
 }

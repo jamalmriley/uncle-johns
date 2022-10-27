@@ -12,6 +12,7 @@ struct LoginView: View {
     
     @EnvironmentObject var authModel: AuthModel
     @EnvironmentObject var restaurantModel: RestaurantModel
+    @State private var showPassword: Bool = false
     
     // MARK: Biometric Properties
     @State var useBiometrics: Bool = false
@@ -25,35 +26,52 @@ struct LoginView: View {
             
             // MARK: Login Text Fields
             Group {
-                TextField("Email Address", text: $authModel.email)
-                    .padding()
-                    .background {
-                        ZStack {
-                            RoundedRectangle(cornerRadius: 10)
-                                .fill(Color("BackgroundColor"))
-                            
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(.white, lineWidth: 2)
-                        }
-                    }
-                    .keyboardType(.emailAddress)
-                    .textInputAutocapitalization(.never)
-                    .disableAutocorrection(true)
+                // MARK: Email Address
+                HStack {
+                    Image(systemName: "envelope")
+                        .foregroundColor(.black)
+                        .aspectRatio(contentMode: .fit)
+                        .opacity(0.3)
+                        .frame(width: 25, height: 25)
+                    
+                    CustomLoginField(placeholder: Text("Email Address"), text: $authModel.email)
+                        .font(.custom("AvenirNext-Medium", size: 16))
+                }
+                .padding(.horizontal)
+                .padding(.vertical, 15)
+                .background(Color("TextField"))
+                .cornerRadius(50)
+                .padding(.bottom)
                 
-                SecureField("Password", text: $authModel.password)
-                    .padding()
-                    .background {
-                        ZStack {
-                            RoundedRectangle(cornerRadius: 10)
-                                .fill(Color("BackgroundColor"))
-                            
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(.white, lineWidth: 2)
+                // MARK: Password
+                HStack {
+                    Image(systemName: "key")
+                        .foregroundColor(.black)
+                        .aspectRatio(contentMode: .fit)
+                        .opacity(0.3)
+                        .frame(width: 25, height: 25)
+                    
+                    Group {
+                        if showPassword {
+                            CustomLoginField(placeholder: Text("Password"), text: $authModel.password)
+                        } else {
+                            CustomPasswordField(placeholder: Text("Password"), text: $authModel.password)
                         }
                     }
-                    .textInputAutocapitalization(.never)
-                    .disableAutocorrection(true)
-                    .padding(.top, 20)
+                    .font(.custom("AvenirNext-Medium", size: 16))
+                    
+                    Button {
+                        showPassword.toggle()
+                    } label: {
+                        Image(systemName: showPassword ? "eye.fill" : "eye.slash.fill")
+                            .foregroundColor(.black)
+                            .padding(.horizontal, 10)
+                    }
+                }
+                .padding(.horizontal)
+                .padding(.vertical, 15)
+                .background(Color("TextField"))
+                .cornerRadius(50)
             }
             
             HStack {

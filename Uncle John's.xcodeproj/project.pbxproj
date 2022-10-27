@@ -71,6 +71,7 @@
 		89C81BCC28E69E1F009DF591 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C81BCB28E69E1F009DF591 /* KeychainHelper.swift */; };
 		89C81BCE28E69E4B009DF591 /* KeychainPropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C81BCD28E69E4B009DF591 /* KeychainPropertyWrapper.swift */; };
 		89C81BD028E69ED3009DF591 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C81BCF28E69ED3009DF591 /* LoginView.swift */; };
+		89CE7DE1290ACE7A004C54B8 /* CustomLoginFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CE7DE0290ACE7A004C54B8 /* CustomLoginFields.swift */; };
 		89F9F552287F14C800DFCAD2 /* Uncle John's App Icon (Light)@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89F9F546287F14C800DFCAD2 /* Uncle John's App Icon (Light)@3x.png */; };
 		89F9F553287F14C800DFCAD2 /* Uncle John's App Icon (Dark)@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89F9F547287F14C800DFCAD2 /* Uncle John's App Icon (Dark)@2x.png */; };
 		89F9F554287F14C800DFCAD2 /* Uncle John's App Icon (Dark)@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89F9F548287F14C800DFCAD2 /* Uncle John's App Icon (Dark)@3x.png */; };
@@ -149,6 +150,7 @@
 		89C81BCB28E69E1F009DF591 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
 		89C81BCD28E69E4B009DF591 /* KeychainPropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainPropertyWrapper.swift; sourceTree = "<group>"; };
 		89C81BCF28E69ED3009DF591 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		89CE7DE0290ACE7A004C54B8 /* CustomLoginFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoginFields.swift; sourceTree = "<group>"; };
 		89F9F545287F136400DFCAD2 /* Uncle-John-s-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Uncle-John-s-Info.plist"; sourceTree = SOURCE_ROOT; };
 		89F9F546287F14C800DFCAD2 /* Uncle John's App Icon (Light)@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Uncle John's App Icon (Light)@3x.png"; sourceTree = "<group>"; };
 		89F9F547287F14C800DFCAD2 /* Uncle John's App Icon (Dark)@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Uncle John's App Icon (Dark)@2x.png"; sourceTree = "<group>"; };
@@ -335,6 +337,7 @@
 				8909C79128A3FDD6004FDE79 /* LaunchView.swift */,
 				8911BF702879FAA200486EDA /* BaseView.swift */,
 				89C81BCF28E69ED3009DF591 /* LoginView.swift */,
+				89CE7DE2290ACE7F004C54B8 /* Components */,
 			);
 			path = Launch;
 			sourceTree = "<group>";
@@ -446,6 +449,14 @@
 				89C81BCD28E69E4B009DF591 /* KeychainPropertyWrapper.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		89CE7DE2290ACE7F004C54B8 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				89CE7DE0290ACE7A004C54B8 /* CustomLoginFields.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -599,6 +610,7 @@
 				898FCCE128A09244003C283F /* CartModel.swift in Sources */,
 				89B3FEBC2873327B00D6DFD0 /* AuthModel.swift in Sources */,
 				898FCCD228A0856C003C283F /* MenuItem.swift in Sources */,
+				89CE7DE1290ACE7A004C54B8 /* CustomLoginFields.swift in Sources */,
 				8901CF0028AE7BEA00021DCA /* DonutGrid.swift in Sources */,
 				890C22E028C10F6200848726 /* UserLocationButton.swift in Sources */,
 			);

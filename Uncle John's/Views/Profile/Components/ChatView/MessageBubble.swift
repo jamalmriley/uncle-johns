@@ -12,6 +12,8 @@ struct MessageBubble: View {
     @State private var showTime = false
     @State private var showActions = false
     var message: Message
+    var cornerRadius: CGFloat
+    var corners: UIRectCorner
     
     var body: some View {
         VStack(alignment: message.received ? .leading : .trailing) {
@@ -66,7 +68,7 @@ struct MessageBubble: View {
                     .font(.custom("AvenirNext-Medium", size: 16))
                     .padding()
                     .background(message.received ? Color("MessageGray") : Color("TertiaryColor (\(restaurantModel.selectedRestaurant == 0 ? "DD" : "UJB"))"))
-                    .cornerRadius(30)
+                    .cornerRadius(cornerRadius, corners: corners)
             }
             .frame(maxWidth: 300, alignment: message.received ? .leading : .trailing)
             .onTapGesture {
@@ -95,7 +97,7 @@ struct MessageBubble: View {
 
 struct MessageBubble_Previews: PreviewProvider {
     static var previews: some View {
-        MessageBubble(message: Message(id: "12345", text: "Hello, World!", received: false, timestamp: Date()))
+        MessageBubble(message: Message(id: "12345", text: "Hello, World!", received: false, timestamp: Date()), cornerRadius: 30, corners: [.topLeft, .bottomLeft, .bottomRight])
             .environmentObject(RestaurantModel())
     }
 }

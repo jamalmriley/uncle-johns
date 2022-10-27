@@ -256,6 +256,7 @@ struct CartView: View {
                                 .foregroundColor(.gray)
                                 .font(.custom("AvenirNext-Medium", size: 14))
                                 .padding(.top, 1)
+                                .padding(.bottom)
                         }
                         .foregroundColor(Color("ForegroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
                         .font(.custom("AvenirNext-Medium", size: 16))

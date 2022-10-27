@@ -217,14 +217,12 @@ struct MenuView: View {
                     .onAppear {
                         Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { timer in
                             withAnimation(.easeInOut(duration: 2)) {
-                                self.addedToOrder.toggle()
+                                self.addedToOrder = false
                             }
                         }
                     }
                     .onTapGesture {
-                        withAnimation(.easeInOut(duration: 2)) {
-                            self.addedToOrder.toggle()
-                        }
+                        self.addedToOrder = false
                     }
             }
         }

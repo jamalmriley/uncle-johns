@@ -16,7 +16,7 @@ struct ChatView: View {
             ScrollViewReader { proxy in
                 ScrollView(showsIndicators: false) {
                     ForEach(chatModel.messages, id: \.id) { message in
-                        MessageBubble(message: message)
+                        MessageBubble(message: message, cornerRadius: 20, corners: .allCorners)
                     }
                     .padding(.top, 20)
                 }
