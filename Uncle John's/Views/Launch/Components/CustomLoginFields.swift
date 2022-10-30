@@ -22,7 +22,6 @@ struct CustomLoginField: View {
             }
             TextField("", text: $text, onEditingChanged: editingChanged, onCommit: commit)
                 .foregroundColor(.black)
-                .keyboardType(.emailAddress)
                 .textInputAutocapitalization(.never)
                 .disableAutocorrection(true)
         }

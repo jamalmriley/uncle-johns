@@ -35,6 +35,7 @@ struct LoginView: View {
                         .frame(width: 25, height: 25)
                     
                     CustomLoginField(placeholder: Text("Email Address"), text: $authModel.email)
+                        .keyboardType(.emailAddress)
                         .font(.custom("AvenirNext-Medium", size: 16))
                 }
                 .padding(.horizontal)
