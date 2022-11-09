@@ -37,6 +37,16 @@ struct LoginView: View {
                     CustomLoginField(placeholder: Text("Email Address"), text: $authModel.email)
                         .keyboardType(.emailAddress)
                         .font(.custom("AvenirNext-Medium", size: 16))
+                    
+                    if authModel.email != "" {
+                        Button {
+                            authModel.email = ""
+                        } label: {
+                            Image(systemName: "xmark.circle.fill")
+                                .foregroundColor(.black)
+                                .padding(.horizontal, 10)
+                        }
+                    }
                 }
                 .padding(.horizontal)
                 .padding(.vertical, 15)
@@ -78,7 +88,7 @@ struct LoginView: View {
             HStack {
                 Spacer()
                 
-                // MARK: Standard Login
+                // MARK: Standard Login Button
                 Button {
                     Task {
                         do {
@@ -141,7 +151,79 @@ struct LoginView: View {
                 
                 Spacer()
             }
-            .padding(.vertical, 20)
+            .padding(.top, 20)
+            
+            Group {
+                Text("or log in with...")
+                    .font(.custom("AvenirNext-Medium", size: 18))
+                    .foregroundColor(.white)
+                
+                HStack {
+                    Spacer()
+                    
+                    // MARK: Google
+                    Button {
+                        //
+                    } label: {
+                        ZStack {
+                            Rectangle()
+                                .frame(width: 75, height: 50)
+                                .foregroundColor(Color("MessageGray"))
+                                .cornerRadius(10)
+                            Image("Google")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 30, height: 30)
+                        }
+                    }
+                    
+                    Spacer()
+                    
+                    // MARK: Facebook
+                    Button {
+                        //
+                    } label: {
+                        ZStack {
+                            Rectangle()
+                                .frame(width: 75, height: 50)
+                                .foregroundColor(Color("MessageGray"))
+                                .cornerRadius(10)
+                            Image("Facebook")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 75, height: 35)
+                        }
+                    }
+                    
+                    Spacer()
+                    
+                    // MARK: Microsoft
+                    Button {
+                        //
+                    } label: {
+                        ZStack {
+                            Rectangle()
+                                .frame(width: 75, height: 50)
+                                .foregroundColor(Color("MessageGray"))
+                                .cornerRadius(10)
+                            Image("Microsoft")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 30, height: 30)
+                        }
+                    }
+                    
+                    Spacer()
+                }
+            }
+            .padding(.bottom)
+            
+            /*
+             GoogleSignInButton()
+                .onTapGesture {
+                    authModel.signIn()
+                }
+             */
             
             if authModel.getBiometricStatus() && !authModel.useBiometrics {
                 Toggle(isOn: $useBiometrics) {
@@ -197,5 +279,6 @@ struct LoginView_Previews: PreviewProvider {
         LoginView()
             .environmentObject(AuthModel())
             .environmentObject(RestaurantModel())
+            .colorScheme(.dark)
     }
 }

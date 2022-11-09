@@ -24,7 +24,7 @@ struct MessageBubble: View {
                     } label: {
                         Image(systemName: "hand.thumbsup.fill")
                             .padding(5)
-                            .background(Color("MessageGray"))
+                            .background(Color("CustomGray"))
                             .cornerRadius(25)
                     }
                     
@@ -33,7 +33,7 @@ struct MessageBubble: View {
                     } label: {
                         Image(systemName: "heart.fill")
                             .padding(5)
-                            .background(Color("MessageGray"))
+                            .background(Color("CustomGray"))
                             .cornerRadius(25)
                     }
                     
@@ -43,7 +43,7 @@ struct MessageBubble: View {
                         } label: {
                             Image(systemName: "pencil")
                                 .padding(5)
-                                .background(Color("MessageGray"))
+                                .background(Color("CustomGray"))
                                 .cornerRadius(25)
                         }
                     }
@@ -53,12 +53,12 @@ struct MessageBubble: View {
                     } label: {
                         Image(systemName: "rectangle.portrait.on.rectangle.portrait")
                             .padding(5)
-                            .background(Color("MessageGray"))
+                            .background(Color("CustomGray"))
                             .cornerRadius(25)
                     }
                 }
                 .padding(5)
-                .background(Color("MessageGray"))
+                .background(Color("CustomGray"))
                 .cornerRadius(25)
                 .buttonStyle(.plain)
             }
@@ -67,7 +67,7 @@ struct MessageBubble: View {
                 Text(message.text)
                     .font(.custom("AvenirNext-Medium", size: 16))
                     .padding()
-                    .background(message.received ? Color("MessageGray") : Color("TertiaryColor (\(restaurantModel.selectedRestaurant == 0 ? "DD" : "UJB"))"))
+                    .background(message.received ? Color("CustomGray") : Color("TertiaryColor (\(restaurantModel.selectedRestaurant == 0 ? "DD" : "UJB"))"))
                     .cornerRadius(cornerRadius, corners: corners)
             }
             .frame(maxWidth: 300, alignment: message.received ? .leading : .trailing)

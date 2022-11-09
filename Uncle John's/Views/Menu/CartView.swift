@@ -138,6 +138,7 @@ struct CartView: View {
                             }
                         }
                     }
+                    .padding(.horizontal)
                     
                     // MARK: - Your Meal
                     Group {
@@ -149,8 +150,15 @@ struct CartView: View {
                             
                             Spacer()
                         }
+                        .padding(.horizontal)
+                        
                         ForEach(cartModel.menuItems, id: \.id) { menuItem in
-                            MenuItemCartRow(menuItem: menuItem)
+                            MenuItemCartRow(menuItem: menuItem) {
+                                cartModel.removeFromCart(menuItem: menuItem)
+                                // let _ = withAnimation(.easeInOut(duration: 0.3)) {
+                                    // cartModel.menuItems.remove(at: indexOf(menuItem: menuItem))
+                                // }
+                            }
                         }
                     }
                     
@@ -313,12 +321,13 @@ struct CartView: View {
                         } */
                     }
                     .font(.custom("AvenirNext-Medium", size: 16))
+                    .padding(.horizontal)
                 }
                 
                 // MARK: "Apple Pay" Button
                 PaymentButton(action: {})
+                    .padding(.horizontal)
             }
-            .padding(.horizontal)
             .safeAreaInset(edge: .top) {
                 VStack {
                     HStack {
@@ -345,6 +354,15 @@ struct CartView: View {
             .navigationBarHidden(true)
             .background(Color("BackgroundColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
         }
+    }
+    
+    func indexOf(menuItem: MenuItem) -> Int {
+        if let index = cartModel.menuItems.firstIndex(where: { menuItem_ in
+            menuItem.id == menuItem_.id
+        }) {
+            return index
+        }
+        return 0
     }
 }
 
