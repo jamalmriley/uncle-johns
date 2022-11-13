@@ -7,6 +7,7 @@
 
 import SwiftUI
 import MapKit
+import Stripe
 
 struct CartView: View {
     @EnvironmentObject var cartModel: CartModel
@@ -15,6 +16,10 @@ struct CartView: View {
     @EnvironmentObject var appSettingsModel: AppSettingsModel
     @Environment(\.presentationMode) var presentationMode
     @State var isChecked: Bool = false
+    @State var isCheckingOut: Bool = false
+    @State private var paymentMethodParams: STPPaymentMethodParams?
+    @State var message: String = ""
+    let paymentGatewayController = PaymentGatewayController()
     let metersToMilesConversionMultiplier = 0.000621371
     
     var body: some View {
@@ -162,7 +167,7 @@ struct CartView: View {
                         }
                     }
                     
-                    // MARK: - Order Meal
+                    // MARK: - Subtotal, Taxes, Donation, and Total
                     VStack(alignment: .leading) {
                         Divider()
                         
@@ -293,7 +298,7 @@ struct CartView: View {
                             
                             // MARK: "Pay" Button
                             Button {
-                                //
+                                payWithCard()
                             } label: {
                                 ZStack {
                                     Rectangle()
@@ -322,7 +327,47 @@ struct CartView: View {
                     }
                     .font(.custom("AvenirNext-Medium", size: 16))
                     .padding(.horizontal)
+                    
+                    // MARK: Payment Method
+                    Group {
+                        Section(header: Text("Payment Info")) {
+                            Text("Payment Method") // TODO: navigation menu to apple pay, saved cards, and "Add payment method"
+                            STPPaymentCardTextField.Representable.init(paymentMethodParams: $paymentMethodParams)
+                            Text("Save payment method") // TODO: Make checkbox
+                            Text("Set as default payment method") // TODO: Make checkbox and only show if above is checked
+                        }
+                    }
+                    .padding(.horizontal)
                 }
+                
+                // MARK: "Checkout" Button
+                Button {
+                    startCheckout { clientSecret in
+                        PaymentConfig.shared.paymentIntentClientSecret = clientSecret
+                        DispatchQueue.main.async {
+                            isCheckingOut = true
+                        }
+                    }
+                } label: {
+                    ZStack {
+                        Rectangle()
+                            .frame(minWidth: 100, maxWidth: 400)
+                            .frame(height: 45)
+                            .frame(maxWidth: .infinity)
+                            .cornerRadius(5)
+                            .foregroundColor(Color("AccentColor \(Color.suffixArray[restaurantModel.selectedRestaurant])"))
+                        
+                        Text("Checkout ")
+                            .foregroundColor(.white)
+                            .font(.custom("AvenirNext-Medium", size: 18))
+                        +
+                        Text("(\(cartModel.menuItems.count) \(cartModel.menuItems.count == 1 ? "item" : "items"))")
+                            .foregroundColor(.white)
+                            .font(.custom("AvenirNext-Bold", size: 18))
+                    }
+                }
+                .buttonStyle(.plain)
+                .padding([.top, .horizontal])
                 
                 // MARK: "Apple Pay" Button
                 PaymentButton(action: {})
@@ -364,11 +409,50 @@ struct CartView: View {
         }
         return 0
     }
+    
+    private func startCheckout(completion: @escaping (String?) -> Void) {
+        let url = URL(string: "https://chief-possible-quilt.glitch.me/create-payment-intent")!
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = try? JSONEncoder().encode(cartModel.menuItems)
+        
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data, error == nil, (response as? HTTPURLResponse)?.statusCode == 200
+            else {
+                completion(nil)
+                return
+            }
+            
+            let checkoutIntentResponse = try? JSONDecoder().decode(CheckoutIntentResponse.self, from: data)
+            completion(checkoutIntentResponse?.clientSecret)
+        }
+        .resume()
+    }
+    
+    private func payWithCard() {
+        guard let clientSecret = PaymentConfig.shared.paymentIntentClientSecret else {
+            return
+        }
+        
+        let paymentIntentParams = STPPaymentIntentParams(clientSecret: clientSecret)
+        paymentIntentParams.paymentMethodParams = paymentMethodParams
+        paymentGatewayController.submitPayment(intent: paymentIntentParams) { status, intent, error in
+            switch status {
+            case .failed:
+                message = "Failed"
+            case .canceled:
+                message = "Cancelled"
+            case .succeeded:
+                message = "Your payment has been successfully completed!"
+            }
+        }
+    }
 }
 
 struct CartView_Previews: PreviewProvider {
     static var previews: some View {
-        BaseView()
+        CartView()
             .environmentObject(CartModel())
             .environmentObject(RestaurantModel())
             .environmentObject(MapModel())
